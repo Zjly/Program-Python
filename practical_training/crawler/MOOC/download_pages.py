@@ -23,6 +23,7 @@ def read_urls():
 	for i in range(len(urls)):
 		urls[i] = urls[i].replace("\n", "")
 
+	# 去除重复地址
 	urls = list(set(urls))
 	return urls
 
