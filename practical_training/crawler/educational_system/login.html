@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta id="i18n_pagename" content="common-stuindex-stuCourseTable">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+<title name='school'  class="i18n">武汉大学教务管理系统</title>
+
+<link id="sex" href="" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jwbIndex.js"></script>
+
+<script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="../js/jquery.i18n.properties.js"></script>
+<script type="text/javascript" src="../js/languageSub.js"></script>
+<script type="text/javascript"
+	src="../js/CheckCookie.js?v=2.002"></script>
+<link
+	href="../css/style_common.css?v=2.002?v=2.002"
+	type="text/css" rel="stylesheet" />
+<link id="backcss" href="../css/style_boy.css?v=2.002"
+	type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js/table.js?v=2.002"></script>
+
+<script type="application/javascript" src="../js/i18n/data.js"></script>
+<script type="application/javascript" src="../js/i18n/lang.js"></script>
+
+<script type="application/javascript">
+	// 为最顶部窗口设置语言
+	$(function () {
+		lang_util.setLang("" || lang_util.getSelectedLang() || 'zh', lang_pack);
+	})
+</script>
+
+
+
+
+
+
+<script type="text/javascript"> 
+// perform JavaScript after the document is scriptable.
+$(function() {
+	$("#overLayFrame").load(IFrameResize2);
+	$("#nameLable").mouseover(function(){
+			showDownOrHideUp("#downlistWrapper");
+		});
+	$("#downlistWrapper").mouseleave(function(){
+			showDownOrHideUp("#downlistWrapper");
+		});
+    // setup ul.tabs to work as tabs for each div directly under div.panes
+	var triggers = $(".overlay").overlay({
+	  target:$("#prompt",window.parent.parent.document),
+	  fixed:false,
+	  top:'10',
+	  left:'0px',
+	  closeOnClick:true,
+	  onBeforeLoad:function(){
+	  		var actionStr = this.getTrigger().attr("rel");
+		 	var wrap = this.getOverlay().find("iframe[name=overLayFrame]");
+		 	wrap.width(830);
+		 	wrap.height(300);
+		 	parent.parent.startExpose();
+		 	if(actionStr=="help"){
+		 		wrap.attr("src","../common/help.html"); 
+		 		parent.parent.document.body.parentNode.style.overflow="scroll"; 
+		 	}else if(actionStr=="resetPsd")
+		 		wrap.attr("src","../common/changePassword.jsp"); 
+		 	
+		 	var length = 1280;
+		 	var leftPosition = (length-830)/2;
+		 	this.getOverlay().css("left",leftPosition);
+	  },
+	  onBeforeClose:function(){parent.parent.closeExpose();},
+	  onClose:function(){
+	  	this.getOverlay().find("iframe[name=overLayFrame]").attr("src","");}
+  });
+  
+	
+	function ifBindPhonenum(){
+		var phone='null';
+		//var ifphonenum=$(phone).val();
+		if (phone === "null"){
+			console.log("未绑定");
+			//$('#verifyBox').show();
+		}
+		else
+		{
+			console.log("已绑定");
+			$('#verifyBox').hide();
+		} 
+	}
+  	ifBindPhonenum();
+  
+});
+</script>
+
+<style>
+    .modal {
+   	background-color:#F5F5F5;
+    display:none;
+    padding:15px;
+    text-align:left;
+    border:2px solid #E0E0E0;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    box-shadow:0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+  }
+
+  .modal h2 {
+    background:url(/media/img/global/info.png) 0 50% no-repeat;
+    margin:0px;
+    padding:10px 0 10px 45px;
+    border-bottom:1px solid #333;
+    font-size:20px;
+  }
+    /* tooltip styling */
+  #downlistWrapper{
+	    /*background:url(/images/white_arrow_small3.png);*/
+	    display:none;
+	    cursor:pointer;
+	    float:right;
+	    font-size:11px;
+	    color:#fff;
+	    text-align: center;
+	    margin-top:-40px;
+	    padding-top: 20px;
+	   	overflow: hidden;
+   }
+  .downlistMenu {
+		background-color:#FFF;
+		padding:10px 10px 20px 5px;
+		height:70px;
+	    width:99px;
+		border:1px solid;
+	    border-bottom-left-radius:3px;
+	    border-bottom-right-radius:3px;
+  }
+  .downlistMenu table{
+  	margin:0;
+  	width: 100%;
+  }
+  .downlistMenu table td{
+  	padding-bottom: 10px;
+  }
+  .downlistMenu a{
+  	font-size: 13px;
+  	font-weight: bold;
+  }
+  #language{
+  	margin-top:33px;
+  	margin-left:35%;
+  }
+
+#verifyBox {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display:none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#login_info2{
+float:right;
+}
+	/* 二维码相关css*/
+    ul,li{
+    	list-style:none; 
+    	zoom:1;
+    	margin:0; padding:0;}
+    .keifu{ 
+    	position:fixed; 
+		top:25%; right:0; width:150px; 
+	 	_position:absolute; 
+	 	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.bottom,10)||0)-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+ 		z-index:990;}
+	.keifu_tab{ width:160px;}
+	.icon_keifu{ 
+		width:26px; height:100px; 
+		font-size: 14px;
+		color: teal;
+		border-bottom-left-radius: 5px;
+    	border-top-left-radius: 5px;
+    	background-color:white;
+    	text-align: center;
+    	float:left; 
+    	position:relative; 
+    	display:none; 
+    	cursor:pointer;} 
+	.keifu_box{ 
+		float:left; 
+		width:150px;
+		border: solid white;
+    	border-top-left-radius: 10px;
+    	border-bottom-left-radius: 10px;
+		}
+	.keifu_tab img{ display:block;}
+	.keifu_close{ 
+		display:block; 
+		width:11px; height:11px; 
+		position:absolute; top:5px; right:5px;}
+	.keifu_con{ 
+	/*border-left:7px solid ; border-right:7px solid ; */
+		padding-top:20px; 
+		background:#fbfbfb;}
+	.keifu_con li{
+		}
+	.keifu_con .weixin{ 
+		height:136px;}
+	.codeTitle{
+		text-align: center;
+    	font-size: 16px;
+    	color: teal;
+	}
+/* 二维码相关css结束*/	
+/*旧系统已完全下线  提示板可以删除
+		#signboard {
+			width: 230px;
+			height: 340px;
+			position: fixed;
+			top: 50%;
+			left: 0;
+			margin-top: -200px;
+		  	transform-origin: 200px 13px;
+		  	z-index: 1;
+		}
+		.sign {
+			width: 100%;
+			height: 340px;
+			background: #6b91b6;
+			border-radius: 15px;
+			position: absolute;
+			bottom: 0;
+		}
+
+		.sign p {
+			font-weight: bold;
+			font-size: 22px;
+			text-align: center;
+			color: white;
+			margin: 20px;
+		}
+
+		.sign ul li{
+			font-family: 幼圆;
+			font-size: 17px;
+			line-height: 22px;
+			margin: 0px 5px 0px 30px;
+			text-align: left;
+			list-style: circle;
+		}
+		
+		.sign ul a {
+			text-decoration: underline;
+		}
+
+		.sign ul a:hover {
+			color: red;
+		}
+		
+		#close:hover {
+			cursor: pointer;
+		}
+		*/
+		#btn10{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-932px -264px;
+	
+}
+#btn10:hover{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-932px -108px;
+	
+}
+#btn10.current{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-932px -108px;
+	
+}
+</style>
+</head>
+<body class="greyBg">
+	
+
+	<div id="container" style="background-color: #6B91B6;">
+	
+<div id="top">
+        	
+        	<div id="system" onclick="showPage('/servlet/Svlt_QueryStuLsn?action=queryStuLsn&csrftoken=d23452f5-5d68-3f0b-a8ee-f1617e1697a7','calendarRight.jsp',this)"></div> 
+        	        	<select id="language">
+                	<option value="zh-CN">简体中文</option>
+                	<option value="en">English</option>
+           		</select>
+            <div id="login_info">          
+	            <div id="nameLable">
+	            	张雷
+	            	<img  src="../images/login_info_arrow.png"/>
+	            </div>
+	            <!-- tooltip element -->
+				<div id="login_info2"><span class='i18n' name='indexYearTerm' data-lang-args='2018~2019~3' id="term"> 2018-2019学年3学期 <span class='i18n' name='indexWeek' data-lang-args="1" id="showOrHide">第1教学周</span></span><span id="acade" title='计算机学院' style='width:90px'>计算机学院</span></div>
+            </div>
+        </div>
+				<!-- tooltip element -->
+				
+
+		<div id="main_contaier">
+			<div id="liebiao"></div>
+			<div id="header">
+				<ul id="menu">
+					<li class="current" id="btn1"
+						onclick="showPage('/servlet/Svlt_QueryStuLsn?action=queryStuLsn&csrftoken=d23452f5-5d68-3f0b-a8ee-f1617e1697a7','calendarRight.jsp?csrftoken=d23452f5-5d68-3f0b-a8ee-f1617e1697a7',this);"></li>
+					<li id="btn2"
+						onclick="showPage('chooseLsn_parent.jsp','choose_Publsn_Apply.jsp',this);"></li>
+					<li id="btn3"
+						onclick="showPage('stu_score_parent.jsp','stu_score_credit_statics.jsp',this);"></li>
+					<!--<li id="btn4"
+						onclick="showPage('stu_jxpg_parent.jsp','calendarRight.jsp',this);"></li>-->
+					<li id="btn5"
+						onclick="showPage('stu_creditFee_parent.jsp','calendarRight.jsp',this);"></li>
+					
+					<li id="btn9"
+						onclick="showPage('stu_information_parent.jsp','calendarRight.jsp',this);"></li>
+					<li id="btn10"
+						onclick="showPage('stu_queryLessonAll_parent.jsp','calendarRight.jsp',this);"></li>
+					<!-- <li id="btn6" onclick="showPage('../common/query_train_scheme.jsp','calendarRight.jsp',this);"></li> -->
+				</ul>				    	      
+				<div id="downlistWrapper">
+					<div class="downlistMenu"> 
+						<table>
+							<tr>
+								<td>
+									<div class="menu_item_help" style="float:left;margin-left:8px"></div>
+									<div style="float:left;margin-left:3px;">
+										<a class="overlay" rel="help" href="">帮助</a>
+									</div></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="menu_item_resetpwd"
+										style="float:left;margin-left:8px"></div>
+									<div style="float:left;margin-left:3px;">
+										<a class="overlay" rel="resetPsd" href="">修改密码</a>
+									</div></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="menu_item_logout"
+										style="float:left;margin-left:8px"></div>
+									<div style="float:left;margin-left:3px;">
+										<a href="/servlet/logout">退出系统</a>
+									</div></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<script>
+	       	 var url="/servlet/Svlt_QueryStuLsn?action=queryStuLsn&csrftoken=d23452f5-5d68-3f0b-a8ee-f1617e1697a7";
+	       	// console.info(url);
+	       	 var btn;
+	       	
+	       	if(url.startsWith("/servlet/Svlt_QueryStuLsn?action=queryStuLsn"))
+	       	 {
+	       	 		btn=document.getElementById("btn1");
+	       	 }
+	       	if(url=="chooseLsn_parent.jsp")	
+	       			btn=document.getElementById("btn2");
+	       	if(url=='stu_score_parent.jsp')
+	       			btn=document.getElementById("btn3");
+	       	if(url=='stu_jxpg_parent.jsp')
+	       			btn=document.getElementById("btn4");
+	       	if(url=='stu_creditFee_parent.jsp')
+	       			btn=document.getElementById("btn5");
+	       	if(url=='../common/query_train_scheme.jsp')
+	       			btn=document.getElementById("btn6");
+	       	if(url=='stu_information_parent.jsp')
+	       			btn=document.getElementById("btn9");
+	       	if(url=='stu_queryLessonAll_parent.jsp')
+	       			btn=document.getElementById("btn10");
+	       	console.log("url"+url);
+			$(btn).siblings(".current").removeClass("current");
+			$(btn).addClass("current");
+	       	</script>
+
+			<div id="content">
+				<div id="right_bar" style="float: right;">
+					<iframe style="padding:0;" allowTransparency="true" id="bar_iframe"
+						name="bar" src=calendarRight.jsp scrolling='no' frameborder="0">
+					</iframe>
+					<!--     <iframe  style="padding:0;height:400px;" allowTransparency="true" id="bar_iframe2" name="bar2" src="auto_score_display.jsp" scrolling ='no' frameborder="0">
+               		 </iframe>
+                 -->
+				</div>
+				<div id="left_bar">
+					<!-- /servlet/Svlt_QueryStuLsn -->
+					<iframe style="padding:0;" allowTransparency="true"
+						id="page_iframe" name="main" src=/servlet/Svlt_QueryStuLsn?action=queryStuLsn&csrftoken=d23452f5-5d68-3f0b-a8ee-f1617e1697a7 scrolling='no'
+						frameborder="0"> </iframe>
+					<input type="hidden" id="hidUrl" value=/servlet/Svlt_QueryStuLsn?action=queryStuLsn&csrftoken=d23452f5-5d68-3f0b-a8ee-f1617e1697a7></input>
+				</div>
+
+				<script>
+          
+            </script>
+
+
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<!-- user input dialog -->
+
+		<div class="modal" id="prompt"
+			style="position:absolute;z-index: 10000;">
+			<div class="overlayContent" id="overlayContent">
+				<iframe name="overLayFrame" id="overLayFrame" frameborder="0"
+					style="width:820px;height: 1020px;border: 0;"></iframe>
+			</div>
+		</div>
+     	<div id="footer" class="stu_footer">
+			<div class="first-part-footer">
+				<div class="first-part i18n" name="schoolname"></div>
+				<div class="second-part">
+					<p><span class='i18n' name='UndergraduateSchool'></span><span class="footer-oper i18n" style="margin-right:14px;" name='host'></span></p>
+					<p><span class='i18n' name='ComputerScience'></span><span class="footer-oper i18n" name='made'style="margin-right:14px;"></span></p>
+					<p><span class='i18n' name='NetworkInformationCenter'></span><span class="footer-oper i18n" name='Platformguarantee'></span></p>
+				</div>
+			</div>
+			<div class="border-right"></div>
+			<div class="second-part-footer">
+				<p class='i18n i18n-title' i18n-title="company" selectattr='title' name='company'></p>
+				<p class='i18n' name='contactus'></p>
+			</div>
+		</div>
+	   <!--<div id="verifyBox">
+			<iframe name="veryfiBox" src="../common/verifyBox.jsp" style="width: 100%;height: 100%;"scrolling='no' frameborder="0">
+			</iframe>
+		</div> 
+	--></div>
+	<div class="keifu">
+    
+	    	<div class="icon_keifu ">展开二维码</div>
+	        <div class="keifu_box">
+	            <div ><a href="javascript:void(0)" class="keifu_close">X</a></div>
+	            <ul class="keifu_con">
+	            <p class="codeTitle">安卓APP二维码</p>
+					<li class="weixin"><img src="../images/android.png" width="126" height="126" alt="安卓APP二维码" /></li></br>
+	               <p class="codeTitle">苹果APP二维码</p>
+	                <li class="weixin"><img src="../images/iOS.png" width="126" height="126" alt="苹果APP二维码" /></li>
+	            <p class="codeTitle">打开手机下载教务APP吧~</p>
+	            </ul>
+	        </div>
+	    
+	</div>
+	
+<script>
+/*先不用此控件
+$(function(){
+$(".menu_item_logout").parent("td").mouseover(function(){
+		$(".menu_item_logout").css("background-position","-23px -24px")
+	}).mouseout(function(){
+		$(".menu_item_logout").css("background-position","-23px -3px")
+	})
+$(".menu_item_resetpwd").parent("td").mouseover(function(){
+		$(".menu_item_resetpwd").css("background-position","0 -24px")
+	}).mouseout(function(){
+		$(".menu_item_resetpwd").css("background-position","0 -3px")
+	})
+	
+// initialize tooltip
+$("#nameLable").tooltip({
+	position: "bottom left", 
+   // tweak the position
+   offset: [10, 77],
+   // use the "slide" effect
+   effect: 'slide',
+   relative:true,
+   events: {
+	  def:     "mouseover,mouseleave",    // default show/hide events for an element
+	  tooltip: "mouseenter,mouseleave"     // the tooltip element
+   }
+// add dynamic plugin with optional configuration for bottom edge
+}).dynamic({ bottom: { direction: 'up', bounce: true } });
+});*/
+</script>
+<script type="text/javascript">
+	var grade2010 = 2017;
+	if(grade2010 >= 2010 ){		
+		$("#btn5").css("display", "block");
+	} else {
+		$("#btn5").css("display", "none");
+	} 
+	//周期
+	var week = 1;
+	if(week >= 20) {
+		$("#showOrHide").css("display", "none");
+	}
+	/*二维码js*/
+	var KF = $(".keifu");
+	var wkbox = $(".keifu_box");
+	var kf_close = $(".keifu .keifu_close");
+	var icon_keifu = $(".icon_keifu");
+	var kH = wkbox.height();
+	var kW = wkbox.width();
+	var wH = $(window).height();
+	KF.css({height:kH});
+	icon_keifu.css("top",parseInt((kH-100)/2));
+	var KF_top = (wH-kH)/2;
+	if(KF_top<0) KF_top=0;
+	KF.css("top",KF_top);
+	
+	$(kf_close).click(function(){
+	console.log(22222);
+		KF.animate({width:"0"},200,function(){
+			wkbox.hide();
+			icon_keifu.show();
+			KF.animate({width:26},300);		
+		});	
+	});
+	$(icon_keifu).click(function(){
+			$(this).hide();
+			wkbox.show();
+			KF.animate({width:kW},200);
+	});
+</script>
+<script>
+</script>
+</body>
+</html>

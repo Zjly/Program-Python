@@ -1,0 +1,5 @@
+window.schoolDto = {
+shortName:"icourse",
+name:"爱课程",
+bigLogo:"http://edu-image.nosdn.127.net/F87B4A6F0A0D123D144F9BC87DC6A77D.jpg?imageView&amp;thumbnail=220y80&amp;quality=100",
+};
