@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/create_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/crawler/MOOC/analysis_pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/crawler/taoke/test_sql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/shielding_sensitive_words/lexicon.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/shielding_sensitive_words/sensitive_words_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/crawler/taoke/taokela.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/crawler/taoke/taokela.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/Iris2.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/Iris2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/python_crawler_class/Class2.10.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/data_analysis_class/python_crawler_class/Class2.10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/python_crawler_class/Class2.9.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/data_analysis_class/python_crawler_class/Class2.9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/python_crawler_class/renren.html" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/data_analysis_class/python_crawler_class/renren.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,24 +25,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="512">
+              <caret line="145" column="46" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practical_training/connect_php/connect_test.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/test_sql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="19">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python/Python3/Lib/site-packages/requests/adapters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="515" selection-start-line="515" selection-end-line="515" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python/Python3/Lib/site-packages/pymysql/err.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +95,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py" />
         <option value="$PROJECT_DIR$/practical_training/crawler/MOOC/testxxx.py" />
+        <option value="$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py" />
+        <option value="$PROJECT_DIR$/practical_training/connect_php/create_file.py" />
+        <option value="$PROJECT_DIR$/practical_training/crawler/MOOC/analysis_pages.py" />
+        <option value="$PROJECT_DIR$/practical_training/shielding_sensitive_words/__init__.py" />
+        <option value="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/Iris2.py" />
+        <option value="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/iris.csv" />
+        <option value="$PROJECT_DIR$/practical_training/shielding_sensitive_words/sensitive_words_analysis.py" />
+        <option value="$PROJECT_DIR$/practical_training/crawler/taoke/taokela.txt" />
+        <option value="$PROJECT_DIR$/practical_training/crawler/taoke/test_sql.py" />
+        <option value="$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py" />
       </list>
     </option>
   </component>
@@ -86,12 +139,6 @@
               <item name="Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
               <item name="practical_training" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_php" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="practical_training" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -99,7 +146,7 @@
               <item name="Program" type="462c0819:PsiDirectoryNode" />
               <item name="practical_training" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="MOOC" type="462c0819:PsiDirectoryNode" />
+              <item name="taoke" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -117,6 +164,9 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\practical_training\data_analysis_class" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Coding\Python\Program" />
     </key>
@@ -133,8 +183,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.download_pages">
-    <configuration name="connect_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test_sql">
+    <configuration name="Iris2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,12 +192,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/connect_php" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/connect_php/connect_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/Iris2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,7 +206,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="download_pages" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -164,12 +214,78 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/crawler/MOOC" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py" />
+      <option name="SCRIPT_NAME" value="E:\Coding\Python\Program\practical_training\shielding_sensitive_words\sensitive_words_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/crawler/taoke" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sensitive_words_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/shielding_sensitive_words/sensitive_words_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_sql" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/crawler/taoke" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/crawler/taoke/test_sql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,8 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.download_pages" />
-        <item itemvalue="Python.connect_test" />
+        <item itemvalue="Python.test_sql" />
+        <item itemvalue="Python.analysis" />
+        <item itemvalue="Python.Iris2" />
+        <item itemvalue="Python.sensitive_words_analysis" />
+        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +316,10 @@
       <updated>1562051548904</updated>
       <workItem from="1562051550160" duration="1092000" />
       <workItem from="1562052742180" duration="274000" />
-      <workItem from="1562053534224" duration="2442000" />
+      <workItem from="1562053534224" duration="4520000" />
+      <workItem from="1562058280636" duration="3806000" />
+      <workItem from="1562066739329" duration="1351000" />
+      <workItem from="1562083701254" duration="2270000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -217,17 +339,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3808000" />
+    <option name="totallyTimeSpent" value="13313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23257373" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24262735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -255,8 +377,24 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Program$sensitive_words_analysis.coverage" NAME="sensitive_words_analysis Coverage Results" MODIFIED="1562066844540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
+    <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562058641948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
+    <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562067428541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
+    <SUITE FILE_PATH="coverage/Program$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1562064079430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
     <SUITE FILE_PATH="coverage/Program$connect_test.coverage" NAME="connect_test Coverage Results" MODIFIED="1562051581948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
+    <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562085774112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$create_file.coverage" NAME="create_file Coverage Results" MODIFIED="1562057925214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
+    <SUITE FILE_PATH="coverage/Program$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1562085384167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>'https://taoke.ziqiang.net.cn/api/course/public/elective/20182018152/comment/?page=1&amp;per_page=10'</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/practical_training/verification_code/test.py" />
@@ -296,30 +434,195 @@
     <entry file="file://$PROJECT_DIR$/.gitattributes.">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/testxxx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/testxxx.py" />
     <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/course_data/BISU-1206027802.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/connect_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/create_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/get_course_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-723">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/analysis_pages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/connect_test.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day2/pandasClass.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1319">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day3/data_visualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day3/wf.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day3/data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2167">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/shielding_sensitive_words/lexicon.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-38001">
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/Iris.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/Iris2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/iris.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/shielding_sensitive_words/sensitive_words_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/taokela.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="142" column="318" selection-start-line="142" selection-start-column="318" selection-end-line="142" selection-end-column="318" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/get_all_course_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="112" column="26" lean-forward="true" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python3/Lib/site-packages/requests/adapters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="515" selection-start-line="515" selection-end-line="515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python3/Lib/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/test_sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="145" column="46" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

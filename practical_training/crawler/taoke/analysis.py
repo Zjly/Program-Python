@@ -1,5 +1,6 @@
 import json
 import re
+from datetime import datetime
 
 import pymysql
 import requests
@@ -142,8 +143,10 @@ def write_comment_database(c_comments_list):
 	for comments_list in c_comments_list:
 		# 对该课程的每一条评论进行插入
 		for comment in comments_list[1]:
+			# TODO 转义符的处理，最好把评论都保存在文件中，不用每次都爬取，方便处理
+			comment_content_this = comment[2].replace("\\", "")
 			comment_sql = "INSERT INTO CM_comment(course_id, student_name, comment_quality, comment_content, comment_time) VALUES ('%s', '%s', '%s', '%s', '%s')" % (
-				comments_list[0], comment[0], comment[1], comment[2], comment[3])
+				comments_list[0], comment[0], comment[1], comment_content_this, comment[3])
 			cursor.execute(comment_sql)
 
 	try:
@@ -180,6 +183,13 @@ def clear_database():
 
 
 if __name__ == '__main__':
+	start_time = datetime.now()
+	print("start time: " + str(start_time))
+
 	clear_database()
 	data = choose_analysis()
 	analysis_data(data)
+
+	end_time = datetime.now()
+	print("end time: " + str(end_time))
+	print("total time: " + str(end_time - start_time))

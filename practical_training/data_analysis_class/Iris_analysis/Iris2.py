@@ -90,22 +90,22 @@ antV = ['#1890FF', '#2FC25B', '#FACC14', '#223273', '#8543E0', '#13C2C2', '#3436
 
 # —————————————————————————————————————————2 机器学习————————————————————————————————————————————————————————————————————
 # 载入特征和标签集
-X = iris[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']]
-y = iris['Species']
-
-# 对标签集进行编码
-encoder = LabelEncoder()
-y = encoder.fit_transform(y)
+# X = iris[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']]
+# y = iris['Species']
+#
+# # 对标签集进行编码
+# encoder = LabelEncoder()
+# y = encoder.fit_transform(y)
 # print(y)
 
 # ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 # 将数据集以 7: 3 的比例，拆分为训练数据和测试数据
-train_X, test_X, train_y, test_y = train_test_split(X, y, test_size=0.3)
-# print(train_X.shape, train_y.shape, test_X.shape, test_y.shape)
-
-import warnings
-
-warnings.filterwarnings("ignore")
+# train_X, test_X, train_y, test_y = train_test_split(X, y, test_size=0.3)
+# # print(train_X.shape, train_y.shape, test_X.shape, test_y.shape)
+#
+# import warnings
+#
+# warnings.filterwarnings("ignore")
 
 # ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 # 检查不同模型的准确性
@@ -117,14 +117,14 @@ warnings.filterwarnings("ignore")
 
 # ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 # # Logistic Regression 逻辑回归
-model = LogisticRegression()
-model.fit(train_X, train_y)
-print(model)
-
-prediction = model.predict(test_X)
-print('预测的结果',prediction)
-print('实际的结果',test_y)
-print('The accuracy of the Logistic Regression is: {0}'.format(metrics.accuracy_score(prediction, test_y)))
+# model = LogisticRegression()
+# model.fit(train_X, train_y)
+# print(model)
+#
+# prediction = model.predict(test_X)
+# print('预测的结果',prediction)
+# print('实际的结果',test_y)
+# print('The accuracy of the Logistic Regression is: {0}'.format(metrics.accuracy_score(prediction, test_y)))
 
 # ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 # # Decision Tree 决策树
