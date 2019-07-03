@@ -72,16 +72,23 @@ def machine_learning(comments):
 	# 初始化
 	model = tflearn.DNN(net, tensorboard_verbose=0, tensorboard_dir="./tflearn_data/tflearn_logs/")
 
-	# 训练
-	model.fit(X_train_padded_seqs, y_train, validation_set=(X_test_padded_seqs, y_test), n_epoch=n_epoch,
-			  show_metric=True, batch_size=100)
+	model.load("./tflearn_data/tflearn_modes/2019-07-03 17.26.25.047838/comment_mode.tflearn")
 
-	# 保存
-	time = datetime.now()
-	time_str = str(time).replace(":", ".")
-	os.makedirs(f"./tflearn_data/tflearn_modes/{time_str}")
-	model.save(f"./tflearn_data/tflearn_modes/{time_str}/comment_mode.tflearn")
+	Xnew = pd.Series(["期末有一篇论文，然后剪辑视频或者p图选做，给分还行"])
+	vect = CountVectorizer(ngram_range=(1, 1), token_pattern=r'\b\w{1,}\b')
+	vect.fit(Xnew)
+	vocab = vect.vocabulary_
 
+	def convert_X_to_X_word_ids(X):
+		return X.apply(lambda x: [vocab[w] for w in [w.lower().strip() for w in x.split()] if w in vocab])
+
+	X_Xnew_word_ids = convert_X_to_X_word_ids(Xnew)
+
+	# 序列扩充
+	X_Xnew_padded_seqs = pad_sequences(X_Xnew_word_ids, maxlen=20, value=0)
+
+	Y = model.predict(X_Xnew_padded_seqs)
+	print(Y)
 
 if __name__ == '__main__':
 	comments_list = get_comment_from_database()
