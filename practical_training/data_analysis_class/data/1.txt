@@ -1,0 +1,13 @@
+name	subject	score
+huangbo	math	81
+huangbo	english	87
+huangbo	computer	57
+xuzheng	math	89
+xuzheng	english	92
+xuzheng	computer	83
+wangbaoqiang	math	78
+wangbaoqiang	english	88
+wangbaoqiang	computer	90
+dengchao	math	88
+dengchao	english	78
+dengchao	computer	58
