@@ -11,7 +11,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from tflearn.data_utils import pad_sequences, to_categorical
 from sklearn import preprocessing
 
-
+# TODO 数字序列几乎都是0 该问题亟待解决
 def get_comment_from_database():
 	"""
 	从数据库中得到评论
@@ -67,14 +67,17 @@ def machine_learning(comments):
 	net = tflearn.fully_connected(net, no_of_unique_y_labels, activation='softmax')  # relu or softmax
 	net = tflearn.regression(net, optimizer='adam', learning_rate=1e-4, loss='categorical_crossentropy')
 
-	# 训练网络
-
 	# 初始化
 	model = tflearn.DNN(net, tensorboard_verbose=0, tensorboard_dir="./tflearn_data/tflearn_logs/")
 
 	model.load("./tflearn_data/tflearn_modes/2019-07-03 17.26.25.047838/comment_mode.tflearn")
 
-	Xnew = pd.Series(["期末有一篇论文，然后剪辑视频或者p图选做，给分还行"])
+	return model
+
+
+def model_predict(model):
+	Xnew = pd.Series(["不错 老师讲的很好", "老师给分有点差", "很好", "慎重慎重，课程内容很实用，但课程很枯燥"])
+
 	vect = CountVectorizer(ngram_range=(1, 1), token_pattern=r'\b\w{1,}\b')
 	vect.fit(Xnew)
 	vocab = vect.vocabulary_
@@ -94,6 +97,7 @@ if __name__ == '__main__':
 	comments_list = get_comment_from_database()
 
 	start_time = datetime.now()
-	machine_learning(comments_list)
+	tflearn_model = machine_learning(comments_list)
+	model_predict(tflearn_model)
 	end_time = datetime.now()
 	print("total time: " + str(end_time - start_time))
