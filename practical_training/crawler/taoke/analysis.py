@@ -50,6 +50,21 @@ def analysis_data(course_number_list):
 	write_course_database(course_list)
 	write_comment_database(c_comments_list)
 
+def save_comments(c_comments_list):
+	"""
+	保存评论list到csv文件中
+	:param c_comments_list:
+	:return:
+	"""
+	with open("comments.csv", "w", encoding="utf-8") as fp:
+		for comments in c_comments_list:
+			for comment in comments[1]:
+				fp.write(str(comments[0]) + "|")
+				for j in range(4):
+					fp.write(comment[j].replace("\n", ""))
+					if j != 3:
+						fp.write("|")
+				fp.write("\n")
 
 def get_course(url):
 	"""
@@ -131,8 +146,7 @@ def write_course_database(course_list):
 def write_comment_database(c_comments_list):
 	"""
 	将评论写入数据库
-	:param course_id: 课程id
-	:param comments_list: 课程评论list
+	:param c_comments_list: 课程评论list
 	:return:
 	"""
 	db = pymysql.connect("localhost", "root", "root", "test")
@@ -143,10 +157,9 @@ def write_comment_database(c_comments_list):
 	for comments_list in c_comments_list:
 		# 对该课程的每一条评论进行插入
 		for comment in comments_list[1]:
-			# TODO 转义符的处理，最好把评论都保存在文件中，不用每次都爬取，方便处理
-			comment_content_this = comment[2].replace("\\", "")
+			comment_content = comment[2].replace("\'", "")
 			comment_sql = "INSERT INTO CM_comment(course_id, student_name, comment_quality, comment_content, comment_time) VALUES ('%s', '%s', '%s', '%s', '%s')" % (
-				comments_list[0], comment[0], comment[1], comment_content_this, comment[3])
+				comments_list[0], comment[0], comment[1], comment_content, comment[3])
 			cursor.execute(comment_sql)
 
 	try:
