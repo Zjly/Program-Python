@@ -5,6 +5,11 @@ from datetime import datetime
 import pymysql
 import requests
 
+db = pymysql.connect("localhost", "root", "root", "test")
+# db = pymysql.connect(host="cdb-5oviul9n.gz.tencentcdb.com", port=10094, user="root", passwd="Ab123123",
+# 					 db="class_manage")
+cursor = db.cursor()
+
 
 def choose_analysis():
 	"""
@@ -45,10 +50,10 @@ def analysis_data(course_number_list):
 		c_comments = [course[0], comments]
 		c_comments_list.append(c_comments)
 
-
 	# 将他们写入数据库
 	write_course_database(course_list)
 	write_comment_database(c_comments_list)
+
 
 def save_comments(c_comments_list):
 	"""
@@ -65,6 +70,7 @@ def save_comments(c_comments_list):
 					if j != 3:
 						fp.write("|")
 				fp.write("\n")
+
 
 def get_course(url):
 	"""
@@ -103,11 +109,6 @@ def write_course_database(course_list):
 	:param course: 课程信息
 	:return:
 	"""
-	db = pymysql.connect("localhost", "root", "root", "test")
-	# db = pymysql.connect(host="cdb-5oviul9n.gz.tencentcdb.com", port=10094, user="root", passwd="Ab123123",
-	# 					 db="class_manage")
-	cursor = db.cursor()
-
 	for course in course_list:
 		# 查找这个老师是否存在
 		teacher_name = course[2]
@@ -140,8 +141,6 @@ def write_course_database(course_list):
 	except:
 		db.rollback()
 
-	db.close()
-
 
 def write_comment_database(c_comments_list):
 	"""
@@ -149,11 +148,6 @@ def write_comment_database(c_comments_list):
 	:param c_comments_list: 课程评论list
 	:return:
 	"""
-	db = pymysql.connect("localhost", "root", "root", "test")
-	# db = pymysql.connect(host="cdb-5oviul9n.gz.tencentcdb.com", port=10094, user="root", passwd="Ab123123",
-	# 					 db="class_manage")
-	cursor = db.cursor()
-
 	for comments_list in c_comments_list:
 		# 对该课程的每一条评论进行插入
 		for comment in comments_list[1]:
@@ -167,19 +161,12 @@ def write_comment_database(c_comments_list):
 	except:
 		db.rollback()
 
-	db.close()
-
 
 def clear_database():
 	"""
 	清空相关数据库内内容
 	:return:
 	"""
-	db = pymysql.connect("localhost", "root", "root", "test")
-	# db = pymysql.connect(host="cdb-5oviul9n.gz.tencentcdb.com", port=10094, user="root", passwd="Ab123123",
-	# 					 db="class_manage")
-	cursor = db.cursor()
-
 	truncate_sql1 = "TRUNCATE TABLE CM_teacher"
 	truncate_sql2 = "TRUNCATE TABLE CM_course"
 	truncate_sql3 = "TRUNCATE TABLE CM_comment"
@@ -192,8 +179,6 @@ def clear_database():
 	except:
 		db.rollback()
 
-	db.close()
-
 
 if __name__ == '__main__':
 	start_time = datetime.now()
@@ -202,6 +187,7 @@ if __name__ == '__main__':
 	clear_database()
 	data = choose_analysis()
 	analysis_data(data)
+	db.close()
 
 	end_time = datetime.now()
 	print("end time: " + str(end_time))
