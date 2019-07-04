@@ -30,7 +30,7 @@ def machine_learning1(comments):
 	y = comments["quality"]
 
 	# 分类训练集和测试集
-	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
+	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1)
 
 	# 将样本集的字符串转变为数字序列。创建vocab，把X转化为X_word_ids
 	vect = CountVectorizer(ngram_range=(1, 1), token_pattern=r'\b\w{1,}\b')
@@ -84,98 +84,10 @@ def machine_learning1(comments):
 	model.save(f"./tflearn_data/tflearn_modes/{time_str}/comment_mode.tflearn")
 
 
-def machine_learning2(comments):
-	# 划分样本集和标签集
-	X = comments["content"]
-	y = comments["quality"]
-
-	# 分类训练集和测试集
-	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
-
-	vocab_proc = VocabularyProcessor(15)
-	trainX = np.array(list(vocab_proc.fit_transform(X_train)))
-	testX = np.array(list(vocab_proc.fit_transform(X_test)))
-
-	# 标签集处理
-	unique_y_labels = list(y_train.value_counts().index)
-	le = preprocessing.LabelEncoder()
-	le.fit(unique_y_labels)
-
-	trainY = to_categorical(y_train.map(lambda x: le.transform([x])[0]), nb_classes=len(unique_y_labels))
-	testY = to_categorical(y_test.map(lambda x: le.transform([x])[0]), nb_classes=len(unique_y_labels))
-
-
-	# vocab_proc2 = VocabularyProcessor(1)
-	# trainY = np.array(list(vocab_proc2.fit_transform(y_train))) - 1
-	# trainY = to_categorical(trainY, nb_classes=11)
-	# vocab_proc3 = VocabularyProcessor(1)
-	# testY = np.array(list(vocab_proc3.fit_transform(y_test))) - 1
-	# testY = to_categorical(testY, nb_classes=11)
-
-	net = tflearn.input_data([None, 100])
-	net = tflearn.embedding(net, input_dim=10000, output_dim=128)
-	net = tflearn.lstm(net, 128, dropout=0.8)
-	net = tflearn.fully_connected(net, 2, activation='softmax')
-	net = tflearn.regression(net, optimizer='adam', learning_rate=0.001, loss='categorical_crossentropy')
-
-	model = tflearn.DNN(net, tensorboard_verbose=0)
-	model.fit(trainX, trainY, validation_set=(testX, testY), show_metric=True, batch_size=32)
-
-def machine_learning3(comments):
-	# 划分样本集和标签集
-	X = comments["content"]
-	y = comments["quality"]
-
-	# 分类训练集和测试集
-	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
-
-	vocab_proc = VocabularyProcessor(15)
-	trainX = np.array(list(vocab_proc.fit_transform(X_train)))
-	testX = np.array(list(vocab_proc.fit_transform(X_test)))
-
-	# 标签集处理
-	unique_y_labels = list(y_train.value_counts().index)
-	le = preprocessing.LabelEncoder()
-	le.fit(unique_y_labels)
-
-	y_train = to_categorical(y_train.map(lambda x: le.transform([x])[0]), nb_classes=len(unique_y_labels))
-	y_test = to_categorical(y_test.map(lambda x: le.transform([x])[0]), nb_classes=len(unique_y_labels))
-
-	# 构造网络
-	n_epoch = 100
-	size_of_each_vector = trainX.shape[1]
-	no_of_unique_y_labels = len(unique_y_labels)
-
-	net = tflearn.input_data(
-		[None, size_of_each_vector])  # The first element is the "batch size" which we set to "None"
-	net = tflearn.embedding(net, input_dim=len(vocab_proc), output_dim=128)  # input_dim: vocabulary size
-	net = tflearn.lstm(net, 128, dropout=0.6)  # Set the dropout to 0.6
-	net = tflearn.fully_connected(net, no_of_unique_y_labels, activation='softmax')  # relu or softmax
-	net = tflearn.regression(net, optimizer='adam', learning_rate=1e-4, loss='categorical_crossentropy')
-
-	# 训练网络
-
-	# 初始化
-	model = tflearn.DNN(net, tensorboard_verbose=0, tensorboard_dir="./tflearn_data/tflearn_logs/")
-
-	# 训练
-	model.fit(trainX, y_train, validation_set=(testX, y_test), n_epoch=n_epoch,
-			  show_metric=True, batch_size=100)
-
-	# 保存
-	time = datetime.now()
-	time_str = str(time).replace(":", ".")
-	os.makedirs(f"./tflearn_data/tflearn_modes/{time_str}")
-	model.save(f"./tflearn_data/tflearn_modes/{time_str}/comment_mode.tflearn")
-
-
 if __name__ == '__main__':
 	comments_list = get_comment_from_database()
 
 	start_time = datetime.now()
-	# machine_learning1(comments_list)
-	# machine_learning2(comments_list)
-	machine_learning3(comments_list)
-
+	machine_learning1(comments_list)
 	end_time = datetime.now()
 	print("total time: " + str(end_time - start_time))
