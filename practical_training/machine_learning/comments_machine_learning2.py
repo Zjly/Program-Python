@@ -119,7 +119,7 @@ def machine_learning2(data):
 	y_test = to_categorical(y_test.map(lambda x: le.transform([x])[0]), nb_classes=len(unique_y_labels))
 
 	# 构造网络
-	n_epoch = 100
+	n_epoch = 1000
 	size_of_each_vector = X_train_padded_seqs.shape[1]
 	vocab_size = len(vocab)
 	no_of_unique_y_labels = len(unique_y_labels)
@@ -149,5 +149,9 @@ def machine_learning2(data):
 if __name__ == '__main__':
 	comments_data = pd.read_csv("comments.csv")
 	# snow_test(comments_data)
+
+	start_time = datetime.now()
 	# machine_learning1(comments_data)
 	machine_learning2(comments_data)
+	end_time = datetime.now()
+	print("total time: " + str(end_time - start_time))

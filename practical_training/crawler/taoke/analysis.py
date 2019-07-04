@@ -40,7 +40,7 @@ def analysis_data(course_number_list):
 	for course_number in course_number_list:
 		# 得到课程信息和课程评论url
 		course_data_url = f"https://taoke.ziqiang.net.cn/api/course/public/elective/{course_number}/"
-		course_comments_url = f"https://taoke.ziqiang.net.cn/api/course/public/elective/{course_number}/comment/?page=1&per_page=10"
+		course_comments_url = f"https://taoke.ziqiang.net.cn/api/course/public/elective/{course_number}/comment/?page=1&per_page=1000"
 
 		# 得到课程信息和课程评论list
 		course = get_course(course_data_url)
