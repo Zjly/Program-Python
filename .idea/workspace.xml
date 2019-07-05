@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-The problem of unable to read model has been solved. It is a problem of random number seed. It needs to be compiled for prediction function.-2019-7-5 01:01:08">
-      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning1.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/test_learn/comments_machine_learning1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning2.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/emotional_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/test_learn/emotional_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/model_predict1.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/test_learn/model_predict1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/model_predict2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/predict.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/predict.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 00.50.49.110886(10, 42)/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 00.50.49.110886(10, 42)/model.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 00.50.49.110886(10, 42)/model.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 00.50.49.110886(10, 42)/model.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 00.52.07.451486(10, 42)/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 00.52.07.451486(10, 42)/model.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 00.52.07.451486(10, 42)/model.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 00.52.07.451486(10, 42)/model.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/write_data_from_database_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/write_data_from_database_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/0N4W7H/events.out.tfevents.1562212749.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/11TLCA/events.out.tfevents.1562238730.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/1EDYZD/events.out.tfevents.1562230970.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/26ZFR7/events.out.tfevents.1562230821.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/2SWCZL/events.out.tfevents.1562244765.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/8E1ZSN/events.out.tfevents.1562226372.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/9E0BIX/events.out.tfevents.1562242329.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/9IVQU6/events.out.tfevents.1562226610.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/AABD5W/events.out.tfevents.1562240114.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/BQKKYP/events.out.tfevents.1562237494.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/CV5LJV/events.out.tfevents.1562291335.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/DZEYTX/events.out.tfevents.1562291382.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/ETAMIX/events.out.tfevents.1562220115.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/EUODIN/events.out.tfevents.1562292659.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/FHDEW9/events.out.tfevents.1562240983.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/G4BNLX/events.out.tfevents.1562259100.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/IWTIBH/events.out.tfevents.1562239435.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/J9UKG9/events.out.tfevents.1562289099.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/JH8MWA/events.out.tfevents.1562258728.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/N49L2X/events.out.tfevents.1562257257.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/NV71SX/events.out.tfevents.1562142944.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/P1B3U6/events.out.tfevents.1562293474.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/Q4NHRL/events.out.tfevents.1562245006.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/QAGDB9/events.out.tfevents.1562293097.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/QFIAMW/events.out.tfevents.1562144041.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/QIK9QZ/events.out.tfevents.1562241712.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/R4VIQP/events.out.tfevents.1562257372.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/SP6US9/events.out.tfevents.1562257656.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/SY1G6I/events.out.tfevents.1562241197.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/TS5ZF4/events.out.tfevents.1562245300.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/TWFBIR/events.out.tfevents.1562259019.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/V4L9ZE/events.out.tfevents.1562258396.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/VCSUFJ/events.out.tfevents.1562242947.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/VN7RGO/events.out.tfevents.1562240064.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/VZGZWG/events.out.tfevents.1562256933.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/WAAS5N/events.out.tfevents.1562239321.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/YHD08F/events.out.tfevents.1562292921.LAPTOP-D8Q2A358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/ZAIS62/events.out.tfevents.1562144497.LAPTOP-D8Q2A358" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="266">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -71,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/model_predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="90" column="81" selection-start-line="90" selection-start-column="81" selection-end-line="90" selection-end-column="81" />
+            <state relative-caret-position="171">
+              <caret line="90" column="90" lean-forward="true" selection-start-line="90" selection-start-column="90" selection-end-line="90" selection-end-column="90" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -83,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/predict.csv">
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
@@ -92,8 +116,23 @@
             </state>
           </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="true" rowLines="3">
+              <column index="0" width="100" />
+              <column index="1" width="100" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="304">
+              <caret line="359" column="29" lean-forward="true" selection-start-line="359" selection-start-column="29" selection-end-line="359" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -150,7 +189,6 @@
         <option value="$PROJECT_DIR$/practical_training/machine_learning/test.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/comments.csv" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/model_test.py" />
-        <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/learning_model_use.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/snow_NLP.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning1.py" />
@@ -158,8 +196,9 @@
         <option value="$PROJECT_DIR$/practical_training/machine_learning/write_data_from_database_to_csv.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning2.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/model_predict2.py" />
-        <option value="$PROJECT_DIR$/practical_training/machine_learning/predict.csv" />
+        <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" />
+        <option value="$PROJECT_DIR$/practical_training/machine_learning/predict.csv" />
       </list>
     </option>
   </component>
@@ -316,7 +355,7 @@
       <workItem from="1562238426815" duration="289000" />
       <workItem from="1562238890533" duration="780000" />
       <workItem from="1562239705323" duration="8814000" />
-      <workItem from="1562288983278" duration="7666000" />
+      <workItem from="1562288983278" duration="12741000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -402,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562259676294</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commit-数据模型载入测试成功，已可以载入保存在文件中的数据模型。已可以对载入的模型进行使用，并依据此模型(迭代100次)进行了新评论集的预测，可以得到结果，结果准确率尚且不错，有待进行更多迭代次数模型的建立和测试。">
+      <created>1562297039476</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562297039476</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -411,7 +457,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79948000" />
+    <option name="totallyTimeSpent" value="85023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,12 +472,12 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.38873994" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.31769437" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -497,7 +543,13 @@
         </entry>
         <entry key="User">
           <value>
-            <list />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="me" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -515,7 +567,8 @@
     <MESSAGE value="commit-The machine learning code is written, the test passes, and the complete model is built after crawling comments." />
     <MESSAGE value="commit-The model has been established." />
     <MESSAGE value="commit-The problem of unable to read model has been solved. It is a problem of random number seed. It needs to be compiled for prediction function.-2019-7-5 01:01:08" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-The problem of unable to read model has been solved. It is a problem of random number seed. It needs to be compiled for prediction function.-2019-7-5 01:01:08" />
+    <MESSAGE value="commit-数据模型载入测试成功，已可以载入保存在文件中的数据模型。已可以对载入的模型进行使用，并依据此模型(迭代100次)进行了新评论集的预测，可以得到结果，结果准确率尚且不错，有待进行更多迭代次数模型的建立和测试。" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-数据模型载入测试成功，已可以载入保存在文件中的数据模型。已可以对载入的模型进行使用，并依据此模型(迭代100次)进行了新评论集的预测，可以得到结果，结果准确率尚且不错，有待进行更多迭代次数模型的建立和测试。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$snow_NLP.coverage" NAME="snow_NLP Coverage Results" MODIFIED="1562258583657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
@@ -534,7 +587,7 @@
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning1.coverage" NAME="comments_machine_learning1 Coverage Results" MODIFIED="1562259009981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$write_data_from_database_to_csv.coverage" NAME="write_data_from_database_to_csv Coverage Results" MODIFIED="1562292600870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$model_predict.coverage" NAME="model_predict Coverage Results" MODIFIED="1562296665187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$model_predict.coverage" NAME="model_predict Coverage Results" MODIFIED="1562308598154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1562228010249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taokela_comments" />
     <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562136264678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$learning_model_use.coverage" NAME="learning_model_use Coverage Results" MODIFIED="1562258446331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
@@ -543,7 +596,7 @@
     <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562135998811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$create_file.coverage" NAME="create_file Coverage Results" MODIFIED="1562057925214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
-    <SUITE FILE_PATH="coverage/Program$comments_machine_learning.coverage" NAME="comments_machine_learning Coverage Results" MODIFIED="1562296301720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$comments_machine_learning.coverage" NAME="comments_machine_learning Coverage Results" MODIFIED="1562299674151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$test.coverage" NAME="test Coverage Results" MODIFIED="1562240103731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
   </component>
   <component name="debuggerHistoryManager">
@@ -884,19 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="true" rowLines="3">
-          <column index="0" width="100" />
-          <column index="1" width="100" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/test_learn/comments_machine_learning1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -926,11 +966,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="266">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/model_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="90" column="90" lean-forward="true" selection-start-line="90" selection-start-column="90" selection-end-line="90" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="true" rowLines="3">
+          <column index="0" width="100" />
+          <column index="1" width="100" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="304">
+          <caret line="359" column="29" lean-forward="true" selection-start-line="359" selection-start-column="29" selection-end-line="359" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -942,18 +1005,8 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/model_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="90" column="81" selection-start-line="90" selection-start-column="81" selection-end-line="90" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

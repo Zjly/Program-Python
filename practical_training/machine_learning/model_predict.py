@@ -88,7 +88,7 @@ def comment_predict():
 	model = tflearn.DNN(net, tensorboard_verbose=0, tensorboard_dir="./tflearn_data/tflearn_logs/")
 
 	# 加载模型
-	model.load("./tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/model")
+	model.load("./tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/model")
 
 	# ———————————————————————————————————————预测部分———————————————————————————————————————
 	# 待预测的评论数据
