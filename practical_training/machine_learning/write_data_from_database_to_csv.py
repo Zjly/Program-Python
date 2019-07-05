@@ -9,7 +9,7 @@ comments = comments.replace("\n", "", regex=True)
 comments = comments.replace(",", "，", regex=True)
 comments = comments.replace(" ", "，", regex=True)
 comments = comments.replace("\t", "，", regex=True)
-# comments = comments.replace("medium", "good", regex=True)
+comments = comments.replace("medium", "good", regex=True)
 # comments = comments.replace("good", "1")
 # comments = comments.replace("bad", "0")
 
