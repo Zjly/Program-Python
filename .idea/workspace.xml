@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/2019-07-05 17.47.43.018277(1000, 42)/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/2019-07-05 17.47.43.018277(1000, 42)/model.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/2019-07-05 17.47.43.018277(1000, 42)/model.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/2019-07-05 17.47.43.018277(1000, 42)/model.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/comments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/lexicon.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/model_predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/sensitive_words_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/connect_php/哈工大停用词表.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/crawler/MOOC/download_comments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/data_visualization/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/educational_system/WHU/MD5encryption.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/educational_system/WHU/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/educational_system/WHU/school_timetable.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/create_file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/crawler/MOOC/analysis_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/crawler/MOOC/analysis_pages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/crawler/MOOC/course_data/NBUT-1206222815.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/test_learn/emotional_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/test_learn/emotional_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/total.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/total.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/shielding_sensitive_words/sensitive_words_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/shielding_sensitive_words/sensitive_words_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/crawler/taokela_comments/comments_crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/crawler/taokela_comments/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,27 +45,30 @@
     </expand>
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Program" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practical_training/connect_php/model_predict.py">
+        <entry file="file://$PROJECT_DIR$/educational_system/WHU/school_timetable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="266">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practical_training/connect_php/sensitive_words_analysis.py">
+        <entry file="file://$PROJECT_DIR$/educational_system/WHU/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="287">
+              <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,6 +88,7 @@
       <find>X_train_padded_seqs</find>
       <find>&quot;</find>
       <find>window.categories =</find>
+      <find>张雷</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,6 +145,11 @@
         <option value="$PROJECT_DIR$/practical_training/shielding_sensitive_words/sensitive_words_analysis.py" />
         <option value="$PROJECT_DIR$/practical_training/connect_php/sensitive_words_analysis.py" />
         <option value="$PROJECT_DIR$/practical_training/connect_php/model_predict.py" />
+        <option value="$PROJECT_DIR$/educational_administration_system/MD5encryption.py" />
+        <option value="$PROJECT_DIR$/educational_administration_system/school_timetable.py" />
+        <option value="$PROJECT_DIR$/educational_administration_system/login.py" />
+        <option value="$PROJECT_DIR$/educational_system/school_timetable.py" />
+        <option value="$PROJECT_DIR$/educational_system/WHU/school_timetable.py" />
       </list>
     </option>
   </component>
@@ -180,6 +174,17 @@
               <item name="Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Program" type="462c0819:PsiDirectoryNode" />
+              <item name="educational_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Program" type="462c0819:PsiDirectoryNode" />
+              <item name="educational_system" type="462c0819:PsiDirectoryNode" />
+              <item name="WHU" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -198,19 +203,19 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
+      <recent name="E:\Coding\Python\Program" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\educational_system\WHU" />
       <recent name="E:\Coding\Python\Program\practical_training\machine_learning\test_learn" />
       <recent name="E:\Coding\Python\Program\practical_training\machine_learning" />
       <recent name="E:\Coding\Python\Program\practical_training\machine_learning\tflearn_data\test_learn" />
       <recent name="E:\Coding\Python\Program\practical_training\data_analysis_class\Day3" />
-      <recent name="E:\Coding\Python\Program\practical_training\data_analysis_class" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
-      <recent name="E:\Coding\Python\Program" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -224,6 +229,81 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python.school_timetable">
+    <configuration name="MD5encryption" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/educational_administration_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/educational_administration_system/MD5encryption.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="comments_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/crawler/taokela_comments" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/crawler/taokela_comments/comments_crawler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="school_timetable" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/educational_administration_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/educational_administration_system/school_timetable.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.school_timetable" />
+        <item itemvalue="Python.comments_crawler" />
+        <item itemvalue="Python.MD5encryption" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\94247\AppData\Roaming\Subversion</configuration>
@@ -252,7 +332,9 @@
       <workItem from="1562239705323" duration="8814000" />
       <workItem from="1562288983278" duration="24760000" />
       <workItem from="1562333344676" duration="608000" />
-      <workItem from="1562375564536" duration="7578000" />
+      <workItem from="1562375564536" duration="11477000" />
+      <workItem from="1562397236494" duration="2876000" />
+      <workItem from="1562429541133" duration="1933000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -352,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562308688988</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="commit-PHP与Python连接部分编写完毕，已测试通过连接并可在PHP中调用Python脚本">
+      <created>1562384705324</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562384705324</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -361,7 +450,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105228000" />
+    <option name="totallyTimeSpent" value="113936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,10 +463,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.26675603" />
+      <window_info id="Structure" order="1" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
+      <window_info id="Favorites" order="2" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.31903484" />
@@ -392,6 +482,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3297587" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3297587" />
+      <window_info anchor="bottom" id="Statistic" order="14" weight="0.3297587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -472,7 +563,8 @@
     <MESSAGE value="commit-The problem of unable to read model has been solved. It is a problem of random number seed. It needs to be compiled for prediction function.-2019-7-5 01:01:08" />
     <MESSAGE value="commit-数据模型载入测试成功，已可以载入保存在文件中的数据模型。已可以对载入的模型进行使用，并依据此模型(迭代100次)进行了新评论集的预测，可以得到结果，结果准确率尚且不错，有待进行更多迭代次数模型的建立和测试。" />
     <MESSAGE value="commit-2000次迭代的数据模型建立成功，并通过预测测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-2000次迭代的数据模型建立成功，并通过预测测试" />
+    <MESSAGE value="commit-PHP与Python连接部分编写完毕，已测试通过连接并可在PHP中调用Python脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-PHP与Python连接部分编写完毕，已测试通过连接并可在PHP中调用Python脚本" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$snow_NLP.coverage" NAME="snow_NLP Coverage Results" MODIFIED="1562258583657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
@@ -484,6 +576,7 @@
     <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1562230503327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$sensitive_words_analysis.coverage" NAME="sensitive_words_analysis Coverage Results" MODIFIED="1562381136945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
+    <SUITE FILE_PATH="coverage/Program$MD5encryption.coverage" NAME="MD5encryption Coverage Results" MODIFIED="1562430181130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_administration_system" />
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_machine_learning_TestMachine_learning_test_machine_learning.coverage" NAME="Twisted Trial for test_machine_learning.TestMachine_learning.test_machine_learning Coverage Results" MODIFIED="1562142738734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$model_predict1.coverage" NAME="model_predict1 Coverage Results" MODIFIED="1562259063180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning2.coverage" NAME="comments_machine_learning2 Coverage Results" MODIFIED="1562295026765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
@@ -491,9 +584,10 @@
     <SUITE FILE_PATH="coverage/Program$CSDN.coverage" NAME="CSDN Coverage Results" MODIFIED="1562146540898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning1.coverage" NAME="comments_machine_learning1 Coverage Results" MODIFIED="1562259009981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
+    <SUITE FILE_PATH="coverage/Program$school_timetable.coverage" NAME="school_timetable Coverage Results" MODIFIED="1562431008633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_administration_system" />
     <SUITE FILE_PATH="coverage/Program$write_data_from_database_to_csv.coverage" NAME="write_data_from_database_to_csv Coverage Results" MODIFIED="1562292600870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$model_predict.coverage" NAME="model_predict Coverage Results" MODIFIED="1562325651858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1562228010249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taokela_comments" />
+    <SUITE FILE_PATH="coverage/Program$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1562430562953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taokela_comments" />
     <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562136264678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$learning_model_use.coverage" NAME="learning_model_use Coverage Results" MODIFIED="1562258446331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
@@ -514,96 +608,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://345d8b2d-165f-40ac-a01c-fd2eea4f6888/schema/test/table/cm_comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="3fa9dd31-5f29-4462-86d6-edad9f075d24">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day2/pandasClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2109">
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://345d8b2d-165f-40ac-a01c-fd2eea4f6888/schema/test/table/cm_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="3fa9dd31-5f29-4462-86d6-edad9f075d24">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taokela_comments/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/taokela.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taokela_comments/comments_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2964">
-          <caret line="153" column="26" lean-forward="true" selection-start-line="153" selection-start-column="26" selection-end-line="153" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/345d8b2d-165f-40ac-a01c-fd2eea4f6888/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python3/Lib/site-packages/tflearn/helpers/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="489" selection-start-line="489" selection-end-line="489" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python3/Lib/site-packages/tflearn/models/dnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="307" selection-start-line="307" selection-end-line="307" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Python3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -663,10 +667,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/test.csv" />
     <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/course_urls.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/connect_php/create_file.py" />
     <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/test.txt">
@@ -730,9 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/data_visualization/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/test_learn/comments_machine_learning1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -754,13 +755,13 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/shielding_sensitive_words/lexicon.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-39003">
           <caret line="964" column="7" lean-forward="true" selection-start-line="964" selection-start-column="7" selection-end-line="964" selection-end-column="7" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/connect_php/哈工大停用词表.txt">
@@ -770,21 +771,21 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/connect_php/comments.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/predict.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
           <column index="0" width="100" />
           <column index="1" width="100" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -802,16 +803,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/predict.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/predict.csv" />
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/model_predict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -822,26 +814,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="118" column="31" lean-forward="true" selection-start-line="118" selection-start-column="31" selection-end-line="118" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="152">
+          <caret line="330" column="46" lean-forward="true" selection-start-line="330" selection-start-column="46" selection-end-line="330" selection-end-column="46" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="true" rowLines="3">
           <column index="0" width="100" />
           <column index="1" width="100" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="152">
-          <caret line="330" column="46" lean-forward="true" selection-start-line="330" selection-start-column="46" selection-end-line="330" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -851,6 +833,22 @@
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="32" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/lexicon.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/model_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-359">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -865,18 +863,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/lexicon.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/model_predict.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="76">
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_visualization/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/MD5encryption.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educational_administration_system/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="610" column="22" selection-start-line="610" selection-start-column="20" selection-end-line="610" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taokela_comments/comments_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taokela_comments/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1926">
+          <caret line="153" column="26" lean-forward="true" selection-start-line="153" selection-start-column="26" selection-end-line="153" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/CSDN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-872">
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/educational_system/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <caret line="58" column="43" lean-forward="true" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12741">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3416#3422#1" expanded="true" />
+            <element signature="e#4023#4029#0" expanded="true" />
+            <element signature="e#4029#4035#0" expanded="true" />
+            <element signature="e#4035#4041#0" expanded="true" />
+            <element signature="e#4093#4099#1" expanded="true" />
+            <element signature="e#4237#4243#0" expanded="true" />
+            <element signature="e#4243#4249#0" expanded="true" />
+            <element signature="e#4249#4255#0" expanded="true" />
+            <element signature="e#4302#4308#0" expanded="true" />
+            <element signature="e#4624#4630#0" expanded="true" />
+            <element signature="e#4630#4636#0" expanded="true" />
+            <element signature="e#4636#4642#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#7;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#8;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#9;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#10;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#11;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/school_timetable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

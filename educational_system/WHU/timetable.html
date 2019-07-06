@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+<!--首先判断是否为合法用户-->
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta id="i18n_pagename" content="stuCourseTable-lessonCommon">
+<link href="../css/style_common.css?v=2.002" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="../js/jquery.i18n.properties.js"></script>
+<script type="text/javascript" src="../js/languageSub.js"></script>
+<script type="text/javascript" src="../js/appendToken.js?v=2.002"></script>
+<script type="text/javascript" src="../js/table.js?v=2.002"></script>
+<title class='i18n' name='courseTable'>课程表</title>
+<script type="text/javascript">
+	function updateRightBar(){
+		//console.info("submit");
+		var targetYear = $("select[name=year]").val();
+		var targetTerm = $("select[name=term]").val();
+		//console.info(targetYear+"######"+targetTerm);
+		//console.info($("#bar_iframe",window.parent.document));
+		$("#bar_iframe",window.parent.parent.document).attr("src","calendarRight.jsp?year="+targetYear+"&term="+targetTerm);
+	}
+	$(function(){
+		$("#search").submit(updateRightBar);
+	});
+</script>
+<script type="text/javascript"> 
+// perform JavaScript after the document is scriptable.
+$(function(){
+	var triggers = $(".overlay").overlay({
+	  target:$("#prompt",window.parent.parent.document),
+	  fixed:false,
+	  closeOnClick:true,
+	  onBeforeLoad:function(){
+	  
+	  		var lessonHeadId = this.getTrigger().attr("alt");//获取课程号
+	  		
+		 	var wrap = this.getOverlay().find("iframe[name=overLayFrame]");
+		 	wrap.width(820);
+		 	
+		 	var act = this.getTrigger().attr('name');
+			if(act=="subLsnSet"){		 	
+		 		wrap.attr("src","stu_querySubLessonHead.jsp?lessonHeadId="+lessonHeadId);//点击“查看子课头”后展示的界面
+		    }
+		    var length= 1280;
+		 //	console.info("length:"+length);
+		 	var leftPosition = (length-950)/2;
+		 	this.getOverlay().css("left",leftPosition);
+		    parent.parent.startExpose();
+	  },
+	  onBeforeClose:function(){parent.parent.closeExpose();},
+	 
+	  onClose:function(){
+	  	this.getOverlay().find("iframe[name=overLayFrame]").attr("src","");}
+  });
+});
+</script>
+<script type="text/javascript">
+$(function(){
+	appendToken('4f251822-b51b-342c-8ba8-d3d778cd4395');
+});
+</script>
+<style>
+table td,th {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#hint {
+	line-height: 20px;
+	position: absolute;
+	background: #808080;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #FFF;
+	display: none;
+}
+</style>
+</head>
+<body class="BD_LISTPAGE">
+<div style="padding: 10px 0px;">
+	<span style="float: right;margin-right: 20px;">
+		<form action="/servlet/Svlt_QueryStuLsn" target="main" method="post">
+			<input type="hidden" value="2018" name="year"/>
+			<input type="hidden" value="queryStuLsn" name="action"/>
+			<input type="hidden" value="3" name="term"/>
+			<input type="submit" class="long_btn1 i18n-input" selectname='model' selectattr='value' value="周历模式"/>
+		</form>
+	</span>
+	<form id="search" style="margin:0px;" action='/servlet/Svlt_QueryStuLsn?action=normalLsn' method="post" enctype="application/x-www-form-urlencoded">	
+	
+		
+<span class='i18n' name='lesson_year'>学年</span>&nbsp;<SELECT NAME="year">
+	
+	
+	<OPTION value="2009" >2009-2010</OPTION>
+	
+	<OPTION value="2010" >2010-2011</OPTION>
+	
+	<OPTION value="2011" >2011-2012</OPTION>
+	
+	<OPTION value="2012" >2012-2013</OPTION>
+	
+	<OPTION value="2013" >2013-2014</OPTION>
+	
+	<OPTION value="2014" >2014-2015</OPTION>
+	
+	<OPTION value="2015" >2015-2016</OPTION>
+	
+	<OPTION value="2016" >2016-2017</OPTION>
+	
+	<OPTION value="2017" >2017-2018</OPTION>
+	
+	<OPTION value="2018" selected>2018-2019</OPTION>
+	
+	<OPTION value="2019" >2019-2020</OPTION>
+	
+	<OPTION value="2020" >2020-2021</OPTION>
+	
+	</SELECT>
+	&nbsp;&nbsp;&nbsp;
+	
+<span class='i18n' name='lesson_term'>学期</span>&nbsp;<SELECT NAME="term"> 	
+	<OPTION value="1">1</OPTION>
+	<OPTION value="2">2</OPTION>
+	<OPTION value="3" selected >3</OPTION>
+</SELECT>
+&nbsp;&nbsp;&nbsp;
+
+
+	<span class='i18n' name='lessonState'>状态&nbsp;<SELECT NAME="state"> 	
+		<OPTION value="" selected>全部</OPTION>
+		<OPTION value="1" >未结算</OPTION>
+	<!--<OPTION value="1">已结算</OPTION> -->
+		<OPTION value="12" >待缴费</OPTION>
+	<!--<OPTION value="3">须缴费</OPTION>-->
+		<OPTION value="11" >待确认</OPTION>
+		<OPTION value="13" >已确认</OPTION>
+
+</SELECT><!-- 学年学期状态 -->&nbsp;&nbsp;&nbsp;
+	
+		<input type="submit" class="searchBtb i18n-input" selectname='lesson_query' selectattr='value' name="submit" value="查 询"/>
+	</form>
+</div>
+<table class="table listTable" style="table-layout: fixed;"> 
+   <tr>
+		<th class='i18n' name='lesson_lessonHead' style="width: 14%;">课头号</th>
+		<th class='i18n' name='lesson_lessonName' style="width: 13%">课程名</th>
+		<th class='i18n' name='lesson_lessonType' style="width: 5%">课程类型</th>
+		<th class='i18n' name='lesson_learningType' style="width: 5%">学习类型</th>
+		<th class='i18n' name='lesson_teachingCollege' style="width: 8%">授课学院</th>
+		<th class='i18n' name='lesson_teacher' style="width: 5%">主讲教师</th>
+		<th class='i18n' name='lesson_subject' style="width: 12%">专业</th>
+		<th class='i18n' name='lesson_credit' style="width: 4%">学分</th>
+		<th class='i18n' name='lesson_hours' style="width: 7%">学时(理论/实验/上机)</th>
+		<th class='i18n' name='lesson_time' style="width: 20%">上课时间</th>
+		<th class='i18n' name='lesson_note' style="width: 6%">备注</th>
+		
+		<th class='i18n' name='lesson_operation' style="width: 6%">操作</th>
+		
+	</tr>
+   	 
+  <!-- 显示数据 -->
+   
+  
+	<!-- add by xuli 20130219
+		对缓考标识进行判断，在课程名后面增加注释文字，表示是缓考的课程
+	缓考标识：0表示未缓考，1表示该门课程通过审核允许缓考，2表示该门课程已经缓考成功，3表示是缓考后选修的新课头
+	定义一个字符串变量，用于表示拼接之后的课程名称--> 
+			
+ 	<tr>	
+ 		<td>
+ 			20183021028                     
+ 		</td>			
+ 		<td>
+ 			
+ 			 
+ 			 中级项目实践（暑期）
+ 			 <!-- 		中级项目实践（暑期） 		 -->	 			 		
+ 			 
+ 			  
+ 			  
+ 			  			 	
+ 			 
+ 		</td>			
+ 		<td>
+ 			专业必修
+ 		</td>		
+ 		<td>
+ 			
+ 			 
+ 			 	 
+ 			 	普通          			 		
+   				
+ 			 			
+ 		</td>		
+ 		<td>
+ 			计算机学院
+ 		</td> 		
+ 		<td>
+ 			何国良
+ 		</td>
+ 		<td>
+ 			软件工程
+ 		</td>
+ 		 <td>
+ 			1.5
+ 		</td>
+ 		<td>
+ 			0/0/0
+ 		</td>
+ 		
+ 		
+ 								
+		  			
+		 						
+		 					
+		 			 			
+		 						
+		 					
+		 			
+		 						
+		 						
+		 						
+		 						
+		 					
+		 						
+		 						
+		 								
+		 			 			
+		 						
+		 					
+		 			
+		 			
+ 		
+ 		  		<td id='tips' title='<div>
+  						
+ 			Mon:1-3周,每1周;1-13节<br/>
+  			
+ 						
+ 			Tue:1-3周,每1周;1-13节<br/>
+ 			 			
+ 						
+ 			Wed:1-3周,每1周;1-13节	<br/>
+ 			
+ 						
+ 			Thu:1-3周,每1周;1-13节<br/>	
+ 						
+ 						
+ 			Fir:1-3周,每1周;1-13节<br/>	
+ 						
+ 						
+ 			Sat:1-3周,每1周;1-13节<br/>			
+ 			 			
+ 						
+ 			Sun:2-4周,每1周;1-4节<br/>
+ 				</div>'>
+ 			<div class="overflow">
+ 							
+		 			Mon:1-3周,每1周;1-13节
+		  			
+		 						
+		 			Tue:1-3周,每1周;1-13节
+		 			 			
+		 						
+		 			Wed:1-3周,每1周;1-13节	
+		 			
+		 						
+		 			Thu:1-3周,每1周;1-13节	
+		 						
+		 						
+		 			Fir:1-3周,每1周;1-13节	
+		 						
+		 						
+		 			Sat:1-3周,每1周;1-13节			
+		 			 			
+		 						
+		 			Sun:2-4周,每1周;1-4节
+		 			
+ 			</div>
+ 		</td>
+ 		
+ 		<td>
+ 			原国软连廊机房A4-5
+ 		</td>
+ 		
+		
+ 					
+		 	<td></td>
+		 	
+		 
+		 
+ 		<!--
+ 		<td>
+ 		
+ 		
+ 		
+ 		 
+ 		  <a style="text-decoration:none; outline:none;color:#858585;">下载</a> 
+ 		 
+ 					
+ 		</td>-->
+ 	</tr>
+ 	
+ 
+</table> 
+<div class="page_nav">
+      <div class="total_count i18n" name='records' data-lang-args='1'>共有1条记录</div>
+</div>
+<script>
+$(function() {
+	// initialize tooltip
+	$("td[title]").tooltip({
+		position: "center left", 
+	   // tweak the position
+	   offset: [10, 2],
+	   // use the "slide" effect
+	   effect: 'slide',
+	   onBeforeShow:function(){
+	   		var tip = this.getTip();
+	   		var brCount = tip.contents().find("br").length;
+	   		if(brCount>1){
+	   			tip.height(brCount*16+10);
+	   		}else{
+	   			tip.remove();
+	   			//tip.width(tip.contents().html().length*16);
+	   		}
+	   }
+	// add dynamic plugin with optional configuration for bottom edge
+	
+	});
+});
+</script>
+
+<script type="text/javascript">
+	$(function() {
+		let x = 55;
+		let y = 15;
+		
+		$("td, th").mouseover(function(e) {
+			if (this.offsetWidth < this.scrollWidth) {				
+				var myTitle = $(this).text();
+				var hint = "<div id='hint'>" + myTitle + "</div>";
+				$("body").append(hint);
+				
+				$("#hint").css({
+					"top": (e.pageY + y) + "px",
+					"left": (e.pageX - x) + "px"
+				}).show("fast");
+			}
+			
+		}).mouseout(function() {
+			$("#hint").remove();
+			
+		}).mousemove(function(e) {
+			$("#hint").css({
+				"top": (e.pageY + y) + "px",
+				"left": (e.pageX - x) + "px"
+			});
+		});
+		
+	})
+</script>
+</body>
+
+<!-- 将描述课程状态的jsp引用进来 -->
+
+
+</html>
