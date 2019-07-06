@@ -5,12 +5,15 @@ import re
 def read_html_pages():
 	root_path = 'E:\Coding\Python\Program\practical_training\crawler\MOOC\course_data'
 	page_list = os.listdir(root_path)  # 列出文件夹下所有的目录与文件
+	course_data_list = []
 	for i in range(0, len(page_list)):
 		path = os.path.join(root_path, page_list[i])
 		if os.path.isfile(path):
 			with open(path, "r", encoding="utf-8") as fp:
 				page = fp.read()
-				analysis_html(path, page)
+				course_data_list.append(analysis_html(path, page))
+
+	print()
 
 
 def analysis_html(path, page):

@@ -1,6 +1,6 @@
 from snownlp import SnowNLP
 
-text = "老师给分有点差"
+text = "cnm"
 s = SnowNLP(text)
 
 for sentence in s.sentences:

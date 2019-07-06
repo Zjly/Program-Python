@@ -88,7 +88,7 @@ def comment_predict():
 	model = tflearn.DNN(net, tensorboard_verbose=0, tensorboard_dir="./tflearn_data/tflearn_logs/")
 
 	# 加载模型
-	model.load("./tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/model")
+	model.load("./tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/model")
 
 	# ———————————————————————————————————————预测部分———————————————————————————————————————
 	# 待预测的评论数据
@@ -109,7 +109,7 @@ def comment_predict():
 	predict_Y = model.predict(predict_X_padded_seqs)
 
 	# 输出结果
-	print(predict_Y)
+	# print(predict_Y)
 	get_evaluation(predict_Y)
 
 

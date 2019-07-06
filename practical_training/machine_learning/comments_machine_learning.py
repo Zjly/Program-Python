@@ -88,7 +88,7 @@ def machine_learning(data):
 	y_test = to_categorical(y_test.map(lambda x: le.transform([x])[0]), nb_classes=len(unique_y_labels))
 
 	# 构造神经网络
-	n_epoch = 2000
+	n_epoch = 1000
 	size_of_each_vector = X_train_padded_seqs.shape[1]
 	vocab_size = len(vocab)
 	no_of_unique_y_labels = len(unique_y_labels)
