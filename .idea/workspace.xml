@@ -2,21 +2,127 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/educational_system/WHU/timetable_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/classification_of_courses/courses_machine_learning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/classification_of_courses/model_predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/classification_of_courses/predict.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/classification_of_courses/write_data_from_database_to_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/courses.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/model_predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/predict.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_files/可视化模型.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_files/新建文本文档.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_logs/762J7X/events.out.tfevents.1562554610.LAPTOP-D8Q2A358" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_logs/DT0K9N/events.out.tfevents.1562553128.LAPTOP-D8Q2A358" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_logs/GQTBL5/events.out.tfevents.1562557673.LAPTOP-D8Q2A358" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_logs/VO37EO/events.out.tfevents.1562554640.LAPTOP-D8Q2A358" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/courses.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/naive_bayes_classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/stop_words/中文停用词表.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/stop_words/哈工大停用词表.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/stop_words/四川大学机器智能实验室停用词库.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/stop_words/百度停用词表.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/中文停用词表.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/哈工大停用词表.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/四川大学机器智能实验室停用词库.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/百度停用词表.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/unit_test/test_add.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practical_training/unit_test/unit_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/predict.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/predict.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/courses.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/courses.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/courses_machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/courses_machine_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/model_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/model_predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/predict.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/predict.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/stop_words/中文停用词表.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/stop_words/中文停用词表.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/stop_words/哈工大停用词表.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/stop_words/哈工大停用词表.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/stop_words/四川大学机器智能实验室停用词库.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/stop_words/四川大学机器智能实验室停用词库.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/stop_words/百度停用词表.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/stop_words/百度停用词表.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_files/可视化模型.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_files/可视化模型.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_files/新建文本文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_files/新建文本文档.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_logs/762J7X/events.out.tfevents.1562554610.LAPTOP-D8Q2A358" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_logs/762J7X/events.out.tfevents.1562554610.LAPTOP-D8Q2A358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_logs/DT0K9N/events.out.tfevents.1562553128.LAPTOP-D8Q2A358" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_logs/DT0K9N/events.out.tfevents.1562553128.LAPTOP-D8Q2A358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_logs/GQTBL5/events.out.tfevents.1562557673.LAPTOP-D8Q2A358" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_logs/GQTBL5/events.out.tfevents.1562557673.LAPTOP-D8Q2A358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_logs/VO37EO/events.out.tfevents.1562554640.LAPTOP-D8Q2A358" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_logs/VO37EO/events.out.tfevents.1562554640.LAPTOP-D8Q2A358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.index" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 10.34.03.069254(100, 42)/model.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.index" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.16.06.232927(1000, 42)/model.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.index" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/tflearn_data/tflearn_models/2019-07-08 11.51.40.170202(200, 42)/model.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/classification_of_courses/write_data_from_database_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/write_data_from_database_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_machine_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/model_predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/predict.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/predict.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/stop_words/中文停用词表.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/stop_words/中文停用词表.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/stop_words/哈工大停用词表.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/stop_words/哈工大停用词表.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/stop_words/四川大学机器智能实验室停用词库.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/stop_words/四川大学机器智能实验室停用词库.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/stop_words/百度停用词表.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/stop_words/百度停用词表.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/test_learn/comments_machine_learning1.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/comments_machine_learning1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/test_learn/emotional_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/emotional_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/test_learn/model_predict1.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/model_predict1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/Accuracy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/Accuracy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/Adam.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/Adam.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/Auxiliary Nodes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/Auxiliary Nodes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/Loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/Loss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/Main Graph.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/Main Graph.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/legend.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/legend.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/total.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/total.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/total2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/total2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/1CYYOE/total2.png" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/1CYYOE/total2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/Accuracy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/Accuracy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/Adam.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/Adam.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/Auxiliary Nodes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/Auxiliary Nodes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/Loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/Loss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/Main Graph.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/Main Graph.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/legend.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/legend.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/total.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/total.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/total2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/total2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/5X1W45/total2.png" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/5X1W45/total2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_files/可视化模型.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/可视化模型.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/1CYYOE/events.out.tfevents.1562299684.LAPTOP-D8Q2A358" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_logs/1CYYOE/events.out.tfevents.1562299684.LAPTOP-D8Q2A358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/5X1W45/events.out.tfevents.1562317475.LAPTOP-D8Q2A358" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_logs/5X1W45/events.out.tfevents.1562317475.LAPTOP-D8Q2A358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/L4515M/events.out.tfevents.1562550605.LAPTOP-D8Q2A358" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_logs/L4515M/events.out.tfevents.1562550605.LAPTOP-D8Q2A358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_logs/WWD47J/events.out.tfevents.1562296311.LAPTOP-D8Q2A358" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_logs/WWD47J/events.out.tfevents.1562296311.LAPTOP-D8Q2A358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/model.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/model.index" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/model.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 11.15.58.896236(100, 42)/model.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/model.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/model.index" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/model.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 13.29.21.656710(2000, 42)/model.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/model.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/model.index" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/model.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/model.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/model.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/model.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/model.index" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/model.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/model.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/write_data_from_database_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/write_data_from_database_to_csv.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="293" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -52,15 +158,12 @@
     <favorites_list name="Program" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practical_training/classification_of_courses/model_predict.py">
+        <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/naive_bayes_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="76">
+              <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -102,12 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/iris.csv" />
-        <option value="$PROJECT_DIR$/practical_training/crawler/taoke/taokela.txt" />
-        <option value="$PROJECT_DIR$/practical_training/crawler/taoke/test_sql.py" />
-        <option value="$PROJECT_DIR$/practical_training/crawler/taoke/test_save.py" />
-        <option value="$PROJECT_DIR$/practical_training/crawler/taoke/save_comments_to_database.py" />
-        <option value="$PROJECT_DIR$/practical_training/machine_learning/__init__.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/345d8b2d-165f-40ac-a01c-fd2eea4f6888/console.sql" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/emotional_analysis.py" />
         <option value="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis/Iris2.py" />
@@ -153,6 +250,12 @@
         <option value="$PROJECT_DIR$/practical_training/classification_of_courses/courses_machine_learning.py" />
         <option value="$PROJECT_DIR$/practical_training/classification_of_courses/predict.csv" />
         <option value="$PROJECT_DIR$/practical_training/classification_of_courses/model_predict.py" />
+        <option value="$PROJECT_DIR$/practical_training/unit_test.py" />
+        <option value="$PROJECT_DIR$/practical_training/unit_test/unit_test.py" />
+        <option value="$PROJECT_DIR$/practical_training/unit_test/test_add.py" />
+        <option value="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/model_predict.py" />
+        <option value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/__init__.py" />
+        <option value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/naive_bayes_classification.py" />
       </list>
     </option>
   </component>
@@ -169,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,6 +289,13 @@
               <item name="Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
               <item name="practical_training" type="462c0819:PsiDirectoryNode" />
+              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Program" type="462c0819:PsiDirectoryNode" />
+              <item name="practical_training" type="462c0819:PsiDirectoryNode" />
+              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
               <item name="classification_of_courses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -192,12 +303,21 @@
               <item name="Program" type="462c0819:PsiDirectoryNode" />
               <item name="practical_training" type="462c0819:PsiDirectoryNode" />
               <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="classification_of_courses" type="462c0819:PsiDirectoryNode" />
+              <item name="DNN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Program" type="462c0819:PsiDirectoryNode" />
+              <item name="practical_training" type="462c0819:PsiDirectoryNode" />
+              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="classification_of_courses" type="462c0819:PsiDirectoryNode" />
+              <item name="naive_bayes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,26 +326,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/practical_training/classification_of_courses" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Coding\Python\Program\educational_system\WHU" />
-      <recent name="E:\Coding\Python\Program\practical_training\machine_learning\test_learn" />
-      <recent name="E:\Coding\Python\Program\practical_training\machine_learning" />
-      <recent name="E:\Coding\Python\Program\practical_training\machine_learning\tflearn_data\test_learn" />
-      <recent name="E:\Coding\Python\Program\practical_training\data_analysis_class\Day3" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\practical_training\machine_learning\classification_of_courses\naive_bayes" />
       <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses" />
       <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
       <recent name="E:\Coding\Python\Program" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
+      <recent name="E:\Coding\Python\Program\practical_training\unit_test" />
+      <recent name="E:\Coding\Python\Program\practical_training\machine_learning" />
+      <recent name="E:\Coding\Python\Program\practical_training\machine_learning\comments_emotional_analysis" />
+      <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses\machine_learning_DNN" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -240,8 +361,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.model_predict (1)">
-    <configuration name="comments_machine_learning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.naive_bayes_classification">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -249,12 +370,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/machine_learning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" />
+      <option name="SCRIPT_NAME" value="E:\Coding\Python\Program\practical_training\machine_learning\classification_of_courses\naive_bayes\naive_bayes_classification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,7 +384,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="courses_machine_learning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model_predict (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,12 +392,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/classification_of_courses" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/classification_of_courses/courses_machine_learning.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/model_predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,7 +406,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="model_predict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="naive_bayes_classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -293,12 +414,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/classification_of_courses" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/classification_of_courses/model_predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/naive_bayes_classification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -307,7 +428,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="model_predict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="unit_test" type="PythonConfigurationType" factoryName="Python">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -315,12 +436,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/machine_learning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/unit_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/unit_test/unit_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -329,35 +450,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="write_data_from_database_to_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Twisted Trial for test_add.TestAdd" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/classification_of_courses" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/unit_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practical_training/classification_of_courses/write_data_from_database_to_csv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add.TestAdd&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Twisted Trial for test_add.TestAdd.test_add" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practical_training/unit_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add.TestAdd.test_add&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.model_predict (1)" />
-        <item itemvalue="Python.model_predict" />
-        <item itemvalue="Python.courses_machine_learning" />
-        <item itemvalue="Python.write_data_from_database_to_csv" />
-        <item itemvalue="Python.comments_machine_learning" />
+        <item itemvalue="Python.naive_bayes_classification" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.model_predict (2)" />
+        <item itemvalue="Python tests.Twisted Trial for test_add.TestAdd" />
+        <item itemvalue="Python tests.Twisted Trial for test_add.TestAdd.test_add" />
       </list>
     </recent_temporary>
   </component>
@@ -392,7 +521,8 @@
       <workItem from="1562397236494" duration="2876000" />
       <workItem from="1562429541133" duration="2258000" />
       <workItem from="1562484018347" duration="1297000" />
-      <workItem from="1562548455257" duration="9887000" />
+      <workItem from="1562548455257" duration="12483000" />
+      <workItem from="1562572087295" duration="1667000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -506,16 +636,41 @@
       <option name="project" value="LOCAL" />
       <updated>1562431623648</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commit-完成根据课程名自动判断课程类型的功能，并完成该机器学习模型的建立，通过了准确率测试">
+      <created>1562566587799</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562566587799</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="Twisted_Trial_for_test_machine_learning_TestMachine_learning_test_machine_learning - 2019.07.03 at 16h 32m 20s.xml">
       <configuration name="Twisted Trial for test_machine_learning.TestMachine_learning.test_machine_learning" configurationId="tests" />
     </history-entry>
+    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 40m 35s.xml">
+      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 44m 34s.xml">
+      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 44m 46s.xml">
+      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 45m 19s.xml">
+      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 46m 28s.xml">
+      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_for_test_add_TestAdd - 2019.07.08 at 14h 48m 18s.xml">
+      <configuration name="Twisted Trial for test_add.TestAdd" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125445000" />
+    <option name="totallyTimeSpent" value="129708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,12 +685,12 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.26742628" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.2707775" />
       <window_info id="Structure" order="1" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info id="Favorites" order="2" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.31903484" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.31903484" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -543,7 +698,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.29088473" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3297587" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.31903484" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3297587" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3297587" />
@@ -553,6 +708,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.7064343" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3297587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,26 +792,31 @@
     <MESSAGE value="commit-2000次迭代的数据模型建立成功，并通过预测测试" />
     <MESSAGE value="commit-PHP与Python连接部分编写完毕，已测试通过连接并可在PHP中调用Python脚本" />
     <MESSAGE value="commit-爬取教务系统信息小项目，完成课程页面的登录并下载源码" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-爬取教务系统信息小项目，完成课程页面的登录并下载源码" />
+    <MESSAGE value="commit-完成根据课程名自动判断课程类型的功能，并完成该机器学习模型的建立，通过了准确率测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-完成根据课程名自动判断课程类型的功能，并完成该机器学习模型的建立，通过了准确率测试" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$snow_NLP.coverage" NAME="snow_NLP Coverage Results" MODIFIED="1562258583657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$courses_machine_learning.coverage" NAME="courses_machine_learning Coverage Results" MODIFIED="1562557663974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
-    <SUITE FILE_PATH="coverage/Program$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1562124216520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$model_predict__1_.coverage" NAME="model_predict (1) Coverage Results" MODIFIED="1562565998220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
+    <SUITE FILE_PATH="coverage/Program$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1562573475553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
     <SUITE FILE_PATH="coverage/Program$save_comments_to_database.coverage" NAME="save_comments_to_database Coverage Results" MODIFIED="1562120868396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$model_predict2.coverage" NAME="model_predict2 Coverage Results" MODIFIED="1562296031978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1562230503327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$unit_test.coverage" NAME="unit_test Coverage Results" MODIFIED="1562567823090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$sensitive_words_analysis.coverage" NAME="sensitive_words_analysis Coverage Results" MODIFIED="1562381136945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
     <SUITE FILE_PATH="coverage/Program$MD5encryption.coverage" NAME="MD5encryption Coverage Results" MODIFIED="1562430181130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_administration_system" />
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_machine_learning_TestMachine_learning_test_machine_learning.coverage" NAME="Twisted Trial for test_machine_learning.TestMachine_learning.test_machine_learning Coverage Results" MODIFIED="1562142738734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$model_predict1.coverage" NAME="model_predict1 Coverage Results" MODIFIED="1562259063180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning2.coverage" NAME="comments_machine_learning2 Coverage Results" MODIFIED="1562295026765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$Iris3.coverage" NAME="Iris3 Coverage Results" MODIFIED="1562138346590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/Iris_analysis" />
+    <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd.coverage" NAME="Twisted Trial for test_add.TestAdd Coverage Results" MODIFIED="1562568497410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$CSDN.coverage" NAME="CSDN Coverage Results" MODIFIED="1562146540898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$naive_bayes_classification.coverage" NAME="naive_bayes_classification Coverage Results" MODIFIED="1562573625601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning1.coverage" NAME="comments_machine_learning1 Coverage Results" MODIFIED="1562259009981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$school_timetable.coverage" NAME="school_timetable Coverage Results" MODIFIED="1562431008633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_administration_system" />
     <SUITE FILE_PATH="coverage/Program$write_data_from_database_to_csv.coverage" NAME="write_data_from_database_to_csv Coverage Results" MODIFIED="1562554481153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
@@ -663,6 +824,7 @@
     <SUITE FILE_PATH="coverage/Program$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1562430562953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taokela_comments" />
     <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562136264678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$learning_model_use.coverage" NAME="learning_model_use Coverage Results" MODIFIED="1562258446331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd_test_add.coverage" NAME="Twisted Trial for test_add.TestAdd.test_add Coverage Results" MODIFIED="1562568386799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$connect_test.coverage" NAME="connect_test Coverage Results" MODIFIED="1562051581948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
     <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
@@ -681,65 +843,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/test.csv" />
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/course_urls.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/create_file.py" />
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/course_data/NBUT-1206222815.html" />
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/course_data/BISU-1206027802.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/analysis_pages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/download_pages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/get_all_course_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1426">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/download_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/download_comments.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -750,7 +853,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/test_learn/comments_machine_learning1.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/comments_machine_learning1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="83" column="92" selection-start-line="83" selection-start-column="92" selection-end-line="83" selection-end-column="92" />
@@ -760,7 +863,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/test_learn/emotional_analysis.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/emotional_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
@@ -807,7 +910,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/connect_php/predict.csv" />
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments.csv">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="true" rowLines="3">
           <column index="0" width="100" />
@@ -835,16 +938,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/model_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/connect_php/sensitive_words_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -956,7 +1049,7 @@
     <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable_analysis.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/stop_words/哈工大停用词表.txt">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/哈工大停用词表.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/educational_system/WHU/login.py">
@@ -976,7 +1069,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/write_data_from_database_to_csv.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/write_data_from_database_to_csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
@@ -986,7 +1079,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_machine_learning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
@@ -996,7 +1089,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/predict.csv">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/predict.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
           <column index="0" width="100" />
@@ -1009,7 +1102,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/classification_of_courses/write_data_from_database_to_csv.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/write_data_from_database_to_csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
@@ -1019,7 +1112,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/classification_of_courses/courses.csv">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/courses.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
@@ -1029,17 +1122,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/classification_of_courses/courses_machine_learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/classification_of_courses/predict.csv">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/predict.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
           <column index="0" width="100" />
@@ -1051,7 +1134,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/model_predict.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/model_predict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="118" column="21" lean-forward="true" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
@@ -1061,13 +1144,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/classification_of_courses/model_predict.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/verification_code/verification_code_send.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/unit_test/test_add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/unit_test/unit_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/model_predict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/courses.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/classification_of_courses/DNN/write_data_from_database_to_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/classification_of_courses/DNN/courses_machine_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/stop_words/中文停用词表.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/model_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="139" column="56" lean-forward="true" selection-start-line="139" selection-start-column="56" selection-end-line="139" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/model_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="115" column="22" lean-forward="true" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN/courses_machine_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/courses.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/stop_words/中文停用词表.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/naive_bayes_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
         </state>
       </provider>
     </entry>
