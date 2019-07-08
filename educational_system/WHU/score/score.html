@@ -1,0 +1,5832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>我的成绩单</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css?v=2.002"/>
+<link rel="stylesheet" type="text/css" href="../css/tab.css?v=2.002"/>
+<script type="text/javascript" src="../js/appendToken.js?v=2.002"></script>
+<script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="../js/table.js?v=2.002"></script>
+<script type="text/javascript" src="../js/ConsoleMonitor.js?v=2.002"></script>
+
+<script type="text/javascript" src="../js/jquery.i18n.properties.js"></script>
+<script type="text/javascript" src="../js/languageSub.js"></script>
+<meta id="i18n_pagename" content="common-lessonCommon"/>
+
+<script type="text/javascript"> 
+// perform JavaScript after the document is scriptable.
+$(function() {
+    // setup ul.tabs to work as tabs for each div directly under div.panes
+    $("ul.tabs").tabs("div.panes > div.panel",{
+		tabs:'li'
+	});
+	//弹出框部分代码  注释addby  黄婷婷  
+	var triggers = $(".overlay").overlay({
+	  target:$("#prompt",window.parent.parent.document),
+	  fixed:false,
+	
+	  top:'10',
+	 // left:'0px',
+	  closeOnClick:true,
+	  onBeforeLoad:function(){
+	  		var queryStr = this.getTrigger().attr("alt");
+		 	var wrap = this.getOverlay().find("iframe[name=overLayFrame]");
+		 	wrap.width(1200);
+		 	wrap.attr("src","/servlet/Svlt_QuerySelRelearnLsn?csrftoken=c930dbac-17a4-3e7d-83ce-75e52b710684&"+queryStr); 
+		 	
+		 	var length= 1280;	  	 
+		
+		 	var leftPosition = (length-1200)/2;
+		 	
+		 	this.getOverlay().css("left",leftPosition);
+		    parent.parent.startExpose();
+		    parent.parent.document.body.parentNode.style.overflow="scroll"; 
+	  },
+	  onBeforeClose:function(){parent.parent.closeExpose();},
+	  onClose:function(){
+	  	this.getOverlay().find("iframe[name=overLayFrame]").attr("src","");}
+  });
+  
+  //弹出框QXLH部分代码 
+	var triggers = $(".overlay_qxlh").overlay({
+	  target:$("#prompt",window.parent.parent.document),
+	  fixed:false,
+	
+	  top:'10',
+	 // left:'0px',
+	  closeOnClick:true,
+	  onBeforeLoad:function(){
+	  		var queryStr = this.getTrigger().attr("alt");
+		 	var wrap = this.getOverlay().find("iframe[name=overLayFrame]");
+		 	wrap.width(1200);
+		 	wrap.attr("src","/servlet/qxlh/Svlt_SubmitRelearnApply_QXLH?csrftoken=c930dbac-17a4-3e7d-83ce-75e52b710684&"+queryStr); 
+		 	
+		 	var length= 1280;	  	 
+		
+		 	var leftPosition = (length-1200)/2;
+		 	
+		 	this.getOverlay().css("left",leftPosition);
+		    parent.parent.startExpose();
+		    parent.parent.document.body.parentNode.style.overflow="scroll"; 
+	  },
+	  onBeforeClose:function(){parent.parent.closeExpose();},
+	  onClose:function(){
+	  	this.getOverlay().find("iframe[name=overLayFrame]").attr("src","");}
+  });
+  
+});
+/*
+ $(document).ready(function(){
+        $('.selectyze1').Selectyze({
+            theme : 'css3',        //下拉框的风格
+            effectOpen:'fade',      //下拉框弹出时的效果
+            effectClose:'slide'     //下拉框收回时的效果
+        });
+    });*/
+
+</script>
+<script type="text/javascript">
+$(function(){
+	appendToken('c930dbac-17a4-3e7d-83ce-75e52b710684');
+});
+
+
+</script>
+
+<style>
+	div#explanation {
+		margin: 0 40px 10px;
+		text-align: left;
+		border: 2px dashed #6b91b6;
+		padding: 10px;
+	}
+	div#explanation p:nth-child(6) {
+		margin-left: 43px;
+	}
+	div#explanation p:nth-child(7) {
+		margin-left: 43px;
+	}
+	span.lessonAttribute {
+		display:inline-block;
+		width: 18px;
+		height: 18px;
+		border: 1px solid;
+		border-radius: 50%;
+		text-align: center;
+	}
+	span.fieldname {
+		color: #336699;
+		border-color: #336699;
+	}
+	span.teachtype {
+		color: #FF6666;
+		border-color: #FF6666;
+	}
+	span.iscreative {
+		color: #99CC33;
+		border-color: #99CC33;
+	}
+	span.isspecify {
+		color: #33CC99;
+		border-color: #33CC99;
+	}
+	#hint {
+		line-height: 20px;
+		position: absolute;
+		background: #6b91b6;
+		padding: 5px 15px;
+		font-size: 16px;
+		color: #FFF;
+		display: none;
+		border-radius: 5px;
+	}
+</style>
+</head>
+
+<body>
+
+
+
+<!--首先判断是否为合法用户-->
+
+
+
+
+
+
+
+
+
+
+
+	<div id="searchBox" style="margin-left:auto;margin-right:auto;width:800px;">
+	<form name="searchScore" style="float:left; " method="post"action="/servlet/Svlt_QueryStuScore">
+        	
+
+学年&nbsp;<SELECT style="width:90PX" NAME="year">
+	
+	<OPTION value="0"  selected >全部</OPTION>
+	
+	<OPTION value="2017" >2017-2018</OPTION>
+	
+	<OPTION value="2018" >2018-2019</OPTION>
+	
+	<OPTION value="2019" >2019-2020</OPTION>
+	
+	<OPTION value="2020" >2020-2021</OPTION>
+	
+	</SELECT>&nbsp;&nbsp;&nbsp;
+学期&nbsp;<SELECT style="width:55PX" NAME="term"> 
+	<OPTION value="" selected >全部</OPTION>
+	<OPTION value="1">1</OPTION>
+	<OPTION value="2">2</OPTION>
+	<OPTION value="3">3</OPTION>
+</SELECT>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="i18n" name="lesson_lessonType">课程类型</span>
+            <select class="input" style="width:78px" name="learnType">
+                <option value=""  selected="selected"  class="i18n" name="allCredit">全部</option>
+                <option value="00"  class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</option>
+                <option value="01"  class="i18n" name="lesson_lessonType_publicOptional">公共选修</option>
+                <option value="10"  class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</option>
+                <option value="11"  class="i18n" name="lesson_lessonType_specializedOptional">专业选修</option>
+            </select>&nbsp;&nbsp;
+            <span class="i18n" name="lesson_mark">成绩</span>
+            <select class="input" style="width:80px" name="scoreFlag">
+            	<option value="0"  selected="selected"  class="i18n" name="allCredit">全部</option>
+                <option value="4"  class="i18n" name="Has_scored">已出成绩</option>
+                <option value = "1"  class="i18n" name="Pass">及格</option>
+                <option value="2"  class="i18n" name="failed">不及格</option>
+                <option value="3"  class="i18n" name="no_results">未出成绩</option>
+            </select>&nbsp;
+            <input name="submit" selectname="lesson_query" selectattr="value" type="submit" class="searchBtb i18n-input" value="查询"/>
+      </form>
+            
+         <form name="searchScore" style="float:left" method="post" action="/servlet/Svlt_QueryStuScore">
+            <input type="hidden" name="year" value="0"/>
+            <input type="hidden" name="term" value=""/>
+            <input type="hidden" name="learnType" value=""/>
+            <input type="hidden" name="scoreFlag" value="0"/>
+            &nbsp; &nbsp;<input name="submit" selectname="lesson_queryAll" selectattr="value" type="submit" class="searchBtb i18n-input" id="searchAll" value="所有"/>
+         </form>
+        
+       
+        </div>
+    
+    <div id="explanation">
+		<span style="color: red; font-size: 16px; font-weight: bold;">注：</span>“课程属性”一列中的值分别表示<span class="fieldname">课程领域</span>，<span class="teachtype">授课方式</span>，<span class="iscreative">是否创新创业</span>或<span class="isspecify">是否制定选修</span>。
+		<p>课程领域分为：<span class="lessonAttribute fieldname">文</span>中华文化与世界文明&nbsp;&nbsp;
+					<span class="lessonAttribute fieldname">艺</span>艺术体验与审美鉴赏&nbsp;&nbsp;
+					<span class="lessonAttribute fieldname">科</span>科学精神与生命关怀&nbsp;&nbsp;
+					<span class="lessonAttribute fieldname">社</span>社会科学与现代社会</p>		
+		<p>授课方式分为：<span class="lessonAttribute teachtype">中</span>中文课程&nbsp;&nbsp;
+					<span class="lessonAttribute teachtype">双</span>双语课程&nbsp;&nbsp;
+					<span class="lessonAttribute teachtype">英</span>全英文课程&nbsp;&nbsp;
+					<span class="lessonAttribute teachtype">慕</span>慕课课程</p>
+	</div>
+	<table class="table listTable">
+		<tr>
+			<!--<th class="i18n" name="lesson_lessonHead">课头号</th>-->
+			<th class="i18n" name="lesson_lessonName" style="width: 20%;">课程名称</th>
+			<th class="i18n" name="lesson_lessonType" style="width: 10%;">课程类型</th>
+			<th class="i18n" name="lesson_GenealLessonType" style="width: 10%;">通识课类型</th>
+			<th class="i18n" name="lesson_lessonAttribute" style="width: 10%;">课程属性</th>
+			<th class="i18n" name="lesson_credit" style="width: 5%;">学分</th>
+			<th class="i18n" name="lesson_lessonTeacher"  style="width: 7%;">教师</th>
+			<th class="i18n" name="lesson_teachingCollege" style="width: 14%;">授课学院</th>
+			<th class="i18n" name="lesson_learningType" style="width: 5%;" >学习类型</th>
+			<th class="i18n" name="lesson_year" style="width: 5%;">学年</th>
+			<th class="i18n" name="lesson_term" style="width: 5%;">学期</th>
+			<th class="i18n" name="lesson_mark" style="width: 5%;">成绩</th>
+			<th class="i18n" name="lesson_operation" style="width: 4%;">操作</th>
+		</tr>
+	     
+	    
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172030116                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172030116                     ">C++程序设计 </td>
+					<!-- <td>C++程序设计</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>涂建光</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>94.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181057032                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181057032                     ">大学物理B（下）  </td>
+					<!-- <td>大学物理B（下） </td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>艾志伟</td>
+					<!-- 学院 -->
+					<td>公共物理教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>86.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172030126                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172030126                     ">C++程序设计实验 </td>
+					<!-- <td>C++程序设计实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>涂建光</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>93.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172058027                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172058027                     ">马克思主义基本原理概论 </td>
+					<!-- <td>马克思主义基本原理概论</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>李光宽</td>
+					<!-- 学院 -->
+					<td>公共政治教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>84.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181022161                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181022161                     ">宇宙新概念 </td>
+					<!-- <td>宇宙新概念</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicOptional">公共选修</span>
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td>核心通识</td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+							<span class="lessonAttribute fieldname">科</span>
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>赵江南</td>
+					<!-- 学院 -->
+					<td>电子信息学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>90.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181055141                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181055141                     ">大学英语4 </td>
+					<!-- <td>大学英语4</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>孙志勇</td>
+					<!-- 学院 -->
+					<td>大学英语部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>80.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181023093                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181023093                     ">经济地理 </td>
+					<!-- <td>经济地理</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicOptional">公共选修</span>
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td>一般通识</td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+							<span class="lessonAttribute fieldname">社</span>
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>贾涛</td>
+					<!-- 学院 -->
+					<td>遥感信息工程学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>96.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181040314                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181040314                     ">网球（初级） </td>
+					<!-- <td>网球（初级）</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>赵继斌</td>
+					<!-- 学院 -->
+					<td>体育部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>89.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181058048                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181058048                     ">毛泽东思想和中国特色社会主义理论体系概论 </td>
+					<!-- <td>毛泽东思想和中国特色社会主义理论体系概论</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>4.0</td>
+                    <!-- 教师 -->
+					<td>吴向伟</td>
+					<!-- 学院 -->
+					<td>公共政治教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>92.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181014181                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181014181                     ">地图历史与文化   </td>
+					<!-- <td>地图历史与文化  </td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicOptional">公共选修</span>
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td>一般通识</td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>刘沛兰</td>
+					<!-- 学院 -->
+					<td>资源与环境科学学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>92.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171040373                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171040373                     ">羽毛球（初级） </td>
+					<!-- <td>羽毛球（初级）</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>晋会峰</td>
+					<!-- 学院 -->
+					<td>体育部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>96.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171030070                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171030070                     ">信息系统导论 </td>
+					<!-- <td>信息系统导论</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>沈志东</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>84.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171041037                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171041037                     ">军事理论 </td>
+					<!-- <td>军事理论</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>吴忠国</td>
+					<!-- 学院 -->
+					<td>军事教研室</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>96.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171030075                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171030075                     ">信息系统导论实验 </td>
+					<!-- <td>信息系统导论实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>沈志东</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>92.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171030145                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171030145                     ">英语听说1 </td>
+					<!-- <td>英语听说1</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>国软外教1</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>77.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171055550                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171055550                     ">大学英语2 </td>
+					<!-- <td>大学英语2</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>孙志勇</td>
+					<!-- 学院 -->
+					<td>大学英语部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>80.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171030134                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171030134                     ">数字工程引论 </td>
+					<!-- <td>数字工程引论</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.5</td>
+                    <!-- 教师 -->
+					<td>孟小亮</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>86.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171056080                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171056080                     ">高等数学B1 </td>
+					<!-- <td>高等数学B1</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>5.0</td>
+                    <!-- 教师 -->
+					<td>胡元明</td>
+					<!-- 学院 -->
+					<td>公共数学教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>90.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171058028                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171058028                     ">思想道德修养与法律基础 </td>
+					<!-- <td>思想道德修养与法律基础</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>陈琳瑛</td>
+					<!-- 学院 -->
+					<td>公共政治教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>87.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171030081                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171030081                     ">计算机基础及应用 </td>
+					<!-- <td>计算机基础及应用</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>张昀</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>85.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171058260                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171058260                     ">中国近现代史纲要 </td>
+					<!-- <td>中国近现代史纲要</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>焦奎</td>
+					<!-- 学院 -->
+					<td>公共政治教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>91.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171030085                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171030085                     ">计算机基础及应用上机1 </td>
+					<!-- <td>计算机基础及应用上机1</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>张昀</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>90.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171030137                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171030137                     ">物联网工程导论 </td>
+					<!-- <td>物联网工程导论</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>唐存琛</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>94.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172057032                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172057032                     ">大学物理B（上） </td>
+					<!-- <td>大学物理B（上）</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>杨柏峰</td>
+					<!-- 学院 -->
+					<td>公共物理教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>86.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172023097                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172023097                     ">数字图像处理技巧 </td>
+					<!-- <td>数字图像处理技巧</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicOptional">公共选修</span>
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>贾永红</td>
+					<!-- 学院 -->
+					<td>遥感信息工程学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>90.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172055155                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172055155                     ">大学英语3 </td>
+					<!-- <td>大学英语3</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>孙志勇</td>
+					<!-- 学院 -->
+					<td>大学英语部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>81.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172040426                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172040426                     ">羽毛球（高级） </td>
+					<!-- <td>羽毛球（高级）</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>晋会峰</td>
+					<!-- 学院 -->
+					<td>体育部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>99.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172056095                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172056095                     ">线性代数B </td>
+					<!-- <td>线性代数B</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>黄正华</td>
+					<!-- 学院 -->
+					<td>公共数学教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>91.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172030005                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172030005                     ">英语听说2 </td>
+					<!-- <td>英语听说2</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>国软外教1</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>92.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172040713                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172040713                     ">羽毛球 </td>
+					<!-- <td>羽毛球</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicOptional">公共选修</span>
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>李勇</td>
+					<!-- 学院 -->
+					<td>体育部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>96.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172056020                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172056020                     ">高等数学B2 </td>
+					<!-- <td>高等数学B2</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>5.0</td>
+                    <!-- 教师 -->
+					<td>罗勇</td>
+					<!-- 学院 -->
+					<td>公共数学教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>76.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20172030122                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20172030122                     ">离散数学 </td>
+					<!-- <td>离散数学</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>刘峰</td>
+					<!-- 学院 -->
+					<td>国际软件学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>85.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181021072                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181021072                     ">面向对象程序设计（JAVA） </td>
+					<!-- <td>面向对象程序设计（JAVA）</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>钟鸣</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>92.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181021077                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181021077                     ">初级项目实践（暑期） </td>
+					<!-- <td>初级项目实践（暑期）</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>何国良</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>91.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181021066                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181021066                     ">计算机组织与体系结构 </td>
+					<!-- <td>计算机组织与体系结构</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>胡启平</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>82.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181056030                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181056030                     ">概率论与数理统计B </td>
+					<!-- <td>概率论与数理统计B</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>让光林</td>
+					<!-- 学院 -->
+					<td>公共数学教学</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>80.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181021069                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181021069                     ">C#程序设计 </td>
+					<!-- <td>C#程序设计</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>贾向阳</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>92.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181021080                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181021080                     ">面向对象程序设计实验 </td>
+					<!-- <td>面向对象程序设计实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>李华玮</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>96.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181021056                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181021056                     ">数据结构与算法 </td>
+					<!-- <td>数据结构与算法</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>刘峰</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>99.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181021083                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181021083                     ">数据结构与算法实验 </td>
+					<!-- <td>数据结构与算法实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>刘峰</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>98.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20181021075                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20181021075                     ">C#程序设计实验 </td>
+					<!-- <td>C#程序设计实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>贾向阳</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>90.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182040052                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182040052                     ">网球（高级） </td>
+					<!-- <td>网球（高级）</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td>无</td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>赵继斌</td>
+					<!-- 学院 -->
+					<td>体育部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>92.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182055378                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182055378                     ">大学英语5 </td>
+					<!-- <td>大学英语5</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>孙志勇</td>
+					<!-- 学院 -->
+					<td>大学英语部</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>73.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182014133                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182014133                     ">移动互联网与地理信息服务创业 </td>
+					<!-- <td>移动互联网与地理信息服务创业</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicOptional">公共选修</span>
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>蔡忠亮</td>
+					<!-- 学院 -->
+					<td>资源与环境科学学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>92.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021015                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021015                     ">操作系统原理 </td>
+					<!-- <td>操作系统原理</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.5</td>
+                    <!-- 教师 -->
+					<td>蒋晶珏</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>88.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182014128                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182014128                     ">能源与环境 </td>
+					<!-- <td>能源与环境</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_publicOptional">公共选修</span>
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>汪的华</td>
+					<!-- 学院 -->
+					<td>资源与环境科学学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>90.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021002                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021002                     ">UNIX程序设计 </td>
+					<!-- <td>UNIX程序设计</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>林馥</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>90.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021006                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021006                     ">编译技术及应用 </td>
+					<!-- <td>编译技术及应用</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>伍春香</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>91.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021034                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021034                     ">数据库课程设计 </td>
+					<!-- <td>数据库课程设计</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>余伟</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>96.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021038                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021038                     ">UML及软件建模实验 </td>
+					<!-- <td>UML及软件建模实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>李晓剑</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>84.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021010                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021010                     ">数据库系统 </td>
+					<!-- <td>数据库系统</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>3.0</td>
+                    <!-- 教师 -->
+					<td>余伟</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>80.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021020                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021020                     ">UML及软件建模 </td>
+					<!-- <td>UML及软件建模</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedOptional">专业选修</span>
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>李晓剑</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td>89.0</td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20171101066                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20171101066                     ">形势与政策1 </td>
+					<!-- <td>形势与政策1</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>于敏</td>
+					<!-- 学院 -->
+					<td>形势与政策教育中心</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2017</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021024                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021024                     ">人机交互 </td>
+					<!-- <td>人机交互</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.0</td>
+                    <!-- 教师 -->
+					<td>何璐璐</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021042                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021042                     ">操作系统原理实验 </td>
+					<!-- <td>操作系统原理实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>蒋晶珏</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182021046                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182021046                     ">人机交互实验 </td>
+					<!-- <td>人机交互实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>何璐璐</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182101185                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182101185                     ">形势与政策 </td>
+					<!-- <td>形势与政策</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>吴红波</td>
+					<!-- 学院 -->
+					<td>形势与政策教育中心</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20183021028                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20183021028                     ">中级项目实践（暑期） </td>
+					<!-- <td>中级项目实践（暑期）</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.5</td>
+                    <!-- 教师 -->
+					<td>何国良</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					
+					<td>3</td>
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20182101186                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20182101186                     ">形势与政策 </td>
+					<!-- <td>形势与政策</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+                    <span class="i18n" name="lesson_lessonType_publicCompulsory">公共必修</span>
+                    
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>吴红波</td>
+					<!-- 学院 -->
+					<td>形势与政策教育中心</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2018</td>
+					<!-- 学期 -->
+					
+					
+					<td>2</td>
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20191021185                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20191021185                     ">系统级程序设计实验 </td>
+					<!-- <td>系统级程序设计实验</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>0.5</td>
+                    <!-- 教师 -->
+					<td>谭成予</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2019</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20191021179                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20191021179                     ">系统级程序设计 </td>
+					<!-- <td>系统级程序设计</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>2.0</td>
+                    <!-- 教师 -->
+					<td>谭成予</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2019</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	    		
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		<!-- 新增重考类型 -->
+	    		
+	    		
+	    		
+				<tr null>
+					<!--课程号-->			
+					<!--<td>20191021182                     </td>-->
+					<!--课程名-->
+					
+					<td class="lessonName" data-lsnId="20191021182                     ">解释器构造实践 </td>
+					<!-- <td>解释器构造实践</td>  -->
+					
+						
+					
+					
+					
+					<!--课程类型-->
+					<td>
+                    
+					
+                    
+                    <span class="i18n" name="lesson_lessonType_specializedCompulsory">专业必修</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </td>
+                    <!-- 通识课类型 -->
+                    <td></td>
+                    <!-- 课程属性 -->
+					<td>
+						<!-- 判断课程领域 -->
+						
+						
+						
+						
+						<!-- 判断授课方式 -->
+						
+						
+						
+						
+						<!-- 判断是否是创新创业课程 -->
+						
+						<!-- 判断是否是指定选修课程 -->
+						
+											</td>
+                    <!-- 学分 -->
+                    <td>1.5</td>
+                    <!-- 教师 -->
+					<td>伍春香</td>
+					<!-- 学院 -->
+					<td>计算机学院</td>
+					<!-- 学习类型 -->
+					
+					<td>普通</td>
+					<!-- 学年 -->
+					<td>2019</td>
+					<!-- 学期 -->
+					
+					<td>1</td>
+					
+					
+					
+					
+					
+					<!-- 成绩 -->
+					<td></td>
+					
+					
+					
+					
+					
+					<!-- 新增重考  relearnFlag=4 -->
+					
+					<!-- 新增重考-->
+					
+					
+					
+					<td><input class="btn overlay " type="button" disabled="disabled" value="无" style="display: none"/></td>
+					
+				</tr>
+			
+			
+	</table>
+	<div class="page_nav">
+        <div class="total_count i18n" name="records" data-lang-args="62" >
+        	共有62条记录
+        </div>
+	</div>
+<!--  
+<div id="warning" 
+						style="border: 1px dotted red; line-height: 20px; margin: 10px; padding: 10px; text-align: left;">
+						<font color="#ff0000">提示: </font>根据学生的学习类型和成绩类型，用不同颜色显示学生的成绩状况。其中，
+						<font color="#800000">红色</font>表示学习类型为“重修”、“第二次重修”和“及格重修”；
+						<font color="#008000">绿色</font>表示学习类型为“辅修”；
+						<font color="#000000">黑色</font>表示学习类型为“普通”。
+					</div>
+         
+  -->    
+</body>
+
+
+<script type="text/javascript">
+	$(function() {
+	
+		var x = 15;
+		var y = 15;
+		
+		$(".lessonName").mouseover(function(e) {
+				
+				var lsnId = this.getAttribute("data-lsnId");
+				var hint = "<div id='hint'>课程号：" + lsnId + "</div>";
+				$("body").append(hint);
+				
+				$("#hint").css({
+					"top": (e.pageY + y) + "px",
+					"left": (e.pageX + x) + "px"
+				}).show("fast");
+
+			
+		}).mouseout(function() {
+			$("#hint").remove();
+			
+		}).mousemove(function(e) {
+			$("#hint").css({
+				"top": (e.pageY + y) + "px",
+				"left": (e.pageX + x) + "px"
+			});
+		});
+		
+	})
+</script>
+</html>
+
