@@ -52,7 +52,7 @@ def comment_predict():
 	stopwords = get_custom_stopwords(stop_words_file)
 
 	# 计算特征数值
-	vect = CountVectorizer(token_pattern=u'(?u)\\b[^\\d\\W]\\w+\\b', stop_words=frozenset(stopwords))
+	vect = CountVectorizer(token_pattern=u'(?u)\\b\\w+\\b', stop_words=frozenset(stopwords))
 	vect.fit(X_train)
 	vocab = vect.vocabulary_
 
@@ -88,7 +88,7 @@ def comment_predict():
 	model = tflearn.DNN(net, tensorboard_verbose=0, tensorboard_dir="./tflearn_data/tflearn_logs/")
 
 	# 加载模型
-	model.load("./tflearn_data/tflearn_models/2019-07-05 17.47.43.018277(1000, 42)/model")
+	model.load("./tflearn_data/tflearn_models/2019-07-08 09.54.14.984471(100, 42)/model")
 
 	# ———————————————————————————————————————预测部分———————————————————————————————————————
 	# 待预测的评论数据
@@ -109,7 +109,7 @@ def comment_predict():
 	predict_Y = model.predict(predict_X_padded_seqs)
 
 	# 输出结果
-	# print(predict_Y)
+	print(predict_Y)
 	get_evaluation(predict_Y)
 
 

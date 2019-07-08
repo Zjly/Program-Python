@@ -1,0 +1,1 @@
+可视化模型代码：tensorboard --logdir=E:\Coding\Python\Program\practical_training\classification_of_courses\tflearn_data\tflearn_logs\VO37EO
