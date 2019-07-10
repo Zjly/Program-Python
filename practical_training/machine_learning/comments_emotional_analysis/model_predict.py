@@ -13,7 +13,7 @@ def comment_predict():
 	:return:
 	"""
 	# 建立模型时用到的评论数据
-	predict_data = pd.read_csv("comments.csv")
+	predict_data = pd.read_csv("./comments_tag.csv")
 
 	def chinese_word_cut(text):
 		"""
@@ -52,7 +52,7 @@ def comment_predict():
 	stopwords = get_custom_stopwords(stop_words_file)
 
 	# 计算特征数值
-	vect = CountVectorizer(token_pattern=u'(?u)\\b\\w+\\b', stop_words=frozenset(stopwords))
+	vect = CountVectorizer(max_df=0.8, min_df=3, token_pattern=u'(?u)\\b\\w+\\b', stop_words=frozenset(stopwords))
 	vect.fit(X_train)
 	vocab = vect.vocabulary_
 
@@ -88,7 +88,7 @@ def comment_predict():
 	model = tflearn.DNN(net, tensorboard_verbose=0, tensorboard_dir="./tflearn_data/tflearn_logs/")
 
 	# 加载模型
-	model.load("./tflearn_data/tflearn_models/2019-07-08 17.49.25.948439(1000, 42)/model")
+	model.load("./tflearn_data/tflearn_models/2019-07-10 20.03.06.175272(1000, 42)/model")
 
 	# ———————————————————————————————————————预测部分———————————————————————————————————————
 	# 待预测的评论数据
@@ -99,7 +99,6 @@ def comment_predict():
 
 	# 设置预测集
 	predict_X = predict_data["cut_comment"]
-	vect.fit(predict_X)
 
 	# 转化为数值序列
 	predict_X_word_ids = convert_X_to_X_word_ids(predict_X)
@@ -109,7 +108,6 @@ def comment_predict():
 	predict_Y = model.predict(predict_X_padded_seqs)
 
 	# 输出结果
-	print(predict_Y)
 	get_evaluation(predict_Y)
 
 
@@ -125,9 +123,9 @@ def get_evaluation(predict_Y):
 
 		# 设置一个阈值，这里定为0.5，大于阈值则说明该评论倾向于good
 		if good > 0.5:
-			print("good")
+			print("good: " + str(round(good * 100, 2)) + "%")
 		else:
-			print("bad")
+			print("bad: " + str(round(good * 100, 2)) + "%")
 
 
 if __name__ == '__main__':

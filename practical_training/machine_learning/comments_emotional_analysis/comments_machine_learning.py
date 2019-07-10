@@ -56,7 +56,7 @@ def machine_learning(data):
 
 	# CountVectorizer是属于常见的特征数值计算类，是一个文本特征提取方法。对于每一个训练文本，它只考虑每种词汇在该训练文本中出现的频率
 	# token_pattern：过滤规则，表示token的正则表达式，stop_words：设置停用词
-	vect = CountVectorizer(token_pattern=u'(?u)\\b\\w+\\b', stop_words=frozenset(stopwords))
+	vect = CountVectorizer(max_df=0.8, min_df=3, token_pattern=u'(?u)\\b\\w+\\b', stop_words=frozenset(stopwords))
 	vect.fit(X_train)
 
 	# 设置dict，对每个出现的词语给予一个值
@@ -150,7 +150,7 @@ def machine_learning(data):
 
 
 if __name__ == '__main__':
-	comments_data = pd.read_csv("comments.csv")
+	comments_data = pd.read_csv("./comments_tag.csv")
 
 	start_time = datetime.now()
 	machine_learning(comments_data)

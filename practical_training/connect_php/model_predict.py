@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import io
 import sys
 import urllib.parse
@@ -17,7 +18,7 @@ def comment_predict(data):
 	:return:
 	"""
 	# 建立模型时用到的评论数据
-	predict_data = pd.read_csv("E:\Coding\Python\Program\practical_training\connect_php\comments.csv")
+	predict_data = pd.read_csv("/var/www/test/python/comments_tag.csv")
 
 	def chinese_word_cut(text):
 		"""
@@ -52,11 +53,11 @@ def comment_predict(data):
 		return custom_stopwords_list
 
 	# 得到停用词表
-	stop_words_file = "E:\Coding\Python\Program\practical_training\connect_php\哈工大停用词表.txt"
+	stop_words_file = "/var/www/test/python/哈工大停用词表.txt"
 	stopwords = get_custom_stopwords(stop_words_file)
 
 	# 计算特征数值
-	vect = CountVectorizer(token_pattern=u'(?u)\\b[^\\d\\W]\\w+\\b', stop_words=frozenset(stopwords))
+	vect = CountVectorizer(max_df=0.8, min_df=3, token_pattern=u'(?u)\\b\\w+\\b', stop_words=frozenset(stopwords))
 	vect.fit(X_train)
 	vocab = vect.vocabulary_
 
@@ -92,7 +93,7 @@ def comment_predict(data):
 	model = tflearn.DNN(net, tensorboard_verbose=0)
 
 	# 加载模型
-	model.load("E:\Coding\Python\Program\practical_training\connect_php\\2019-07-05 17.47.43.018277(1000, 42)/model")
+	model.load("/var/www/test/python/2019-07-10 20.03.06.175272(1000, 42)/model")
 
 	# ———————————————————————————————————————预测部分———————————————————————————————————————
 	# 待预测的评论数据
@@ -103,7 +104,6 @@ def comment_predict(data):
 
 	# 设置预测集
 	predict_X = predict_data["cut_comment"]
-	vect.fit(predict_X)
 
 	# 转化为数值序列
 	predict_X_word_ids = convert_X_to_X_word_ids(predict_X)
@@ -113,7 +113,6 @@ def comment_predict(data):
 	predict_Y = model.predict(predict_X_padded_seqs)
 
 	# 输出结果
-	# print(predict_Y)
 	get_evaluation(predict_Y)
 
 
@@ -129,13 +128,12 @@ def get_evaluation(predict_Y):
 
 		# 设置一个阈值，这里定为0.5，大于阈值则说明该评论倾向于good
 		if good > 0.5:
-			print("good")
+			print("good: " + str(round(good * 100, 2)) + "%")
 		else:
-			print("bad")
+			print("bad: " + str(round(good * 100, 2)) + "%")
 
 
 if __name__ == '__main__':
-	sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-	comment = urllib.parse.unquote(sys.argv[1])
+	comment = sys.argv[1]
 	data = pd.DataFrame({'comment': comment}, index=[0])
 	comment_predict(data)

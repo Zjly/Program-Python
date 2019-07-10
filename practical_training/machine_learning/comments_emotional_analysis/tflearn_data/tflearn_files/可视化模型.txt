@@ -1,1 +1,1 @@
-可视化模型代码：tensorboard --logdir=E:\Coding\Python\Program\practical_training\machine_learning\tflearn_data\tflearn_logs\WWD47J
+可视化模型代码：tensorboard --logdir=E:\Coding\Python\Program\practical_training\machine_learning\comments_emotional_analysis\tflearn_data\tflearn_logs\5EF8WN
