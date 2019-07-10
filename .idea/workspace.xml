@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-修改与Linux服务器上的PHP的连接部分的代码，">
-      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/devide_comments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_comments_to_database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/read_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-修改与Linux服务器上的PHP的连接部分的代码；重新标记评论集，使其更精确，并以此新建立模型并通过情绪分析测试；编写课程推荐算法（基于物品的协同过滤算法）">
+      <change afterPath="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/collaborative_filtering_algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/2019-07-05 17.47.43.018277(1000, 42)/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/2019-07-05 17.47.43.018277(1000, 42)/model.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/2019-07-05 17.47.43.018277(1000, 42)/model.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/2019-07-05 17.47.43.018277(1000, 42)/model.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/comments.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/comments.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/model_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/model_predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/sensitive_words_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/sensitive_words_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/connect_php/verification_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/verification_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/data_visualization/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/collaborative_filtering_algorithm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/connect_php/comments_tag.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_machine_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/model_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/model_predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/predict.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/predict.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/可视化模型.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/tflearn_data/tflearn_files/可视化模型.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/write_data_from_database_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_data_from_database_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical_training/data_visualization/__init__.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,71 +50,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/model_predict.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practical_training/crawler/taoke/save_comments_to_database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_data_from_database_to_csv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/devide_comments.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_comments_to_database.py">
+        <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/collaborative_filtering_algorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+            <state relative-caret-position="278">
+              <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://345d8b2d-165f-40ac-a01c-fd2eea4f6888/schema/test/table/cm_student_course">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="0ebdca28-4664-4755-80c8-b4e5eb7222ee">
+              <filtering>
+                <filter text="" />
+              </filtering>
             </state>
           </provider>
         </entry>
@@ -214,7 +150,6 @@
         <option value="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/read_data_from_database_to_csv.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/read_data.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/test.py" />
-        <option value="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/collaborative_filtering_algorithm.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/devide_comments.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments/comments.csv" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/write_comments_to_database.py" />
@@ -232,6 +167,7 @@
         <option value="$PROJECT_DIR$/practical_training/crawler/taoke/save_comments_to_database.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_data_from_database_to_csv.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_comments_to_database.py" />
+        <option value="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/collaborative_filtering_algorithm.py" />
       </list>
     </option>
   </component>
@@ -266,21 +202,6 @@
               <item name="Program" type="462c0819:PsiDirectoryNode" />
               <item name="practical_training" type="462c0819:PsiDirectoryNode" />
               <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="practical_training" type="462c0819:PsiDirectoryNode" />
-              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="comments_emotional_analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="practical_training" type="462c0819:PsiDirectoryNode" />
-              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="comments_emotional_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Program" type="b2602c69:ProjectViewProjectNode" />
@@ -336,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.model_predict">
+  <component name="RunManager" selected="Python.collaborative_filtering_algorithm">
     <configuration name="collaborative_filtering_algorithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -456,11 +377,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.collaborative_filtering_algorithm" />
         <item itemvalue="Python.model_predict" />
         <item itemvalue="Python.comments_machine_learning" />
         <item itemvalue="Python.write_comments_to_database" />
         <item itemvalue="Python.devide_comments" />
-        <item itemvalue="Python.collaborative_filtering_algorithm" />
       </list>
     </recent_temporary>
   </component>
@@ -502,7 +423,8 @@
       <workItem from="1562638941913" duration="19614000" />
       <workItem from="1562685658319" duration="2185000" />
       <workItem from="1562720552647" duration="7023000" />
-      <workItem from="1562740936372" duration="17426000" />
+      <workItem from="1562740936372" duration="17868000" />
+      <workItem from="1562769248287" duration="4590000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -644,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562601272973</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="commit-修改与Linux服务器上的PHP的连接部分的代码；重新标记评论集，使其更精确，并以此新建立模型并通过情绪分析测试；编写课程推荐算法（基于物品的协同过滤算法）">
+      <created>1562762369704</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1562762369704</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -671,7 +600,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192822000" />
+    <option name="totallyTimeSpent" value="197854000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,18 +615,18 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.23927614" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.24262735" />
       <window_info id="Structure" order="1" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info id="Favorites" order="2" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.3538874" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.3538874" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2600536" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25871313" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.31903484" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3297587" />
@@ -707,7 +636,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.7406166" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.7372654" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3297587" />
     </layout>
@@ -823,7 +752,8 @@
     <MESSAGE value="commit-修改项目结构，完成判断课程类型的功能的朴素贝叶斯算法的实现，完成深度神经网络预测与PHP的链接代码" />
     <MESSAGE value="commit-对机器学习深度神经网络的建立的每一步加上注释，标注出网络的构筑层次" />
     <MESSAGE value="commit-完成教务系统查询课表功能，完成教务系统查询成绩并计算GPA功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-完成教务系统查询课表功能，完成教务系统查询成绩并计算GPA功能" />
+    <MESSAGE value="commit-修改与Linux服务器上的PHP的连接部分的代码；重新标记评论集，使其更精确，并以此新建立模型并通过情绪分析测试；编写课程推荐算法（基于物品的协同过滤算法）" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-修改与Linux服务器上的PHP的连接部分的代码；重新标记评论集，使其更精确，并以此新建立模型并通过情绪分析测试；编写课程推荐算法（基于物品的协同过滤算法）" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$snow_NLP.coverage" NAME="snow_NLP Coverage Results" MODIFIED="1562258583657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
@@ -871,11 +801,28 @@
     <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562325733111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/test_learn" />
     <SUITE FILE_PATH="coverage/Program$create_file.coverage" NAME="create_file Coverage Results" MODIFIED="1562057925214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
-    <SUITE FILE_PATH="coverage/Program$collaborative_filtering_algorithm.coverage" NAME="collaborative_filtering_algorithm Coverage Results" MODIFIED="1562744976696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
+    <SUITE FILE_PATH="coverage/Program$collaborative_filtering_algorithm.coverage" NAME="collaborative_filtering_algorithm Coverage Results" MODIFIED="1562775963544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning.coverage" NAME="comments_machine_learning Coverage Results" MODIFIED="1562757811656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$test.coverage" NAME="test Coverage Results" MODIFIED="1562674622705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>row == &quot;213213&quot;</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row == 213213</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row ==</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="setValue">
       <expression>
         <expression-string>'https://taoke.ziqiang.net.cn/api/course/public/elective/20182018152/comment/?page=1&amp;per_page=10'</expression-string>
@@ -885,30 +832,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable/timetable_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/verification_code/verification_code_send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="57" column="1193" selection-start-line="57" selection-start-column="1193" selection-end-line="57" selection-end-column="1193" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/connect_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/educational_system/WHU/score/score_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2451">
@@ -1018,10 +941,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/course_urls.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day5/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1039,15 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://345d8b2d-165f-40ac-a01c-fd2eea4f6888/schema/test/table/cm_student_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="975fad36-ef34-4864-9a9d-cea9e1c00894">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day3/data_visualization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1062,31 +976,6 @@
         <state relative-caret-position="-2661">
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day2/pandasClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1673">
-          <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day2/numpyClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/collaborative_filtering_algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1111,19 +1000,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments/comments.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="243">
-          <caret line="2149" column="289" selection-start-line="2149" selection-start-column="289" selection-end-line="2149" selection-end-column="289" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
-          <column index="0" width="100" />
-          <column index="1" width="100" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments/comments.csv" />
     <entry file="file://D:/Python/Python3/Lib/site-packages/pymysql/err.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1142,16 +1019,7 @@
         <state relative-caret-position="-31" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments/test.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="193">
-          <caret line="123" column="8" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments/test.csv" />
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/哈工大停用词表.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1160,21 +1028,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_tag.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/predict.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
           <column index="0" width="100" />
           <column index="1" width="100" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1189,23 +1057,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/connect_php/lexicon.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/comments_tag.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/comments_tag.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="392">
           <caret line="3954" selection-start-line="3954" selection-end-line="3954" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/comments_machine_learning1.py">
@@ -1281,13 +1149,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/comments.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="392">
           <caret line="998" column="32" lean-forward="true" selection-start-line="998" selection-start-column="32" selection-end-line="998" selection-end-column="32" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_data_from_database_to_csv.py">
@@ -1311,6 +1179,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python3/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5066" selection-start-line="5066" selection-end-line="5066" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day2/numpyClass.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day2/pandasClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python3/Lib/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="3798" selection-start-line="3798" selection-end-line="3798" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://345d8b2d-165f-40ac-a01c-fd2eea4f6888/schema/test/table/cm_student_course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0ebdca28-4664-4755-80c8-b4e5eb7222ee">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/collaborative_filtering_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
