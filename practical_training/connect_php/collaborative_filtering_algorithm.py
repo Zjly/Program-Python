@@ -1,3 +1,5 @@
+import sys
+
 import pandas as pd
 import pymysql
 
@@ -183,7 +185,7 @@ if __name__ == '__main__':
 	num_matrix = create_num_matrix(inverted_matrix, course_list)
 	similarity_matrix = create_similarity_matrix(co_occurrence_matrix, num_matrix, course_list)
 	recommendation_matrix = create_recommendation_matrix(inverted_matrix, similarity_matrix, student_list, course_list)
-	recommended_courses = get_recommended_courses("23531", recommendation_matrix, 3)
+	recommended_courses = get_recommended_courses(sys.argv[1], recommendation_matrix, 3)
 	course_names = get_course_name(recommended_courses)
 	display_courses(course_names)
 	db.close()
