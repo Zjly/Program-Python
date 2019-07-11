@@ -1,14 +1,20 @@
 import re
+from urllib import parse, request
+from educational_system.WHU.login import get_login_opener
 
 
-def read_pages():
-	"""
-	从html文件中读取网页源代码
-	:return:
-	"""
-	with open("./score.html", "r") as fp:
-		html = fp.read()
-		return html
+def get_score(opener):
+	grade_page = "http://218.197.150.140/servlet/Svlt_QueryStuScore"
+
+	post_data = parse.urlencode({
+		'year': "0",
+		'term': "",
+		'learnType': "",
+		'scoreFlag': "0"
+	})
+	req = request.Request(grade_page, data=post_data.encode("gbk"))
+	resp = opener.open(req)
+	return resp.read().decode("gbk")
 
 
 def get_score_range(data):
@@ -91,6 +97,7 @@ def calculate_GPA(course_list):
 			sum_credit += course_credit
 	print("保研GPA:" + str(sum_GPA / sum_credit))
 
+
 def get_GPA_from_score(score):
 	score = float(score)
 	"""
@@ -119,12 +126,13 @@ def get_GPA_from_score(score):
 	else:
 		return 0.0
 
-def main():
-	score_page = read_pages()
+
+if __name__ == '__main__':
+	user_id = input("用户名: ")
+	password = input("密码: ")
+	opener = get_login_opener(user_id, password)
+	score_page = get_score(opener)
 	ranges = get_score_range(score_page)
 	course_score_list = get_course_list(ranges)
 	display_course_list(course_score_list)
 	calculate_GPA(course_score_list)
-
-if __name__ == '__main__':
-	main()

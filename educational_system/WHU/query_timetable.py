@@ -1,14 +1,13 @@
 import re
+from urllib import request
+
+from educational_system.WHU.login import get_login_opener
 
 
-def read_pages():
-	"""
-	从html文件中读取网页源代码
-	:return:
-	"""
-	with open("./timetable.html", "r") as fp:
-		html = fp.read()
-		return html
+def get_timetable(opener, year, term):
+	timetable_url = f"http://218.197.150.140/servlet/Svlt_QueryStuLsn?csrftoken=a68bf89f-596c-38b0-b7c0-2503fb425b28&action=normalLsn&year={year}&term={term}&state="
+	res = opener.open(request.Request(timetable_url))
+	return res.read().decode("gbk")
 
 
 def get_courses_range(data):
@@ -38,7 +37,7 @@ def get_course_list(courses_range):
 		p = re.compile(pattern, re.S)
 		course_data = p.findall(course_range)
 		for i in range(len(course_data)):
-			course_data[i] = course_data[i].replace("\t", "").replace("\n", "").replace(" ", "")
+			course_data[i] = course_data[i].replace("\t", "").replace("\n", "").replace(" ", "").replace("\r", "")
 		course_id = course_data[0]
 		course_name = course_data[1][0:course_data[1].index("<")]
 		course_teacher = course_data[5]
@@ -47,11 +46,12 @@ def get_course_list(courses_range):
 		pattern = "<td id='' title='<div>(.*?)<br/>"
 		p = re.compile(pattern, re.S)
 		time = p.findall(course_range)
-		course_time = time[0].replace("\t", "").replace("\n", "").replace(" ", "")
+		course_time = time[0].replace("\t", "").replace("\n", "").replace(" ", "").replace("\r", "")
 
 		course = [course_id, course_name, course_teacher, course_time]
 		course_list.append(course)
 	return course_list
+
 
 def display_timetable_data(course_list):
 	"""
@@ -62,8 +62,12 @@ def display_timetable_data(course_list):
 	for course in course_list:
 		print(course)
 
+
 if __name__ == '__main__':
-	timetable_data = read_pages()
+	user_id = input("用户名: ")
+	password = input("密码: ")
+	login_opener = get_login_opener(user_id, password)
+	timetable_data = get_timetable(login_opener, 2019, 1)
 	ranges = get_courses_range(timetable_data)
 	courses = get_course_list(ranges)
 	display_timetable_data(courses)
