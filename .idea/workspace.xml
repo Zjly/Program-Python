@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/94247.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/summer_battle/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Kiana_Kaslana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Theresa_Apocalypse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Valkyrja.py" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-编写崩坏3夏日大作战游戏，完成琪亚娜和德丽莎两个女武神的类，有待编写游戏回合流程">
+      <change afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Damage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/summer_battle/valkyrja/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer_battle/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/summer_battle/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Kiana_Kaslana.py" beforeDir="false" afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Kiana_Kaslana.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Theresa_Apocalypse.py" beforeDir="false" afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Theresa_Apocalypse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Valkyrja.py" beforeDir="false" afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Valkyrja.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +57,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Valkyrja.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="779">
+              <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Damage.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -65,8 +75,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Kiana_Kaslana.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="318">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Theresa_Apocalypse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+            <state relative-caret-position="-328">
+              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -86,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/summer_battle/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="375">
+              <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -135,9 +148,11 @@
       <find>负责</find>
       <find>很</find>
       <find>水</find>
+      <find>physical</find>
     </findStrings>
     <replaceStrings>
       <replace>人文与社会类</replace>
+      <replace>物理</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -149,10 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practical_training/machine_learning/predict.csv" />
-        <option value="$PROJECT_DIR$/practical_training/machine_learning/comments_machine_learning.py" />
-        <option value="$PROJECT_DIR$/practical_training/machine_learning/model_predict.py" />
-        <option value="$PROJECT_DIR$/practical_training/classification_of_courses/write_data_from_database_to_csv.py" />
         <option value="$PROJECT_DIR$/practical_training/classification_of_courses/courses_machine_learning.py" />
         <option value="$PROJECT_DIR$/practical_training/classification_of_courses/predict.csv" />
         <option value="$PROJECT_DIR$/practical_training/classification_of_courses/model_predict.py" />
@@ -196,7 +207,11 @@
         <option value="$PROJECT_DIR$/educational_system/WHU/score/query_scores.py" />
         <option value="$PROJECT_DIR$/educational_system/WHU/query_timetable.py" />
         <option value="$PROJECT_DIR$/summer_battle/__init__.py" />
+        <option value="$PROJECT_DIR$/.idea/dictionaries/94247.xml" />
+        <option value="$PROJECT_DIR$/summer_battle/test.py" />
         <option value="$PROJECT_DIR$/summer_battle/valkyrja/Valkyrja.py" />
+        <option value="$PROJECT_DIR$/summer_battle/valkyrja/test.py" />
+        <option value="$PROJECT_DIR$/summer_battle/valkyrja/Damage.py" />
         <option value="$PROJECT_DIR$/summer_battle/valkyrja/Kiana_Kaslana.py" />
         <option value="$PROJECT_DIR$/summer_battle/valkyrja/Theresa_Apocalypse.py" />
         <option value="$PROJECT_DIR$/summer_battle/game.py" />
@@ -216,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,19 +248,12 @@
               <item name="Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
               <item name="summer_battle" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="summer_battle" type="462c0819:PsiDirectoryNode" />
               <item name="valkyrja" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,7 +268,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -288,8 +297,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.query_timetable">
-    <configuration name="query_scores (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.game">
+    <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/summer_battle" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\Coding\Python\Program\summer_battle\games\kiana_theresa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="query_scores" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -311,7 +342,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="query_scores" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -319,12 +350,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/educational_system/WHU/score" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/summer_battle/valkyrja" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\Coding\Python\Program\educational_system\WHU\query_scores.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/summer_battle/valkyrja/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,86 +364,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="query_timetable" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/educational_system/WHU" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/educational_system/WHU/query_timetable.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="school_timetable" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/educational_system/WHU/timetable" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/educational_system/WHU/timetable/school_timetable.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="timetable_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/educational_system/WHU/timetable" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/educational_system/WHU/timetable/timetable_analysis.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.query_scores" />
-      <item itemvalue="Python.school_timetable" />
-      <item itemvalue="Python.timetable_analysis" />
-      <item itemvalue="Python.query_scores (1)" />
-      <item itemvalue="Python.query_timetable" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.query_timetable" />
-        <item itemvalue="Python.query_scores (1)" />
+        <item itemvalue="Python.game" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.query_scores" />
-        <item itemvalue="Python.timetable_analysis" />
-        <item itemvalue="Python.school_timetable" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +415,10 @@
       <workItem from="1562807562505" duration="3744000" />
       <workItem from="1562817115997" duration="1238000" />
       <workItem from="1562836620181" duration="3470000" />
-      <workItem from="1562855125068" duration="6947000" />
+      <workItem from="1562855125068" duration="7094000" />
+      <workItem from="1562915524465" duration="2489000" />
+      <workItem from="1563111514143" duration="722000" />
+      <workItem from="1563203575890" duration="6002000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -629,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562856255752</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="commit-编写崩坏3夏日大作战游戏，完成琪亚娜和德丽莎两个女武神的类，有待编写游戏回合流程">
+      <created>1562862187492</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1562862187492</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -656,7 +622,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213316000" />
+    <option name="totallyTimeSpent" value="222676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,12 +637,12 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.23324397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.24329759" />
       <window_info id="Structure" order="1" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info id="Favorites" order="2" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.32707775" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4383378" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -812,7 +778,8 @@
     <MESSAGE value="commit-编写基于物品的协同过滤的课程推荐算法完成，得到推荐课程的课程号" />
     <MESSAGE value="commit-编写推荐算法的课程显示，并编写此功能链接PHP部分的代码" />
     <MESSAGE value="commit-查询教务系统信息时需要手动输入用户名和密码，提高安全性；合并爬虫和分析py文件，消除html文件的生成" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-查询教务系统信息时需要手动输入用户名和密码，提高安全性；合并爬虫和分析py文件，消除html文件的生成" />
+    <MESSAGE value="commit-编写崩坏3夏日大作战游戏，完成琪亚娜和德丽莎两个女武神的类，有待编写游戏回合流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-编写崩坏3夏日大作战游戏，完成琪亚娜和德丽莎两个女武神的类，有待编写游戏回合流程" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
@@ -834,10 +801,11 @@
     <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562325733111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/test_learn" />
     <SUITE FILE_PATH="coverage/Program$collaborative_filtering_algorithm.coverage" NAME="collaborative_filtering_algorithm Coverage Results" MODIFIED="1562836760602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
-    <SUITE FILE_PATH="coverage/Program$test.coverage" NAME="test Coverage Results" MODIFIED="1562674622705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
+    <SUITE FILE_PATH="coverage/Program$test.coverage" NAME="test Coverage Results" MODIFIED="1563207736569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer_battle/valkyrja" />
     <SUITE FILE_PATH="coverage/Program$snow_NLP.coverage" NAME="snow_NLP Coverage Results" MODIFIED="1562258583657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$game.coverage" NAME="game Coverage Results" MODIFIED="1563209716666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer_battle" />
     <SUITE FILE_PATH="coverage/Program$score_analysis.coverage" NAME="score_analysis Coverage Results" MODIFIED="1562600889372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
-    <SUITE FILE_PATH="coverage/Program$query_scores__1_.coverage" NAME="query_scores (1) Coverage Results" MODIFIED="1562855746009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
+    <SUITE FILE_PATH="coverage/Program$query_scores__1_.coverage" NAME="query_scores (1) Coverage Results" MODIFIED="1563204346577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
     <SUITE FILE_PATH="coverage/Program$courses_machine_learning.coverage" NAME="courses_machine_learning Coverage Results" MODIFIED="1562843298363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
     <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
     <SUITE FILE_PATH="coverage/Program$model_predict__1_.coverage" NAME="model_predict (1) Coverage Results" MODIFIED="1562565998220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
@@ -855,7 +823,7 @@
     <SUITE FILE_PATH="coverage/Program$Iris3.coverage" NAME="Iris3 Coverage Results" MODIFIED="1562138346590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd.coverage" NAME="Twisted Trial for test_add.TestAdd Coverage Results" MODIFIED="1562568497410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning1.coverage" NAME="comments_machine_learning1 Coverage Results" MODIFIED="1562259009981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1562855683568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
+    <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1563204356970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
     <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1562856136366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
@@ -893,24 +861,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python/Python3/Lib/site-packages/pymysql/err.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/百度停用词表.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/中文停用词表.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/四川大学机器智能实验室停用词库.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments/test.csv" />
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/stop_words/哈工大停用词表.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -920,21 +870,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_tag.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/predict.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
           <column index="0" width="100" />
           <column index="1" width="100" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -949,23 +899,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/connect_php/lexicon.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/comments_tag.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/comments_tag.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="392">
           <caret line="3954" selection-start-line="3954" selection-end-line="3954" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/comments_machine_learning1.py">
@@ -1021,13 +971,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/comments.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="392">
           <caret line="998" column="32" lean-forward="true" selection-start-line="998" selection-start-column="32" selection-end-line="998" selection-end-column="32" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_data_from_database_to_csv.py">
@@ -1140,16 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_machine_learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="136" column="148" selection-start-line="136" selection-start-column="148" selection-end-line="136" selection-end-column="148" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/educational_system/WHU/login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-330">
@@ -1159,9 +1099,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable/timetable.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable/timetable.html" />
     <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/course_recommendation/collaborative_filtering_algorithm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
@@ -1172,43 +1110,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/educational_system/WHU/score/score.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/educational_system/WHU/score/score.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/educational_system/WHU/score/score_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
-          <caret line="126" column="36" lean-forward="true" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable/school_timetable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable/timetable_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/score/score.html" />
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/score/score.py" />
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/score/score_analysis.py" />
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable/school_timetable.py" />
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/timetable/timetable_analysis.py" />
     <entry file="file://$PROJECT_DIR$/summer_battle/files/Bronya_Zaychik.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1224,8 +1130,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/educational_system/WHU/query_scores.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="209">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,34 +1144,71 @@
     <entry file="file://$PROJECT_DIR$/summer_battle/files/Theresa_Apocalypse.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Valkyrja.py">
+    <entry file="file://$PROJECT_DIR$/summer_battle/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Valkyrja.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1843561486/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="163" column="4" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Damage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Kiana_Kaslana.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        <state relative-caret-position="318">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Theresa_Apocalypse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        <state relative-caret-position="-328">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_machine_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="136" column="148" selection-start-line="136" selection-start-column="148" selection-end-line="136" selection-end-column="148" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/summer_battle/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="375">
+          <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
