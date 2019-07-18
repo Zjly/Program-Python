@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/summer_battle/games/fu_sakura.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Fu_Hua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/summer_battle/valkyrja/Yae_Sakura.py" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-完成符华模型和八重樱模型建立，完成符华和八重樱比赛逻辑，测试1000000场成功">
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/get_verification_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/image_processing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/94247.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/94247.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,49 +52,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/summer_battle/games/fu_sakura.py">
+        <entry file="file://$PROJECT_DIR$/verification_code_recognition/image_processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+            <state relative-caret-position="171">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Fu_Hua.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Yae_Sakura.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer_battle/files/Fu_Hua.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer_battle/files/Yae_Sakura.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -147,10 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practical_training/unit_test.py" />
-        <option value="$PROJECT_DIR$/practical_training/unit_test/unit_test.py" />
-        <option value="$PROJECT_DIR$/practical_training/unit_test/test_add.py" />
-        <option value="$PROJECT_DIR$/practical_training/connect_php/classification_of_courses/DNN/model_predict.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/__init__.py" />
         <option value="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes/naive_bayes_classification.py" />
         <option value="$PROJECT_DIR$/educational_system/WHU/school_timetable.py" />
@@ -198,6 +158,10 @@
         <option value="$PROJECT_DIR$/summer_battle/valkyrja/Fu_Hua.py" />
         <option value="$PROJECT_DIR$/summer_battle/valkyrja/Yae_Sakura.py" />
         <option value="$PROJECT_DIR$/summer_battle/games/fu_sakura.py" />
+        <option value="$PROJECT_DIR$/verification_code_recognition/__init__.py" />
+        <option value="$PROJECT_DIR$/verification_code_recognition/test.py" />
+        <option value="$PROJECT_DIR$/verification_code_recognition/get_verification_code.py" />
+        <option value="$PROJECT_DIR$/verification_code_recognition/image_processing.py" />
       </list>
     </option>
   </component>
@@ -224,19 +188,7 @@
             <path>
               <item name="Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="summer_battle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="summer_battle" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="summer_battle" type="462c0819:PsiDirectoryNode" />
-              <item name="valkyrja" type="462c0819:PsiDirectoryNode" />
+              <item name="verification_code_recognition" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -253,8 +205,11 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/practical_training/connect_php" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -286,8 +241,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.fu_sakura">
-    <configuration name="fu_sakura" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.image_processing">
+    <configuration name="get_verification_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,12 +250,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/summer_battle/games" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/verification_code_recognition" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/summer_battle/games/fu_sakura.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/get_verification_code.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -309,7 +264,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="image_processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -317,56 +272,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/summer_battle" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/verification_code_recognition" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\Coding\Python\Program\summer_battle\games\kiana_theresa.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="query_scores" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/educational_system/WHU" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/educational_system/WHU/query_scores.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/summer_battle/valkyrja" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/summer_battle/valkyrja/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/image_processing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -377,10 +288,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.fu_sakura" />
-        <item itemvalue="Python.game" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.query_scores" />
+        <item itemvalue="Python.image_processing" />
+        <item itemvalue="Python.get_verification_code" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +340,8 @@
       <workItem from="1562915524465" duration="2489000" />
       <workItem from="1563111514143" duration="722000" />
       <workItem from="1563203575890" duration="6199000" />
-      <workItem from="1563280404980" duration="5080000" />
+      <workItem from="1563280404980" duration="5171000" />
+      <workItem from="1563453487605" duration="7739000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -615,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563209883287</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="commit-完成符华模型和八重樱模型建立，完成符华和八重樱比赛逻辑，测试1000000场成功">
+      <created>1563293130600</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1563293130600</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -642,7 +559,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227953000" />
+    <option name="totallyTimeSpent" value="235783000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -657,7 +574,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.24664879" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info id="Favorites" order="2" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -668,7 +585,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25737265" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2570281" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.31903484" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3297587" />
@@ -678,7 +595,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.730563" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.7298928" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3297587" />
     </layout>
@@ -800,20 +717,23 @@
     <MESSAGE value="commit-查询教务系统信息时需要手动输入用户名和密码，提高安全性；合并爬虫和分析py文件，消除html文件的生成" />
     <MESSAGE value="commit-编写崩坏3夏日大作战游戏，完成琪亚娜和德丽莎两个女武神的类，有待编写游戏回合流程" />
     <MESSAGE value="commit-完成琪亚娜模型和德丽莎模型建立，完成琪亚娜和德丽莎比赛逻辑，测试1000000场成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-完成琪亚娜模型和德丽莎模型建立，完成琪亚娜和德丽莎比赛逻辑，测试1000000场成功" />
+    <MESSAGE value="commit-完成符华模型和八重樱模型建立，完成符华和八重樱比赛逻辑，测试1000000场成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-完成符华模型和八重樱模型建立，完成符华和八重樱比赛逻辑，测试1000000场成功" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$score.coverage" NAME="score Coverage Results" MODIFIED="1562597932578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
+    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1563456140999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$model_predict2.coverage" NAME="model_predict2 Coverage Results" MODIFIED="1562296031978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
-    <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1562744302816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
+    <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1563455690731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$MD5encryption.coverage" NAME="MD5encryption Coverage Results" MODIFIED="1562430181130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_administration_system" />
     <SUITE FILE_PATH="coverage/Program$write_comments_to_database.coverage" NAME="write_comments_to_database Coverage Results" MODIFIED="1562751263133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$CSDN.coverage" NAME="CSDN Coverage Results" MODIFIED="1562146540898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$read_data_from_database_to_csv.coverage" NAME="read_data_from_database_to_csv Coverage Results" MODIFIED="1562742315041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
     <SUITE FILE_PATH="coverage/Program$timetable_analysis__1_.coverage" NAME="timetable_analysis (1) Coverage Results" MODIFIED="1562599610896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
     <SUITE FILE_PATH="coverage/Program$naive_bayes_classification.coverage" NAME="naive_bayes_classification Coverage Results" MODIFIED="1562686230533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
+    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1563465310532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$write_data_from_database_to_csv.coverage" NAME="write_data_from_database_to_csv Coverage Results" MODIFIED="1562554481153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
     <SUITE FILE_PATH="coverage/Program$model_predict.coverage" NAME="model_predict Coverage Results" MODIFIED="1562761834728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1562430562953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taokela_comments" />
@@ -830,7 +750,7 @@
     <SUITE FILE_PATH="coverage/Program$courses_machine_learning.coverage" NAME="courses_machine_learning Coverage Results" MODIFIED="1562843298363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
     <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
     <SUITE FILE_PATH="coverage/Program$model_predict__1_.coverage" NAME="model_predict (1) Coverage Results" MODIFIED="1562565998220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
-    <SUITE FILE_PATH="coverage/Program$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1562573475553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
+    <SUITE FILE_PATH="coverage/Program$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1563454818951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$save_comments_to_database.coverage" NAME="save_comments_to_database Coverage Results" MODIFIED="1562120868396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$verification_code_send.coverage" NAME="verification_code_send Coverage Results" MODIFIED="1562642150294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/verification_code" />
     <SUITE FILE_PATH="coverage/Program$devide_comments.coverage" NAME="devide_comments Coverage Results" MODIFIED="1562746821862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
@@ -883,65 +803,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/lexicon.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/comments_tag.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="392">
-          <caret line="3954" selection-start-line="3954" selection-end-line="3954" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/comments_machine_learning1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/test_learn/model_predict1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/connect_php/sensitive_words_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practical_training/connect_php/verification_code.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/model_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,13 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="3798" selection-start-line="3798" selection-end-line="3798" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1124,27 +982,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer_battle/test.py" />
-    <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/test.py" />
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1843561486/time.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="163" column="4" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_machine_learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="136" column="148" selection-start-line="136" selection-start-column="148" selection-end-line="136" selection-end-column="148" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,10 +1040,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/summer_battle/games/fu_sakura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Fu_Hua.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="1273">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1210,7 +1062,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/summer_battle/valkyrja/Yae_Sakura.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
+        <state relative-caret-position="1501">
           <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -1224,12 +1076,73 @@
     <entry file="file://$PROJECT_DIR$/summer_battle/files/Yae_Sakura.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer_battle/games/fu_sakura.py">
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/model_predict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+        <state relative-caret-position="-603">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/comments_machine_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="136" column="148" selection-start-line="136" selection-start-column="148" selection-end-line="136" selection-end-column="148" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/educational_system/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_recognition/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="98" selection-start-line="2" selection-start-column="98" selection-end-line="2" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practical_training/crawler/MOOC/analysis_pages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_recognition/get_verification_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_recognition/image_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
