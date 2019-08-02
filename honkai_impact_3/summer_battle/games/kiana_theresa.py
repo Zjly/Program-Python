@@ -1,8 +1,8 @@
 import random
 from datetime import datetime
 
-from summer_battle.valkyrja.Kiana_Kaslana import KianaKaslana
-from summer_battle.valkyrja.Theresa_Apocalypse import TheresaApocalypse
+from honkai_impact_3.summer_battle.valkyrja.Kiana_Kaslana import KianaKaslana
+from honkai_impact_3.summer_battle.valkyrja.Theresa_Apocalypse import TheresaApocalypse
 
 
 def begin_game(valKyrja1, valKyrja2):

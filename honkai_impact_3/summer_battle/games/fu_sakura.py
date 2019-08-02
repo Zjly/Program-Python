@@ -1,8 +1,7 @@
-import random
 from datetime import datetime
 
-from summer_battle.valkyrja.Fu_Hua import FuHua
-from summer_battle.valkyrja.Yae_Sakura import YaeSakura
+from honkai_impact_3.summer_battle.valkyrja.Fu_Hua import FuHua
+from honkai_impact_3.summer_battle.valkyrja.Yae_Sakura import YaeSakura
 
 
 def begin_game(fu, sakura):

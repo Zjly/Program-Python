@@ -1,7 +1,7 @@
 import random
 
-from summer_battle.valkyrja.Damage import Damage
-from summer_battle.valkyrja.Valkyrja import ValKyrja
+from honkai_impact_3.summer_battle.valkyrja.Damage import Damage
+from honkai_impact_3.summer_battle.valkyrja.Valkyrja import ValKyrja
 
 
 class YaeSakura(ValKyrja):

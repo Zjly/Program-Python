@@ -108,15 +108,37 @@ def remove_noise(image_list, threshold):
 						image[i, j] = 0
 	return image_list
 
+num = 0
+
+def fill_color(image_list):
+	global num
+	for image in image_list:
+		image = image[1]
+		i_height = image.shape[0]
+		i_width = image.shape[1]
+		color = 0
+		result_num = 0
+		for i in range(i_height):
+			for j in range(i_width):
+				if image[i, j] == 0:
+					num = 0
+
 
 def image_processing():
 	"""
 	图像处理
 	:return:
 	"""
+	# 读取验证码列表
 	img_list = read_images('./test_image')
+
+	# 图像灰度化
 	g_img_list = gray_scale(img_list)
+
+	# 图像二值化
 	b_img_list = binarization(g_img_list)
+
+	# 图像去除噪点
 	n_image_list = noise_processing(b_img_list, 7, 2)
 
 
