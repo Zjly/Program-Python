@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-完成图像去除噪点工作">
-      <change afterPath="$PROJECT_DIR$/honkai_impact_3/supply_system/get_ratio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/honkai_impact_3/supply_system/precision_replenishment.py" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/douyu/subtitles/get_subtitles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Bronya_Zaychik.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Fu_Hua.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Kallen_Kaslana.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Kiana_Kaslana.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Liliya_Olenyeva.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Murata_Himeko.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Raiden_Mei.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Rita_Rossweisse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Rozaliya_Olenyeva.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Seele_Vollerei.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Theresa_Apocalypse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/files/Yae_Sakura.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/games/fu_sakura.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/games/kiana_theresa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Damage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Fu_Hua.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Kiana_Kaslana.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Theresa_Apocalypse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Valkyrja.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer_battle/valkyrja/Yae_Sakura.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification_code_recognition/image_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/verification_code_recognition/image_processing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,20 +49,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/honkai_impact_3/supply_system/get_ratio.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/honkai_impact_3/supply_system/precision_replenishment.py">
+        <entry file="file://$PROJECT_DIR$/douyu/subtitles/get_subtitles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="180">
+              <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +93,7 @@
       <find>水</find>
       <find>physical</find>
       <find>print</find>
+      <find>db</find>
     </findStrings>
     <replaceStrings>
       <replace>人文与社会类</replace>
@@ -137,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/educational_system/WHU/timetable.html" />
         <option value="$PROJECT_DIR$/educational_system/WHU/timetable_analysis.py" />
         <option value="$PROJECT_DIR$/educational_system/WHU/timetable/timetable_analysis.py" />
         <option value="$PROJECT_DIR$/educational_system/WHU/score/score_analysis.py" />
@@ -188,6 +160,7 @@
         <option value="$PROJECT_DIR$/honkai_impact_3/supply_system/precisionRreplenishment.py" />
         <option value="$PROJECT_DIR$/honkai_impact_3/supply_system/get_ratio.py" />
         <option value="$PROJECT_DIR$/honkai_impact_3/supply_system/precision_replenishment.py" />
+        <option value="$PROJECT_DIR$/douyu/subtitles/get_subtitles.py" />
       </list>
     </option>
   </component>
@@ -204,7 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,18 +187,19 @@
             <path>
               <item name="Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="honkai_impact_3" type="462c0819:PsiDirectoryNode" />
+              <item name="douyu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="honkai_impact_3" type="462c0819:PsiDirectoryNode" />
-              <item name="supply_system" type="462c0819:PsiDirectoryNode" />
+              <item name="douyu" type="462c0819:PsiDirectoryNode" />
+              <item name="subtitles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,7 +246,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.precision_replenishment">
+  <component name="RunManager" selected="Python.get_subtitles">
     <configuration name="get_ratio" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -288,6 +261,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/honkai_impact_3/supply_system/get_ratio.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_subtitles" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/douyu/subtitles" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/douyu/subtitles/get_subtitles.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,35 +357,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/verification_code_recognition" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.get_subtitles" />
+        <item itemvalue="Python.query_scores" />
         <item itemvalue="Python.precision_replenishment" />
         <item itemvalue="Python.get_ratio" />
         <item itemvalue="Python.image_processing" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.query_scores" />
       </list>
     </recent_temporary>
   </component>
@@ -446,7 +419,9 @@
       <workItem from="1563541307137" duration="4042000" />
       <workItem from="1563885084382" duration="1009000" />
       <workItem from="1564044666963" duration="3003000" />
-      <workItem from="1564742325077" duration="7153000" />
+      <workItem from="1564742325077" duration="7351000" />
+      <workItem from="1565429064858" duration="268000" />
+      <workItem from="1566908998695" duration="9524000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -651,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563554025569</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="commit-编写崩坏3的精准抽取概率计算，编写精准抽取毕业次数计算">
+      <created>1564749883778</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1564749883778</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -678,7 +660,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251892000" />
+    <option name="totallyTimeSpent" value="261882000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -693,13 +675,13 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.26340482" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.27010724" />
       <window_info id="Structure" order="1" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info id="Favorites" order="2" sideWeight="0.5013405" side_tool="true" weight="0.26340482" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.32171583" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4383378" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.32171583" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4383378" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
@@ -812,7 +794,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="commit-2019-7-3 11:33:52" />
     <MESSAGE value="commit-2019-7-3 16:58:58" />
     <MESSAGE value="commit-2019-7-3 23:06:27" />
     <MESSAGE value="commit-2019-7-4 00:34:56" />
@@ -837,13 +818,15 @@
     <MESSAGE value="commit-完成符华模型和八重樱模型建立，完成符华和八重樱比赛逻辑，测试1000000场成功" />
     <MESSAGE value="commit-完成验证码爬取和标记并存储，完成验证码读取，并进行灰度化和二值化" />
     <MESSAGE value="commit-完成图像去除噪点工作" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-完成图像去除噪点工作" />
+    <MESSAGE value="commit-编写崩坏3的精准抽取概率计算，编写精准抽取毕业次数计算" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-编写崩坏3的精准抽取概率计算，编写精准抽取毕业次数计算" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$score.coverage" NAME="score Coverage Results" MODIFIED="1562597932578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
     <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1563456140999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$model_predict2.coverage" NAME="model_predict2 Coverage Results" MODIFIED="1562296031978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$get_subtitles.coverage" NAME="get_subtitles Coverage Results" MODIFIED="1566926484194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/douyu/subtitles" />
     <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1563455690731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$MD5encryption.coverage" NAME="MD5encryption Coverage Results" MODIFIED="1562430181130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_administration_system" />
@@ -885,7 +868,7 @@
     <SUITE FILE_PATH="coverage/Program$Iris3.coverage" NAME="Iris3 Coverage Results" MODIFIED="1562138346590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd.coverage" NAME="Twisted Trial for test_add.TestAdd Coverage Results" MODIFIED="1562568497410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning1.coverage" NAME="comments_machine_learning1 Coverage Results" MODIFIED="1562259009981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1563541356104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
+    <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1565429198332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
     <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1562856136366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
@@ -915,6 +898,13 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>gift_data1</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="setValue">
       <expression>
         <expression-string>'https://taoke.ziqiang.net.cn/api/course/public/elective/20182018152/comment/?page=1&amp;per_page=10'</expression-string>
@@ -924,53 +914,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_data_from_database_to_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/devide_comments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis/learn_files/write_comments_to_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python3/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5066" selection-start-line="5066" selection-end-line="5066" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day2/numpyClass.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practical_training/data_analysis_class/Day2/pandasClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Python3/Lib/site-packages/pandas/core/indexes/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1207,16 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/educational_system/WHU/query_scores.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Python3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -1251,8 +1184,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/honkai_impact_3/supply_system/precision_replenishment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="2546">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educational_system/WHU/query_scores.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1843561486/_socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python3/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="864" selection-start-line="864" selection-end-line="864" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python3/Lib/site-packages/danmu/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python3/Lib/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/socket.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="549" column="8" selection-start-line="549" selection-start-column="8" selection-end-line="549" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyu/subtitles/get_subtitles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
