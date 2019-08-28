@@ -2,7 +2,6 @@ import re
 import time
 import json
 import socket
-import pymongo
 import logging
 import requests
 import threading
@@ -14,14 +13,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 class DouYu:
 	def __init__(self, room_id):
 		self.room_id = room_id
-		# 面向网络的套接字和面向连接的套接字
+		# 客户端 面向网络的套接字和面向连接的套接字
 		self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		host = socket.gethostbyname("openbarrage.douyutv.com")
 		port = 8601
 		self.client.connect((host, port))
 		self.gift_dict = {}
-		db = pymongo.MongoClient(host="127.0.0.1", port=27017)
-		self.col = db['Spider']['DouYu-{}'.format(room_id)]
 
 	def get_gift_dict(self):
 		# 获取礼物信息
@@ -76,35 +73,34 @@ class DouYu:
 			try:
 				data = self.client.recv(2048)
 				data = data[12:].decode('utf-8', 'ignore')
-				# TODO 处理一条data中有多条弹幕和礼物的情况
-				# 弹幕
-				if re.search('type@=chatmsg', data):
-					pattern1 = re.compile('uid@=(.+?)/nn@=(.+?)/txt@=(.+?)/cid@=(.+?)/')
-					chat = re.findall(pattern1, data)[0]
-					# print(chat)
-					chat_data = {
-						"data_type": "chat",
-						"chat_id": chat[3],
-						"chat_txt": chat[2],
-						"user_id": chat[0],
-						"user_name": chat[1]
-					}
-					logging.info("{}:{}".format(chat_data["user_name"], chat_data["chat_txt"]))
-					# self.col.insert(chat_data)
-				# 礼物
-				if re.search('type@=dgb', data):
-					pattern2 = re.compile('gfid@=(.+?)/.+?/uid@=(.+?)/nn@=(.+?)/')
-					gift = re.findall(pattern2, data)[0]
-					# print(gift)
-					gift_data = {
-						"data_type": "gift",
-						"gift_id": gift[0],
-						"gift_name": self.gift_dict[int(gift[0])],
-						"user_id": gift[1],
-						"user_name": gift[2]
-					}
-					logging.info("{}送出了:{}".format(gift[2], self.gift_dict[int(gift[0])]))
-					# self.col.insert(gift_data)
+
+				# 处理一条data中有多条弹幕和礼物的情况
+				data = data.split("type@=")
+				for d in data:
+					# 弹幕
+					if re.search('chatmsg', d):
+						pattern1 = re.compile('uid@=(.+?)/nn@=(.+?)/txt@=(.+?)/cid@=(.+?)/')
+						chat = re.findall(pattern1, d)[0]
+						chat_data = {
+							"data_type": "chat",
+							"chat_id": chat[3],
+							"chat_txt": chat[2],
+							"user_id": chat[0],
+							"user_name": chat[1]
+						}
+						print("{}: {}".format(chat_data["user_name"], chat_data["chat_txt"]))
+					# 礼物
+					elif re.search('dgb', d):
+						pattern2 = re.compile('gfid@=(.+?)/.+?/uid@=(.+?)/nn@=(.+?)/')
+						gift = re.findall(pattern2, d)[0]
+						gift_data = {
+							"data_type": "gift",
+							"gift_id": gift[0],
+							"gift_name": self.gift_dict[int(gift[0])],
+							"user_id": gift[1],
+							"user_name": gift[2]
+						}
+						print("\033[0;32;m{}送出了: {}\033[0m".format(gift[2], self.gift_dict[int(gift[0])]))
 				time.sleep(0.05)
 			except KeyError:
 				pass
@@ -133,5 +129,5 @@ class DouYu:
 
 
 if __name__ == '__main__':
-	dy = DouYu(32892)
+	dy = DouYu(93589)
 	dy.main()
