@@ -13,7 +13,7 @@ def read_images(path):
 	for i in range(0, len(file_list)):
 		path = os.path.join(root_path, file_list[i])
 		if os.path.isfile(path):
-			name = path.replace("./images\\", "").replace(".jpg", "")
+			name = path.replace("./images\\", "").replace("./test_image\\", "").replace(".jpg", "")
 			image = cv2.imread(path)
 			image_list.append([name, image])
 
@@ -70,8 +70,8 @@ def remove_noise(image_list, threshold):
 	:param threshold: 阈值 代表一个点周围n个点颜色与之不同则更改该点的颜色
 	:return: 去除噪点后的图像列表
 	"""
-	for image in image_list:
-		image = image[1]
+	for n_image in image_list:
+		image = n_image[1]
 		i_height = image.shape[0]
 		i_width = image.shape[1]
 
@@ -85,6 +85,7 @@ def remove_noise(image_list, threshold):
 			image[i, 0] = 255
 			image[i, i_width - 1] = 255
 
+		# 判定每一个像素
 		for i in range(1, i_height - 1):
 			for j in range(1, i_width - 1):
 				i_value = image[i, j]
@@ -108,20 +109,110 @@ def remove_noise(image_list, threshold):
 						image[i, j] = 0
 	return image_list
 
+
+# 黑点的个数，通过与一个阈值的比较，确定是噪点还是字母
 num = 0
 
+
 def fill_color(image_list):
+	"""
+	向字母中填充颜色
+	:param image_list: 图像列表
+	:return: 颜色填充完毕的图像列表
+	"""
 	global num
-	for image in image_list:
-		image = image[1]
+	for n_image in image_list:
+		image = n_image[1]
 		i_height = image.shape[0]
 		i_width = image.shape[1]
+
+		# 待填充颜色
 		color = 0
+		colors = [0, 0, 0, 0]
 		result_num = 0
+
+		# 对向量黑点进行填充数字
 		for i in range(i_height):
 			for j in range(i_width):
 				if image[i, j] == 0:
 					num = 0
+					color += 1
+					overflow_filling(image, i, j, color)
+
+					# 过滤噪点的颜色填充
+					if num > 20:
+						colors[result_num] = color
+						result_num += 1
+
+		n_image.append(colors)
+
+		# 过滤掉未识别出4个字母的图片
+		for i in colors:
+			if i == 0:
+				image_list.remove(n_image)
+
+	return image_list
+
+
+def overflow_filling(image, x, y, color):
+	"""
+	对方块及其四周进行递归漫水填充
+	:param image: 图像
+	:param x: 当前像素横坐标
+	:param y: 当前像素纵坐标
+	:param color: 待填充颜色
+	:return:
+	"""
+	global num
+	if image[x, y] == 0:
+		image[x, y] = color
+		num += 1
+
+		# 递归调用对四周方块进行填充
+		overflow_filling(image, x - 1, y, color)
+		overflow_filling(image, x + 1, y, color)
+		overflow_filling(image, x, y - 1, color)
+		overflow_filling(image, x, y + 1, color)
+
+
+def divide_characters(image_list):
+	"""
+	分隔字符
+	:param image_list: 图像列表
+	:return:
+	"""
+	for n_image in image_list:
+		image = n_image[1]
+		i_height = image.shape[0]
+		i_width = image.shape[1]
+
+		# 对每一种颜色的字符进行提取
+		for color in n_image[2]:
+			left = i_width
+			right = 0
+			up = i_height
+			down = 0
+
+			# 找出该字符的边界
+			for i in range(i_height):
+				for j in range(i_width):
+					if image[i, j] == color:
+						if i < left:
+							left = i
+
+						if i > right:
+							right = i
+
+						if j < up:
+							up = i
+
+						if j > down:
+							down = j
+
+			width = right - left + 1
+			height = down - up + 1
+
+			# TODO 分离出字符
 
 
 def image_processing():
@@ -140,6 +231,11 @@ def image_processing():
 
 	# 图像去除噪点
 	n_image_list = noise_processing(b_img_list, 7, 2)
+
+	# 填充图像字母
+	f_image_list = fill_color(n_image_list)
+
+	print()
 
 
 if __name__ == '__main__':
