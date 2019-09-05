@@ -1,5 +1,6 @@
 import os
 import cv2
+import numpy
 
 
 def read_images(path):
@@ -113,7 +114,6 @@ def remove_noise(image_list, threshold):
 # 黑点的个数，通过与一个阈值的比较，确定是噪点还是字母
 num = 0
 
-
 def fill_color(image_list):
 	"""
 	向字母中填充颜色
@@ -121,6 +121,10 @@ def fill_color(image_list):
 	:return: 颜色填充完毕的图像列表
 	"""
 	global num
+
+	# 此处设置f_image_list是为了保存正确的四个字母的验证码，由于下方代码使用的是foreach，故不能在原list中使用remove，所以采用了添加到新list的方法
+	f_image_list = []
+
 	for n_image in image_list:
 		image = n_image[1]
 		i_height = image.shape[0]
@@ -131,27 +135,26 @@ def fill_color(image_list):
 		colors = [0, 0, 0, 0]
 		result_num = 0
 
-		# 对向量黑点进行填充数字
-		for i in range(i_height):
-			for j in range(i_width):
+		# 对向量黑点进行填充数字 这里需要从左到右扫描
+		for j in range(i_width):
+			for i in range(i_height):
 				if image[i, j] == 0:
 					num = 0
 					color += 1
 					overflow_filling(image, i, j, color)
 
-					# 过滤噪点的颜色填充
-					if num > 20:
+					# 过滤噪点的颜色填充 TODO 此处需要处理一下分割出超过4个字母的部分 目前只是暂且屏蔽
+					if num > 20 and result_num < 4:
 						colors[result_num] = color
 						result_num += 1
 
 		n_image.append(colors)
 
 		# 过滤掉未识别出4个字母的图片
-		for i in colors:
-			if i == 0:
-				image_list.remove(n_image)
+		if colors[3] != 0:
+			f_image_list.append(n_image)
 
-	return image_list
+	return f_image_list
 
 
 def overflow_filling(image, x, y, color):
@@ -174,18 +177,26 @@ def overflow_filling(image, x, y, color):
 		overflow_filling(image, x, y - 1, color)
 		overflow_filling(image, x, y + 1, color)
 
+		overflow_filling(image, x - 1, y - 1, color)
+		overflow_filling(image, x - 1, y, color)
+		overflow_filling(image, x - 1, y, color)
+		overflow_filling(image, x - 1, y, color)
+
 
 def divide_characters(image_list):
 	"""
 	分隔字符
 	:param image_list: 图像列表
-	:return:
+	:return: 单个字符组成的[名字，矩阵]列表
 	"""
+	d_list = []
+
 	for n_image in image_list:
 		image = n_image[1]
 		i_height = image.shape[0]
 		i_width = image.shape[1]
 
+		c_num = 0
 		# 对每一种颜色的字符进行提取
 		for color in n_image[2]:
 			left = i_width
@@ -197,23 +208,43 @@ def divide_characters(image_list):
 			for i in range(i_height):
 				for j in range(i_width):
 					if image[i, j] == color:
-						if i < left:
-							left = i
+						if j < left:
+							left = j
 
-						if i > right:
-							right = i
+						if j > right:
+							right = j
 
-						if j < up:
+						if i < up:
 							up = i
 
-						if j > down:
-							down = j
+						if i > down:
+							down = i
 
 			width = right - left + 1
 			height = down - up + 1
 
-			# TODO 分离出字符
+			p_image = numpy.zeros([height, width])
 
+			# 分离出字符
+			for i in range(height):
+				for j in range(width):
+					if image[i + up, j + left] == color:
+						p_image[i, j] = 1
+
+			# 保存图片名字和图片到end_image中
+			end_image = [n_image[0][c_num], p_image]
+			c_num += 1
+
+			d_list.append(end_image)
+
+	return d_list
+
+def rotate_character(c_list):
+	"""
+	旋转字符
+	:param c_list: 字符列表
+	:return: 旋转完毕后的字符列表
+	"""
 
 def image_processing():
 	"""
@@ -221,7 +252,7 @@ def image_processing():
 	:return:
 	"""
 	# 读取验证码列表
-	img_list = read_images('./test_image')
+	img_list = read_images('./images')
 
 	# 图像灰度化
 	g_img_list = gray_scale(img_list)
@@ -234,6 +265,9 @@ def image_processing():
 
 	# 填充图像字母
 	f_image_list = fill_color(n_image_list)
+
+	# 分离各个字符并存入数组
+	character_list = divide_characters(f_image_list)
 
 	print()
 
