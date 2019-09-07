@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/verification_code_recognition/test_images/0HLU.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification_code_recognition/test_images/0wYz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification_code_recognition/test_images/0yLf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification_code_recognition/test_images/1ppv.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification_code_recognition/test_images/2xbG.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/verification_code_recognition/image_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/verification_code_recognition/image_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification_code_recognition/test_image/0HLU.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/verification_code_recognition/test_images/2xbG.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,12 +36,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="test: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -124,21 +114,21 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
-      <recent name="E:\Coding\Python\Program\practical_training\machine_learning\classification_of_courses\naive_bayes" />
-      <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses" />
-      <recent name="E:\Coding\Python\Program" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Coding\Python\Program\honkai_impact_3" />
       <recent name="E:\Coding\Python\Program\summer_battle\games" />
       <recent name="E:\Coding\Python\Program\educational_system\WHU" />
       <recent name="E:\Coding\Python\Program\practical_training\machine_learning\comments_emotional_analysis\learn_files" />
       <recent name="E:\Coding\Python\Program\educational_system\WHU\timetable" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
+      <recent name="E:\Coding\Python\Program\practical_training\machine_learning\classification_of_courses\naive_bayes" />
+      <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses" />
+      <recent name="E:\Coding\Python\Program" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -198,28 +188,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="precision_replenishment" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/honkai_impact_3/supply_system" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/honkai_impact_3/supply_system/precision_replenishment.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="query_scores" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,6 +202,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/educational_system/WHU/query_scores.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/verification_code_recognition" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -267,12 +257,32 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.image_processing" />
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.get_subtitles" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.query_scores" />
-        <item itemvalue="Python.precision_replenishment" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ff5948d1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ff5948d1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@75b8aea6" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\94247\AppData\Roaming\Subversion</configuration>
@@ -331,7 +341,9 @@
       <workItem from="1566908998695" duration="9689000" />
       <workItem from="1566975159764" duration="2602000" />
       <workItem from="1567429658119" duration="5363000" />
-      <workItem from="1567696827530" duration="5802000" />
+      <workItem from="1567696827530" duration="5975000" />
+      <workItem from="1567786718325" duration="1390000" />
+      <workItem from="1567859466344" duration="13672000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -564,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567439877202</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="commit-完成验证码字符的分隔，将每一个字符单独保存">
+      <created>1567702984739</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1567702984740</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -654,7 +673,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-2019-7-4 12:10:41" />
     <MESSAGE value="commit-The machine learning code is written, the test passes, and the complete model is built after crawling comments." />
     <MESSAGE value="commit-The model has been established." />
     <MESSAGE value="commit-The problem of unable to read model has been solved. It is a problem of random number seed. It needs to be compiled for prediction function.-2019-7-5 01:01:08" />
@@ -679,21 +697,11 @@
     <MESSAGE value="commit-学习斗鱼弹幕的爬取" />
     <MESSAGE value="commit-斗鱼弹幕爬取优化" />
     <MESSAGE value="commit-完成漫水填充算法的编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-完成漫水填充算法的编写" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/verification_code_recognition/image_processing.py</url>
-          <line>271</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="commit-完成验证码字符的分隔，将每一个字符单独保存" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-完成验证码字符的分隔，将每一个字符单独保存" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1563455690731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1567860569489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$game.coverage" NAME="game Coverage Results" MODIFIED="1563209716666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer_battle" />
     <SUITE FILE_PATH="coverage/Program$model_predict2.coverage" NAME="model_predict2 Coverage Results" MODIFIED="1562296031978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1562430562953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taokela_comments" />
@@ -739,7 +747,7 @@
     <SUITE FILE_PATH="coverage/Program$get_ratio.coverage" NAME="get_ratio Coverage Results" MODIFIED="1564744148464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
     <SUITE FILE_PATH="coverage/Program$verification_code_send.coverage" NAME="verification_code_send Coverage Results" MODIFIED="1562642150294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/verification_code" />
     <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1563456140999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
-    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1567702863376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1567875261102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562325733111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/test_learn" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />

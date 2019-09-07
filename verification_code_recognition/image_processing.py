@@ -1,6 +1,7 @@
 import os
 import cv2
 import numpy
+import pymysql
 
 
 def read_images(path):
@@ -14,7 +15,7 @@ def read_images(path):
 	for i in range(0, len(file_list)):
 		path = os.path.join(root_path, file_list[i])
 		if os.path.isfile(path):
-			name = path.replace("./images\\", "").replace("./test_image\\", "").replace(".jpg", "")
+			name = path.replace("./images\\", "").replace("./test_images\\", "").replace(".jpg", "")
 			image = cv2.imread(path)
 			image_list.append([name, image])
 
@@ -114,6 +115,7 @@ def remove_noise(image_list, threshold):
 # 黑点的个数，通过与一个阈值的比较，确定是噪点还是字母
 num = 0
 
+
 def fill_color(image_list):
 	"""
 	向字母中填充颜色
@@ -177,10 +179,11 @@ def overflow_filling(image, x, y, color):
 		overflow_filling(image, x, y - 1, color)
 		overflow_filling(image, x, y + 1, color)
 
-		overflow_filling(image, x - 1, y - 1, color)
-		overflow_filling(image, x - 1, y, color)
-		overflow_filling(image, x - 1, y, color)
-		overflow_filling(image, x - 1, y, color)
+
+# overflow_filling(image, x - 1, y - 1, color)
+# overflow_filling(image, x - 1, y + 1, color)
+# overflow_filling(image, x + 1, y - 1, color)
+# overflow_filling(image, x + 1, y + 1, color)
 
 
 def divide_characters(image_list):
@@ -224,12 +227,19 @@ def divide_characters(image_list):
 			height = down - up + 1
 
 			p_image = numpy.zeros([height, width])
+			p_image.fill(255)
 
 			# 分离出字符
 			for i in range(height):
 				for j in range(width):
 					if image[i + up, j + left] == color:
-						p_image[i, j] = 1
+						p_image[i, j] = 0
+
+			# 这段代码可用来显示图像并缩放到合适大小
+			# cv2.namedWindow('demo', 0)
+			# cv2.imshow("demo", p_image)
+			# cv2.waitKey(0)
+			# cv2.destroyAllWindows()
 
 			# 保存图片名字和图片到end_image中
 			end_image = [n_image[0][c_num], p_image]
@@ -239,12 +249,120 @@ def divide_characters(image_list):
 
 	return d_list
 
-def rotate_character(c_list):
+
+def rotate_character(image_list):
 	"""
 	旋转字符
-	:param c_list: 字符列表
+	:param image_list: 字符列表
 	:return: 旋转完毕后的字符列表
 	"""
+	r_list = []
+	for n_image in image_list:
+		image = n_image[1]
+		i_height = image.shape[0]
+		i_width = image.shape[1]
+
+		# 这里需要对图片进行一个转化为数对的处理 方便接下来调用minAreaRect函数
+		r_image = numpy.array([0, 0])
+		for i in range(i_height):
+			for j in range(i_width):
+				if image[i, j] == 0:
+					point = numpy.array([i, j])
+					r_image = numpy.vstack((r_image, point))
+		r_image = r_image[1:]
+
+		# 最小外接矩形
+		rect_image = cv2.minAreaRect(r_image)
+
+		# 矩形的四个顶点
+		box = cv2.boxPoints(rect_image)
+		box = numpy.int0(box)
+
+		# 旋转角度
+		angle = cv2.minAreaRect(r_image)[2]
+		if angle > 45:
+			angle = 135 - angle
+		elif angle < -45:
+			angle = angle + 90
+
+		center = (i_width // 2, i_height // 2)
+
+		# 获得图像绕着某一点的旋转矩阵
+		matrix = cv2.getRotationMatrix2D(center, -angle, 1.0)
+
+		# 进行仿射变换
+		rotated = cv2.warpAffine(image, matrix, (i_width, i_height), flags=cv2.INTER_CUBIC,
+								 borderMode=cv2.BORDER_REPLICATE)
+
+		# 统一缩放图像到16*16
+		f_image = cv2.resize(rotated, (16, 16), interpolation=cv2.INTER_LANCZOS4)
+
+		# 将变换完成后的图像进行二值化
+		for i in range(f_image.shape[0]):
+			for j in range(f_image.shape[1]):
+				if f_image[i, j] > 180:
+					f_image[i, j] = 255
+				else:
+					f_image[i, j] = 0
+
+		# cv2.namedWindow('demo', 0)
+		# cv2.imshow("demo", f_image)
+		# cv2.waitKey(0)
+		# cv2.destroyAllWindows()
+
+		r_list.append([n_image[0], f_image])
+
+	return r_list
+
+
+def eigenvalue_extraction(image_list):
+	"""
+	对字符图片进行特征值提取，划分为16个区域并计算每一个区域内的像素个数
+	:param image_list: 图像列表
+	:return: 字母的特征值列表
+	"""
+	e_list = []
+	for n_image in image_list:
+		image = n_image[1]
+		i_height = image.shape[0]
+		i_width = image.shape[1]
+
+		n_list = [0] * 16
+		for i in range(i_height):
+			for j in range(i_width):
+				index = int(i / 4) * 4 + int(j / 4)
+				if image[i, j] == 0:
+					n_list[index] += 1
+
+		e_list.append([n_image[0], n_list])
+
+	return e_list
+
+
+def save_data_to_database(data_list):
+	"""
+	将特征列表存入数据库
+	:param data_list: 数据列表
+	:return:
+	"""
+	db = pymysql.connect("localhost", "root", "root", "verification_code")
+	cursor = db.cursor()
+
+	truncate_sql = "TRUNCATE TABLE character_data"
+	cursor.execute(truncate_sql)
+
+	for data in data_list:
+		sql = "INSERT INTO character_data(character, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (
+		data[0], data[1][0], data[1][1], data[1][2], data[1][3], data[1][4], data[1][5], data[1][6], data[1][7],
+		data[1][8], data[1][9], data[1][10], data[1][11], data[1][12], data[1][13], data[1][14], data[1][15])
+
+		cursor.execute(sql)
+
+	try:
+		db.commit()
+	except:
+		db.rollback()
+
 
 def image_processing():
 	"""
@@ -252,7 +370,7 @@ def image_processing():
 	:return:
 	"""
 	# 读取验证码列表
-	img_list = read_images('./images')
+	img_list = read_images('./test_images')
 
 	# 图像灰度化
 	g_img_list = gray_scale(img_list)
@@ -261,15 +379,22 @@ def image_processing():
 	b_img_list = binarization(g_img_list)
 
 	# 图像去除噪点
-	n_image_list = noise_processing(b_img_list, 7, 2)
+	n_img_list = noise_processing(b_img_list, 7, 2)
 
 	# 填充图像字母
-	f_image_list = fill_color(n_image_list)
+	f_img_list = fill_color(n_img_list)
 
-	# 分离各个字符并存入数组
-	character_list = divide_characters(f_image_list)
+	# 分离各个字符
+	character_list = divide_characters(f_img_list)
 
-	print()
+	# 旋转字符
+	r_character_list = rotate_character(character_list)
+
+	# 特征值提取
+	e_character_list = eigenvalue_extraction(r_character_list)
+
+	# 存入数据库
+	save_data_to_database(e_character_list)
 
 
 if __name__ == '__main__':
