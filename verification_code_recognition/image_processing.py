@@ -352,9 +352,11 @@ def save_data_to_database(data_list):
 	cursor.execute(truncate_sql)
 
 	for data in data_list:
-		sql = "INSERT INTO character_data(character, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (
-		data[0], data[1][0], data[1][1], data[1][2], data[1][3], data[1][4], data[1][5], data[1][6], data[1][7],
-		data[1][8], data[1][9], data[1][10], data[1][11], data[1][12], data[1][13], data[1][14], data[1][15])
+		sql = """
+		INSERT INTO character_data VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')
+		""" % (
+			data[0], data[1][0], data[1][1], data[1][2], data[1][3], data[1][4], data[1][5], data[1][6], data[1][7],
+			data[1][8], data[1][9], data[1][10], data[1][11], data[1][12], data[1][13], data[1][14], data[1][15])
 
 		cursor.execute(sql)
 
@@ -370,7 +372,7 @@ def image_processing():
 	:return:
 	"""
 	# 读取验证码列表
-	img_list = read_images('./test_images')
+	img_list = read_images('./images')
 
 	# 图像灰度化
 	g_img_list = gray_scale(img_list)
