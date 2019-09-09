@@ -136,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.image_processing">
+  <component name="RunManager" selected="Python.homework1">
     <configuration name="get_subtitles" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,6 +159,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="homework1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pattern recognition" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pattern recognition/homework1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="image_processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,28 +195,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/image_processing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="query_scores" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/educational_system/WHU" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/educational_system/WHU/query_scores.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.homework1" />
         <item itemvalue="Python.image_processing" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.get_subtitles" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.query_scores" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +337,7 @@
       <workItem from="1567951167812" duration="1524000" />
       <workItem from="1567955325243" duration="1943000" />
       <workItem from="1567958393558" duration="301000" />
-      <workItem from="1568031995468" duration="211000" />
+      <workItem from="1568031995468" duration="1815000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -591,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567958671650</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="commit-去除已经完成的TODO">
+      <created>1568032248701</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1568032248701</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -672,7 +679,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-The problem of unable to read model has been solved. It is a problem of random number seed. It needs to be compiled for prediction function.-2019-7-5 01:01:08" />
     <MESSAGE value="commit-数据模型载入测试成功，已可以载入保存在文件中的数据模型。已可以对载入的模型进行使用，并依据此模型(迭代100次)进行了新评论集的预测，可以得到结果，结果准确率尚且不错，有待进行更多迭代次数模型的建立和测试。" />
     <MESSAGE value="commit-2000次迭代的数据模型建立成功，并通过预测测试" />
     <MESSAGE value="commit-PHP与Python连接部分编写完毕，已测试通过连接并可在PHP中调用Python脚本" />
@@ -697,7 +703,8 @@
     <MESSAGE value="commit-完成验证码字符的分隔，将每一个字符单独保存" />
     <MESSAGE value="commit-完成字符的旋转和统一大小" />
     <MESSAGE value="commit-抽取字符特征值并存入数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-抽取字符特征值并存入数据库" />
+    <MESSAGE value="commit-去除已经完成的TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-去除已经完成的TODO" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1567860569489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
@@ -738,6 +745,7 @@
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd_test_add.coverage" NAME="Twisted Trial for test_add.TestAdd.test_add Coverage Results" MODIFIED="1562568386799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$naive_bayes_classification.coverage" NAME="naive_bayes_classification Coverage Results" MODIFIED="1562686230533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
     <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1565429198332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
+    <SUITE FILE_PATH="coverage/Program$homework1.coverage" NAME="homework1 Coverage Results" MODIFIED="1568033722368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pattern recognition" />
     <SUITE FILE_PATH="coverage/Program$CSDN.coverage" NAME="CSDN Coverage Results" MODIFIED="1562146540898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$score_analysis.coverage" NAME="score_analysis Coverage Results" MODIFIED="1562600889372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
     <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
