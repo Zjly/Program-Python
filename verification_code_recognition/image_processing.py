@@ -145,7 +145,7 @@ def fill_color(image_list):
 					color += 1
 					overflow_filling(image, i, j, color)
 
-					# 过滤噪点的颜色填充 TODO 此处需要处理一下分割出超过4个字母的部分 目前只是暂且屏蔽
+					# 过滤噪点的颜色填充
 					if num > 20 and result_num < 4:
 						colors[result_num] = color
 						result_num += 1
