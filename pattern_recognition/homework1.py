@@ -18,7 +18,7 @@ def question2():
 	"""
 	x = numpy.array([[4, 5, 1], [3, 1, 0], [2, 3, 2]])
 	print("2.\nX的逆矩阵: \n", numpy.linalg.inv(x))
-	print("COV(X): \n", numpy.cov(x), end="\n\n")
+	print("COV(X): \n", numpy.cov(x.T), end="\n\n")
 
 
 def question3():
