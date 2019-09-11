@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-修改模式识别作业代码，加入矩阵的转置以正确计算协方差矩阵">
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/auto_get_timetable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/image_recognition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification_code_recognition/r_images/image9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pattern_recognition/homework1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pattern_recognition/homework1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verification_code_recognition/get_verification_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/verification_code_recognition/get_verification_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verification_code_recognition/recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/verification_code_recognition/machine_learning_recognition.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,18 +135,18 @@
     <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Coding\Python\Program\honkai_impact_3" />
-      <recent name="E:\Coding\Python\Program\summer_battle\games" />
-      <recent name="E:\Coding\Python\Program\educational_system\WHU" />
-      <recent name="E:\Coding\Python\Program\practical_training\machine_learning\comments_emotional_analysis\learn_files" />
-      <recent name="E:\Coding\Python\Program\educational_system\WHU\timetable" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
       <recent name="E:\Coding\Python\Program\practical_training\machine_learning\classification_of_courses\naive_bayes" />
       <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses" />
       <recent name="E:\Coding\Python\Program" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\verification_code_recognition" />
+      <recent name="E:\Coding\Python\Program\honkai_impact_3" />
+      <recent name="E:\Coding\Python\Program\summer_battle\games" />
+      <recent name="E:\Coding\Python\Program\educational_system\WHU" />
+      <recent name="E:\Coding\Python\Program\practical_training\machine_learning\comments_emotional_analysis\learn_files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -147,30 +161,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.homework1">
-    <configuration name="homework1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pattern_recognition" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pattern_recognition/homework1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.auto_get_timetable">
+    <configuration name="auto_get_timetable" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -183,7 +175,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/recognition.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/auto_get_timetable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,7 +184,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="get_verification_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,7 +197,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/get_verification_code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="image_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/verification_code_recognition" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verification_code_recognition/image_recognition.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,9 +230,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.homework1" />
-        <item itemvalue="Python.recognition" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.auto_get_timetable" />
+        <item itemvalue="Python.image_recognition" />
+        <item itemvalue="Python.get_verification_code" />
       </list>
     </recent_temporary>
   </component>
@@ -299,6 +313,8 @@
       <workItem from="1567958393558" duration="301000" />
       <workItem from="1568031995468" duration="10908000" />
       <workItem from="1568104016261" duration="211000" />
+      <workItem from="1568123579616" duration="1431000" />
+      <workItem from="1568198886472" duration="7368000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -573,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568047329164</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="commit-修改模式识别作业代码，加入矩阵的转置以正确计算协方差矩阵">
+      <created>1568123643031</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1568123643031</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -654,8 +677,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-PHP与Python连接部分编写完毕，已测试通过连接并可在PHP中调用Python脚本" />
-    <MESSAGE value="commit-爬取教务系统信息小项目，完成课程页面的登录并下载源码" />
     <MESSAGE value="commit-完成根据课程名自动判断课程类型的功能，并完成该机器学习模型的建立，通过了准确率测试" />
     <MESSAGE value="commit-修改项目结构，完成判断课程类型的功能的朴素贝叶斯算法的实现，完成深度神经网络预测与PHP的链接代码" />
     <MESSAGE value="commit-对机器学习深度神经网络的建立的每一步加上注释，标注出网络的构筑层次" />
@@ -679,7 +700,9 @@
     <MESSAGE value="commit-去除已经完成的TODO" />
     <MESSAGE value="commit-完成模式识别homework1" />
     <MESSAGE value="commit-完成验证码识别的机器学习模型训练，完成神经网络训练并保存模型" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-完成验证码识别的机器学习模型训练，完成神经网络训练并保存模型" />
+    <MESSAGE value="commit-修改模式识别作业代码，加入矩阵的转置以正确计算协方差矩阵" />
+    <MESSAGE value="commit-no reason" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-no reason" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
@@ -690,6 +713,7 @@
     <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$query_scores__1_.coverage" NAME="query_scores (1) Coverage Results" MODIFIED="1563204346577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
     <SUITE FILE_PATH="coverage/Program$collaborative_filtering_algorithm.coverage" NAME="collaborative_filtering_algorithm Coverage Results" MODIFIED="1562836760602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
+    <SUITE FILE_PATH="coverage/Program$auto_get_timetable.coverage" NAME="auto_get_timetable Coverage Results" MODIFIED="1568205671290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$write_comments_to_database.coverage" NAME="write_comments_to_database Coverage Results" MODIFIED="1562751263133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning1.coverage" NAME="comments_machine_learning1 Coverage Results" MODIFIED="1562259009981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
@@ -703,12 +727,14 @@
     <SUITE FILE_PATH="coverage/Program$model_predict1.coverage" NAME="model_predict1 Coverage Results" MODIFIED="1562259063180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$devide_comments.coverage" NAME="devide_comments Coverage Results" MODIFIED="1562746821862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$connect_test.coverage" NAME="connect_test Coverage Results" MODIFIED="1562051581948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
+    <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1568204482651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$school_timetable.coverage" NAME="school_timetable Coverage Results" MODIFIED="1562855304042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
     <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562136264678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
     <SUITE FILE_PATH="coverage/Program$precision_replenishment.coverage" NAME="precision_replenishment Coverage Results" MODIFIED="1564748638996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
-    <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1562856136366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
+    <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1568201626762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning.coverage" NAME="comments_machine_learning Coverage Results" MODIFIED="1568044295252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
+    <SUITE FILE_PATH="coverage/Program$machine_learning_recognition.coverage" NAME="machine_learning_recognition Coverage Results" MODIFIED="1568199885241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning2.coverage" NAME="comments_machine_learning2 Coverage Results" MODIFIED="1562295026765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$snow_NLP.coverage" NAME="snow_NLP Coverage Results" MODIFIED="1562258583657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
@@ -729,7 +755,7 @@
     <SUITE FILE_PATH="coverage/Program$sensitive_words_analysis.coverage" NAME="sensitive_words_analysis Coverage Results" MODIFIED="1562381136945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
     <SUITE FILE_PATH="coverage/Program$get_ratio.coverage" NAME="get_ratio Coverage Results" MODIFIED="1564744148464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
     <SUITE FILE_PATH="coverage/Program$verification_code_send.coverage" NAME="verification_code_send Coverage Results" MODIFIED="1562642150294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/verification_code" />
-    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1563456140999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1568204361696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1567958310319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562325733111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/test_learn" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />

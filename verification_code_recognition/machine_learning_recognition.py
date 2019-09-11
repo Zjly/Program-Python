@@ -110,5 +110,5 @@ def DNN(data):
 
 if __name__ == '__main__':
 	data_list = read_data_from_database()
-# machine_learning(data_list)
-# DNN(data_list)
+	machine_learning(data_list)
+	# DNN(data_list)

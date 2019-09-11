@@ -16,11 +16,11 @@ def get_verification_code():
 
 	image_url = "http://218.197.150.140/servlet/GenImg"
 
-	for i in range(100):
+	for i in range(10):
 		res = opener.open(request.Request(image_url))
 		temp_image = BytesIO(res.read())
 		image = PIL.Image.open(temp_image)
-		image.save(f"./images/未标注{i}.jpg")
+		image.save(f"./r_images/image{i}.jpg")
 
 
 if __name__ == '__main__':
