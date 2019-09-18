@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/homework1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/sakura.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/sakura_grayscale_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/sakura_grayscale_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/sakura_grayscale_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/sakura_grayscale_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/sakura_grayscale_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/sakura_grayscale_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/west_lake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/west_lake_equalization.png" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-上传数字图像处理homework1图像处理结果">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/digital_image_processing/homework1/homework1.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/digital_image_processing/homework1/homework1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -268,6 +259,8 @@
       <workItem from="1568704537998" duration="4221000" />
       <workItem from="1568712591124" duration="1096000" />
       <workItem from="1568729232019" duration="3432000" />
+      <workItem from="1568732928345" duration="252000" />
+      <workItem from="1568792601421" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -577,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568732797000</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="commit-上传数字图像处理homework1图像处理结果">
+      <created>1568732989598</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1568732989598</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -658,7 +658,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-修改与Linux服务器上的PHP的连接部分的代码；重新标记评论集，使其更精确，并以此新建立模型并通过情绪分析测试；编写课程推荐算法（基于物品的协同过滤算法）" />
     <MESSAGE value="commit-编写基于物品的协同过滤的课程推荐算法完成，得到推荐课程的课程号" />
     <MESSAGE value="commit-编写推荐算法的课程显示，并编写此功能链接PHP部分的代码" />
     <MESSAGE value="commit-查询教务系统信息时需要手动输入用户名和密码，提高安全性；合并爬虫和分析py文件，消除html文件的生成" />
@@ -683,7 +682,8 @@
     <MESSAGE value="commit-完成模式识别homework2" />
     <MESSAGE value="commit-调整文件夹层次关系" />
     <MESSAGE value="commit-完成数字图像处理homework1" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-完成数字图像处理homework1" />
+    <MESSAGE value="commit-上传数字图像处理homework1图像处理结果" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-上传数字图像处理homework1图像处理结果" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
@@ -729,7 +729,7 @@
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd_test_add.coverage" NAME="Twisted Trial for test_add.TestAdd.test_add Coverage Results" MODIFIED="1562568386799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$naive_bayes_classification.coverage" NAME="naive_bayes_classification Coverage Results" MODIFIED="1562686230533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
     <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1565429198332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
-    <SUITE FILE_PATH="coverage/Program$homework1.coverage" NAME="homework1 Coverage Results" MODIFIED="1568730479030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_image_processing/homework1" />
+    <SUITE FILE_PATH="coverage/Program$homework1.coverage" NAME="homework1 Coverage Results" MODIFIED="1568792868869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_image_processing/homework1" />
     <SUITE FILE_PATH="coverage/Program$CSDN.coverage" NAME="CSDN Coverage Results" MODIFIED="1562146540898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$score_analysis.coverage" NAME="score_analysis Coverage Results" MODIFIED="1562600889372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
     <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />

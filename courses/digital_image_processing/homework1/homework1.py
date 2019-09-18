@@ -88,10 +88,15 @@ def histogram_equalization(image):
 	for i in range(1, 256):
 		cumulative_probability_array[i] = cumulative_probability_array[i - 1] + probability_array[i]
 
+	# 转换数组，后续可以进行查表计算，优化程序速度
+	convert_array = np.zeros(256)
+	for i in range(256):
+		convert_array[i] = int(cumulative_probability_array[i] * 255 + 0.5)
+
 	# 进行直方图均衡化计算，进行取整扩展
 	for i in range(i_height):
 		for j in range(i_width):
-			image[i, j] = int(cumulative_probability_array[image[i, j]] * 255 + 0.5)
+			image[i, j] = convert_array[image[i, j]]
 
 	# 显示直方图均衡化之后的图像
 	cv2.namedWindow('demo', 0)
