@@ -4,7 +4,6 @@
     <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-增加点到矩阵的马氏距离计算">
       <change afterPath="$PROJECT_DIR$/courses/digital_media_communication/homework2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/honkai_impact_3/supply_system/precision_replenishment.py" beforeDir="false" afterPath="$PROJECT_DIR$/honkai_impact_3/supply_system/precision_replenishment.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.precision_replenishment">
+  <component name="RunManager" selected="Python.homework2">
     <configuration name="homework2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,8 +194,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.precision_replenishment" />
         <item itemvalue="Python.homework2" />
+        <item itemvalue="Python.precision_replenishment" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +288,7 @@
       <workItem from="1569570685749" duration="711000" />
       <workItem from="1569597518932" duration="55000" />
       <workItem from="1569599361995" duration="2360000" />
+      <workItem from="1569673361239" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1562052484143</created>
@@ -619,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568794663425</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="commit-增加加入武器保底之后的抽取测试">
+      <created>1569673480577</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1569673480577</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -700,7 +707,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-查询教务系统信息时需要手动输入用户名和密码，提高安全性；合并爬虫和分析py文件，消除html文件的生成" />
     <MESSAGE value="commit-编写崩坏3夏日大作战游戏，完成琪亚娜和德丽莎两个女武神的类，有待编写游戏回合流程" />
     <MESSAGE value="commit-完成琪亚娜模型和德丽莎模型建立，完成琪亚娜和德丽莎比赛逻辑，测试1000000场成功" />
     <MESSAGE value="commit-完成符华模型和八重樱模型建立，完成符华和八重樱比赛逻辑，测试1000000场成功" />
@@ -725,7 +731,8 @@
     <MESSAGE value="commit-上传数字图像处理homework1图像处理结果" />
     <MESSAGE value="commit-优化数字图像处理homework1中的算法，对每个像素值操作的时候进行查表而不是单独计算" />
     <MESSAGE value="commit-增加点到矩阵的马氏距离计算" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-增加点到矩阵的马氏距离计算" />
+    <MESSAGE value="commit-增加加入武器保底之后的抽取测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-增加加入武器保底之后的抽取测试" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
@@ -757,7 +764,7 @@
     <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
     <SUITE FILE_PATH="coverage/Program$precision_replenishment.coverage" NAME="precision_replenishment Coverage Results" MODIFIED="1569673438594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
     <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1568201626762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
-    <SUITE FILE_PATH="coverage/Program$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1569570725430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_media_communication" />
+    <SUITE FILE_PATH="coverage/Program$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1569673546258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_media_communication" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning.coverage" NAME="comments_machine_learning Coverage Results" MODIFIED="1568044295252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$machine_learning_recognition.coverage" NAME="machine_learning_recognition Coverage Results" MODIFIED="1568199885241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning2.coverage" NAME="comments_machine_learning2 Coverage Results" MODIFIED="1562295026765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
