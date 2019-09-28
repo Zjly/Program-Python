@@ -114,7 +114,46 @@ def get_num_of_graduation2():
 		elif result == "up圣痕（上）":
 			holy_scar1 += 1
 		elif result == "up圣痕（中）":
-			holy_scar2 = 1
+			holy_scar2 += 1
+		elif result == "up圣痕（下）":
+			holy_scar3 += 1
+
+	return count
+
+
+def get_num_of_graduation3():
+	"""
+	得到毕业装备的抽取数，计算武器保底
+	:return: 毕业装备的抽取数
+	"""
+	global num_in_ten
+
+	weapon = 0
+	holy_scar1 = 0
+	holy_scar2 = 0
+	holy_scar3 = 0
+
+	count = 0
+
+	# 算上2换1的情况，进行各种条件的判断
+	while not (weapon >= 1 and ((holy_scar1 >= 1 and holy_scar2 >= 1 and holy_scar3 >= 1) or (
+			holy_scar1 + holy_scar2 + holy_scar3 >= 4 and (
+			(holy_scar1 >= 1 and holy_scar2 >= 1) or (holy_scar1 >= 1 and holy_scar3 >= 1) or (
+			holy_scar2 >= 1 and holy_scar3 >= 1))))):
+		count += 1
+
+		if count == 60 and weapon == 0:
+			weapon += 1
+			num_in_ten = 0
+			continue
+
+		result = get_equipment()
+		if result == "up武器":
+			weapon += 1
+		elif result == "up圣痕（上）":
+			holy_scar1 += 1
+		elif result == "up圣痕（中）":
+			holy_scar2 += 1
 		elif result == "up圣痕（下）":
 			holy_scar3 += 1
 
@@ -126,12 +165,12 @@ def get_avg_count():
 	计算平均出货的次数
 	:return:
 	"""
-	num = 100
+	num = 100000
 	sum_of_count = 0
 	for i in range(num):
-		count = get_num_of_graduation2()
+		count = get_num_of_graduation3()
 		sum_of_count += count
-		# print(f"{i}: 毕业所需{count}抽")
+	# print(f"{i}: 毕业所需{count}抽")
 
 	print(f"测试次数: {num}, 平均毕业套所需{sum_of_count / num}次抽取！")
 
