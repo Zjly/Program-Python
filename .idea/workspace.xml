@@ -1,11 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-完成数字图像处理homework2">
-      <change afterPath="$PROJECT_DIR$/courses/digital_media_communication/homework3.py" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-完成数字媒介传播homework3，调整数字图像处理homework2格式">
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/get_verification_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/image_digitization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/image_processing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/image_recognition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/0HLU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/0KZD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/0wYz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/0yLf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/1ppv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/2xbG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/3JwG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/3Udu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/3xHM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/4e9N.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/5sJt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/6F21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/6Ykq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/6kYw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/75C0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/7FiY.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/8uiy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/9HcA.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/AfvG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/AvMJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/BUpo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/Bfko.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/Bz7r.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/CpoD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/DR8A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/Dpmc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/DyLK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/EmpF.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/FipL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/H9qO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/HEza.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/JBMC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/La1i.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/PPKg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/QLPL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/QTEW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/SDUc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/TxnX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/URyi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/VWvz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/VhLU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/WMPO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/XSqK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/XWR9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/XtKT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/YOek.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/Ydov.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/Yovk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/abiN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/ai74.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/bdHO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/bizy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/caJb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/dvSa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/f4uV.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/fZQt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/fbmf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/gLKA.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/gbAm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/h3kQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/jsMC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/kk7w.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/mQoX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/n5VT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/nFDn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/nzWs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/psjN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/rAKz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/rt1h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/sHPD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/tMu2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/tXxx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/tfxg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/uRgY.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/uVFC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/ug7f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/ujid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/vdM0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/vhRj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/vjLf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/vxEn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/w3X0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/wa2d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/xq9L.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/xtd6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/yOjx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/zfZT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/zgQt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/zoRh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/images/zwKO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/digital_image_processing/homework2/noise_image/salt_and_pepper_image_0.1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/digital_image_processing/homework2/noise_image/salt_and_pepper_image_0.25.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +182,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/practical_training/connect_php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/courses/business_intelligence" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,21 +191,22 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\courses\business_intelligence" />
+      <recent name="E:\Coding\Python\Program\courses\business_intelligence\get_data" />
       <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
       <recent name="E:\Coding\Python\Program\practical_training\machine_learning\classification_of_courses\naive_bayes" />
       <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses" />
-      <recent name="E:\Coding\Python\Program" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\courses\business_intelligence" />
       <recent name="E:\Coding\Python\Program\courses\digital_image_processing\homework1" />
       <recent name="E:\Coding\Python\Program\courses" />
       <recent name="E:\Coding\Python\Program\verification_code_recognition" />
       <recent name="E:\Coding\Python\Program\honkai_impact_3" />
-      <recent name="E:\Coding\Python\Program\summer_battle\games" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -118,8 +221,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.homework3">
-    <configuration name="homework2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.image_recognition">
+    <configuration name="get_verification_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,12 +230,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/digital_image_processing/homework2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/business_intelligence" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/digital_image_processing/homework2/homework2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/business_intelligence/get_verification_code.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +244,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="homework3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="image_processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -149,12 +252,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/digital_media_communication" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/business_intelligence" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/digital_media_communication/homework3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/business_intelligence/image_processing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,7 +266,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="image_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -171,12 +274,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/digital_media_communication" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/business_intelligence" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/digital_media_communication/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/business_intelligence/image_recognition.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,9 +290,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.homework3" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.homework2" />
+        <item itemvalue="Python.image_recognition" />
+        <item itemvalue="Python.image_processing" />
+        <item itemvalue="Python.get_verification_code" />
       </list>
     </recent_temporary>
   </component>
@@ -293,13 +396,10 @@
       <workItem from="1571024318993" duration="599000" />
       <workItem from="1571042919693" duration="5608000" />
       <workItem from="1571063817309" duration="34000" />
-    </task>
-    <task id="LOCAL-00004" summary="commit-Solving the problem of crawling multiple comments">
-      <created>1562122813210</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1562122813210</updated>
+      <workItem from="1571071403862" duration="59000" />
+      <workItem from="1573470108621" duration="110000" />
+      <workItem from="1573474823715" duration="10539000" />
+      <workItem from="1573490630564" duration="1022000" />
     </task>
     <task id="LOCAL-00005" summary="commit-2019-7-3 11:33:52">
       <created>1562124847852</created>
@@ -637,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570625749729</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="commit-完成数字媒介传播homework3，调整数字图像处理homework2格式">
+      <created>1571071447276</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1571071447277</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -718,7 +825,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-完成图像去除噪点工作" />
     <MESSAGE value="commit-编写崩坏3的精准抽取概率计算，编写精准抽取毕业次数计算" />
     <MESSAGE value="commit-学习斗鱼弹幕的爬取" />
     <MESSAGE value="commit-斗鱼弹幕爬取优化" />
@@ -743,7 +849,8 @@
     <MESSAGE value="commit-数字图像处理homework2，高斯噪声添加完毕" />
     <MESSAGE value="commit-数字图像处理homework2，完成噪声添加，完成算数均值滤波器" />
     <MESSAGE value="commit-完成数字图像处理homework2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-完成数字图像处理homework2" />
+    <MESSAGE value="commit-完成数字媒介传播homework3，调整数字图像处理homework2格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-完成数字媒介传播homework3，调整数字图像处理homework2格式" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
@@ -770,7 +877,8 @@
     <SUITE FILE_PATH="coverage/Program$model_predict1.coverage" NAME="model_predict1 Coverage Results" MODIFIED="1562259063180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$devide_comments.coverage" NAME="devide_comments Coverage Results" MODIFIED="1562746821862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$connect_test.coverage" NAME="connect_test Coverage Results" MODIFIED="1562051581948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
-    <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1568204482651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$get_verification_code__1_.coverage" NAME="get_verification_code (1) Coverage Results" MODIFIED="1573485867338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1573491364065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
     <SUITE FILE_PATH="coverage/Program$school_timetable.coverage" NAME="school_timetable Coverage Results" MODIFIED="1562855304042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
     <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562136264678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
@@ -784,6 +892,7 @@
     <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1563454818951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1562230503327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1573475547718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence/get_data" />
     <SUITE FILE_PATH="coverage/Program$timetable_analysis__1_.coverage" NAME="timetable_analysis (1) Coverage Results" MODIFIED="1562599610896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
     <SUITE FILE_PATH="coverage/Program$unit_test.coverage" NAME="unit_test Coverage Results" MODIFIED="1562567823090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$create_file.coverage" NAME="create_file Coverage Results" MODIFIED="1562057925214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
@@ -800,8 +909,8 @@
     <SUITE FILE_PATH="coverage/Program$get_ratio.coverage" NAME="get_ratio Coverage Results" MODIFIED="1564744148464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
     <SUITE FILE_PATH="coverage/Program$adding_noise.coverage" NAME="adding_noise Coverage Results" MODIFIED="1570591887489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_image_processing/homework2" />
     <SUITE FILE_PATH="coverage/Program$verification_code_send.coverage" NAME="verification_code_send Coverage Results" MODIFIED="1562642150294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/verification_code" />
-    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1568204361696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
-    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1567958310319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1573487301869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1573489796398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
     <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562325733111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/test_learn" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
