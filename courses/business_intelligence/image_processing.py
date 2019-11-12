@@ -1,7 +1,7 @@
 import os
 import cv2
 
-from courses.business_intelligence.image_digitization import image_digitization
+from courses.business_intelligence.image_digitization import image_digitization, eigenvalue_extraction2, eigenvalue_extraction
 
 
 def read_images(path):
@@ -28,15 +28,7 @@ def save_data_to_csv(data_list):
 	:param data_list: 特征列表
 	:return:
 	"""
-	with open("data.csv", "w", encoding="utf-8") as fp:
-		for data in data_list:
-			fp.write(data[0])
-			fp.write(",")
-			for i in range(len(data[1])):
-				fp.write(str(data[1][i]))
-				if i != len(data[1]) - 1:
-						fp.write(",")
-			fp.write("\n")
+	data_list.to_csv("data.csv", sep=",", header=False, index=False)
 
 
 def image_processing():
@@ -47,11 +39,15 @@ def image_processing():
 	# 读取验证码列表
 	img_list = read_images('./images')
 
-	# 字符特征值列表
-	e_character_list = image_digitization(img_list)
+	# 字符列表
+	r_character_list = image_digitization(img_list)
+
+	# 特征值提取
+	e_character_list = eigenvalue_extraction2(r_character_list)
 
 	# 存入csv文件中
 	save_data_to_csv(e_character_list)
+
 
 if __name__ == '__main__':
 	image_processing()

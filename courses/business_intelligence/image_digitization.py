@@ -1,5 +1,11 @@
+import warnings
+
 import cv2
 import numpy
+import pandas
+from sklearn.decomposition import PCA
+import joblib
+
 
 def gray_scale(image_list):
 	"""
@@ -280,7 +286,7 @@ def rotate_character(image_list):
 		for i in range(f_image.shape[0]):
 			for j in range(f_image.shape[1]):
 				if f_image[i, j] > 180:
-					f_image[i, j] = 255
+					f_image[i, j] = 1
 				else:
 					f_image[i, j] = 0
 
@@ -293,7 +299,7 @@ def eigenvalue_extraction(image_list):
 	"""
 	对字符图片进行特征值提取，划分为16个区域并计算每一个区域内的像素个数
 	:param image_list: 图像列表
-	:return: 字母的特征值列表
+	:return: 标记，字母的特征值列表
 	"""
 	e_list = []
 	for n_image in image_list:
@@ -301,16 +307,56 @@ def eigenvalue_extraction(image_list):
 		i_height = image.shape[0]
 		i_width = image.shape[1]
 
-		n_list = [0] * 16
+		n_list = [0] * 17
+		n_list[0] = n_image[0]
 		for i in range(i_height):
 			for j in range(i_width):
-				index = int(i / 4) * 4 + int(j / 4)
+				index = int(i / 4) * 4 + int(j / 4) + 1
 				if image[i, j] == 0:
 					n_list[index] += 1
 
-		e_list.append([n_image[0], n_list])
+		e_list.append(n_list)
+
+	e_list = pandas.DataFrame(e_list)
 
 	return e_list
+
+
+def eigenvalue_extraction2(image_list):
+	"""
+	使用主成分分析对数据进行降维
+	:param image_list: 图像列表
+	:return: 标记，字母的特征值列表
+	"""
+	e_list = []
+	for n_image in image_list:
+		image = n_image[1]
+		i_height = image.shape[0]
+		i_width = image.shape[1]
+
+		n_list = [n_image[0]]
+		for i in range(i_height):
+			for j in range(i_width):
+				n_list.append(image[i, j])
+
+		e_list.append(n_list)
+
+	e_list = pandas.DataFrame(e_list)
+
+	pca = PCA(n_components='mle')
+	pca.fit(pandas.DataFrame(e_list.iloc[:, 1:]))
+
+	print('降维后的特征数: ' + str(pca.n_components_))
+
+	# 保存模型
+	joblib.dump(pca, 'pca.pickle')
+	reduced_X = pca.transform(pandas.DataFrame(e_list.iloc[:, 1:]))  # reduced_X为降维后的数据
+
+	name = e_list.iloc[:, 0:1]
+	reduced_X = pandas.DataFrame(reduced_X)
+	result = pandas.concat([name, reduced_X], axis=1, ignore_index=True)
+
+	return result
 
 
 def image_digitization(img_list):
@@ -336,7 +382,4 @@ def image_digitization(img_list):
 	# 旋转字符
 	r_character_list = rotate_character(character_list)
 
-	# 特征值提取
-	e_character_list = eigenvalue_extraction(r_character_list)
-
-	return e_character_list
+	return r_character_list
