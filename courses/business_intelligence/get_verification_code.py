@@ -20,7 +20,7 @@ def get_verification_code():
 		res = opener.open(request.Request(image_url))
 		temp_image = BytesIO(res.read())
 		image = PIL.Image.open(temp_image)
-		image.save(f"./r_images/image{i}.jpg")
+		image.save(f"./to_be_identified_images/image{i}.jpg")
 
 
 if __name__ == '__main__':

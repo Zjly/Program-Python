@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/pca.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-增加各种机器学习模型测试，增加主成分分析">
+      <change afterPath="$PROJECT_DIR$/courses/business_intelligence/model.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/business_intelligence/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/get_verification_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/get_verification_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/business_intelligence/image_digitization.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/image_digitization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/business_intelligence/image_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/image_processing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/business_intelligence/image_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/image_recognition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/pca.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/pca.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/courses/business_intelligence/to_be_identified_images/image9.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +105,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -303,14 +314,12 @@
       <workItem from="1573470108621" duration="110000" />
       <workItem from="1573474823715" duration="10539000" />
       <workItem from="1573490630564" duration="1262000" />
-      <workItem from="1573564233333" duration="7282000" />
-    </task>
-    <task id="LOCAL-00006" summary="commit-2019-7-3 16:58:58">
-      <created>1562144350306</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1562144350306</updated>
+      <workItem from="1573564233333" duration="7363000" />
+      <workItem from="1573610338476" duration="2662000" />
+      <workItem from="1573632336499" duration="640000" />
+      <workItem from="1573641241561" duration="4204000" />
+      <workItem from="1573696366277" duration="8503000" />
+      <workItem from="1573706872561" duration="6575000" />
     </task>
     <task id="LOCAL-00007" summary="commit-2019-7-3 23:06:27">
       <created>1562166393735</created>
@@ -648,31 +657,15 @@
       <option name="project" value="LOCAL" />
       <updated>1573491876021</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="commit-增加各种机器学习模型测试，增加主成分分析">
+      <created>1573571561948</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1573571561949</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="Twisted_Trial_for_test_machine_learning_TestMachine_learning_test_machine_learning - 2019.07.03 at 16h 32m 20s.xml">
-      <configuration name="Twisted Trial for test_machine_learning.TestMachine_learning.test_machine_learning" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 40m 35s.xml">
-      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 44m 34s.xml">
-      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 44m 46s.xml">
-      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 45m 19s.xml">
-      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Twisted_Trial_for_test_add_TestAdd_test_add - 2019.07.08 at 14h 46m 28s.xml">
-      <configuration name="Twisted Trial for test_add.TestAdd.test_add" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Twisted_Trial_for_test_add_TestAdd - 2019.07.08 at 14h 48m 18s.xml">
-      <configuration name="Twisted Trial for test_add.TestAdd" configurationId="tests" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -729,7 +722,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-学习斗鱼弹幕的爬取" />
     <MESSAGE value="commit-斗鱼弹幕爬取优化" />
     <MESSAGE value="commit-完成漫水填充算法的编写" />
     <MESSAGE value="commit-完成验证码字符的分隔，将每一个字符单独保存" />
@@ -754,7 +746,8 @@
     <MESSAGE value="commit-完成数字图像处理homework2" />
     <MESSAGE value="commit-完成数字媒介传播homework3，调整数字图像处理homework2格式" />
     <MESSAGE value="commit-编写商务智能课程项目设计代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-编写商务智能课程项目设计代码" />
+    <MESSAGE value="commit-增加各种机器学习模型测试，增加主成分分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-增加各种机器学习模型测试，增加主成分分析" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
@@ -782,7 +775,7 @@
     <SUITE FILE_PATH="coverage/Program$devide_comments.coverage" NAME="devide_comments Coverage Results" MODIFIED="1562746821862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$connect_test.coverage" NAME="connect_test Coverage Results" MODIFIED="1562051581948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
     <SUITE FILE_PATH="coverage/Program$get_verification_code__1_.coverage" NAME="get_verification_code (1) Coverage Results" MODIFIED="1573485867338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
-    <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1573571410223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1573722725768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
     <SUITE FILE_PATH="coverage/Program$school_timetable.coverage" NAME="school_timetable Coverage Results" MODIFIED="1562855304042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
     <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562136264678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
@@ -813,8 +806,8 @@
     <SUITE FILE_PATH="coverage/Program$get_ratio.coverage" NAME="get_ratio Coverage Results" MODIFIED="1564744148464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
     <SUITE FILE_PATH="coverage/Program$adding_noise.coverage" NAME="adding_noise Coverage Results" MODIFIED="1570591887489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_image_processing/homework2" />
     <SUITE FILE_PATH="coverage/Program$verification_code_send.coverage" NAME="verification_code_send Coverage Results" MODIFIED="1562642150294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/verification_code" />
-    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1573487301869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
-    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1573571365423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1573612432921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1573722463585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
     <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562325733111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/test_learn" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />

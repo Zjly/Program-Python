@@ -1,7 +1,8 @@
 import os
 import cv2
 
-from courses.business_intelligence.image_digitization import image_digitization, eigenvalue_extraction2, eigenvalue_extraction
+from courses.business_intelligence.image_digitization import image_digitization, principal_component_analysis, \
+	eigenvalue_extraction
 
 
 def read_images(path):
@@ -43,7 +44,7 @@ def image_processing():
 	r_character_list = image_digitization(img_list)
 
 	# 特征值提取
-	e_character_list = eigenvalue_extraction2(r_character_list)
+	e_character_list = principal_component_analysis(r_character_list)
 
 	# 存入csv文件中
 	save_data_to_csv(e_character_list)

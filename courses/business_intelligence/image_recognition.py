@@ -1,8 +1,10 @@
 import os
+
+import numpy
 import pandas
 import sklearn
 import joblib
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB, GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
@@ -55,7 +57,7 @@ def machine_learning(c_list, l_list):
 	"""
 	warnings.filterwarnings("ignore")
 
-	train_X, test_X, train_y, test_y = train_test_split(c_list, l_list, test_size=0.1, random_state=42)
+	train_X, test_X, train_y, test_y = train_test_split(c_list, l_list, test_size=0.3, random_state=42)
 
 	# 线性回归
 	# fit_intercept：是否计算截距。False-模型没有截距
@@ -72,13 +74,13 @@ def machine_learning(c_list, l_list):
 	# dual: n_samples > n_features取False（默认）
 	# C：正则化强度的反，值越小正则化强度越大
 	# n_jobs: 指定线程数
-	# random_state：随机数生成器
 	# fit_intercept: 是否需要常量
-	model = sklearn.linear_model.LogisticRegression(penalty='l2', dual=False, C=1.0, n_jobs=1, random_state=20,
-													fit_intercept=True)
+	model = sklearn.linear_model.LogisticRegression(penalty='l2', dual=False, C=1.0, n_jobs=4, fit_intercept=True)
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
-	print('逻辑回归算法的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	# print('逻辑回归算法的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	score = cross_val_score(model, X=c_list, y=l_list, cv=10)
+	print(f'逻辑回归算法的平均准确率为: {numpy.mean(score)}')
 
 	# 朴素贝叶斯
 	# alpha：平滑参数
@@ -96,13 +98,17 @@ def machine_learning(c_list, l_list):
 	model = BernoulliNB(alpha=1.0, binarize=0.0, fit_prior=True, class_prior=None)
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
-	print('朴素贝叶斯算法(伯努利分布)的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	# print('朴素贝叶斯算法(伯努利分布)的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	score = cross_val_score(model, X=c_list, y=l_list, cv=10)
+	print(f'朴素贝叶斯算法(伯努利分布)的平均准确率为: {numpy.mean(score)}')
 
 	# 高斯分布朴素贝叶斯
 	model = GaussianNB()
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
-	print('朴素贝叶斯算法(高斯分布)的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	# print('朴素贝叶斯算法(高斯分布)的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	score = cross_val_score(model, X=c_list, y=l_list, cv=10)
+	print(f'朴素贝叶斯算法(高斯分布)的平均准确率为: {numpy.mean(score)}')
 
 	# Decision Tree 决策树
 	# criterion ：特征选择准则gini/entropy
@@ -117,7 +123,9 @@ def machine_learning(c_list, l_list):
 								   min_impurity_decrease=0)
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
-	print('决策树算法的准确率为: {0}'.format(metrics.accuracy_score(prediction, test_y)))
+	# print('决策树算法的准确率为: {0}'.format(metrics.accuracy_score(prediction, test_y)))
+	score = cross_val_score(model, X=c_list, y=l_list, cv=10)
+	print(f'决策树算法的平均准确率为: {numpy.mean(score)}')
 
 	# 支持向量机
 	# C：误差项的惩罚参数C
@@ -126,7 +134,9 @@ def machine_learning(c_list, l_list):
 	model = SVC(C=1.0, kernel='rbf', gamma='auto')
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
-	print('支持向量机算法的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	# print('支持向量机算法的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	score = cross_val_score(model, X=c_list, y=l_list, cv=10)
+	print(f'支持向量机算法的平均准确率为: {numpy.mean(score)}')
 
 	# 神经网络
 	# hidden_layer_sizes: 元祖
@@ -147,18 +157,23 @@ def machine_learning(c_list, l_list):
 	# sgd：随机梯度下降
 	# adam： Kingma, Diederik, and Jimmy Ba提出的机遇随机梯度的优化器
 	model = MLPClassifier(activation='tanh', solver='adam', alpha=0.0001,
-						  learning_rate='adaptive', learning_rate_init=0.001, max_iter=200)
+						  learning_rate='adaptive', learning_rate_init=0.001, max_iter=1000)
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
-	print('神经网络算法的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	# print('神经网络算法的准确率为: {0}'.format(sklearn.metrics.accuracy_score(prediction, test_y)))
+	score = cross_val_score(model, X=c_list, y=l_list, cv=10)
+	joblib.dump(model, 'model.pickle')
+	print(f'神经网络算法的平均准确率为: {numpy.mean(score)}')
 
 	# K-Nearest Neighbours  K最近邻分类算法
 	# n_neighbors： 使用邻居的数目
 	# n_jobs：并行任务数
-	model = KNeighborsClassifier(n_neighbors=5, n_jobs=4)
+	model = KNeighborsClassifier(n_neighbors=3, n_jobs=4)
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
-	print('K近邻分类算法的准确率为: {0}'.format(metrics.accuracy_score(prediction, test_y)))
+	# print('K近邻分类算法的准确率为: {0}'.format(metrics.accuracy_score(prediction, test_y)))
+	score = cross_val_score(model, X=c_list, y=l_list, cv=10)
+	print(f'K近邻分类算法的平均准确率为: {numpy.mean(score)}')
 
 
 def recognition(c_list, l_list, g_list):
@@ -176,8 +191,7 @@ def recognition(c_list, l_list, g_list):
 
 	test_X = g_list
 
-	# K-Nearest Neighbours  K最近邻分类算法
-	model = KNeighborsClassifier(n_neighbors=3)
+	model = joblib.load('model.pickle')
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
 
@@ -193,7 +207,12 @@ def recognition(c_list, l_list, g_list):
 	return result
 
 
-def eigenvalue_extraction2(r_character_list):
+def principal_component_analysis(r_character_list):
+	"""
+	使用主成分分析进行特征提取
+	:param r_character_list: 字符列表
+	:return:
+	"""
 	e_list = []
 	for n_image in r_character_list:
 		image = n_image[1]
@@ -232,21 +251,21 @@ def image_recognition():
 	r_character_list = image_digitization(image_list)
 
 	# 特征值提取
-	e_character_list = eigenvalue_extraction2(r_character_list)
+	e_character_list = principal_component_analysis(r_character_list)
 
 	# 得到训练集
 	characteristics_list, label_list = read_data_from_csv()
 
 	# 机器学习方法测试
-	machine_learning(characteristics_list, label_list)
+	# machine_learning(characteristics_list, label_list)
 
 	# 进行识别
-	# result = recognition(characteristics_list, label_list, e_character_list.iloc[:, 1:])
-	# if result is None:
-	# 	print("识别失败!")
-	# 	exit()
-	#
-	# print(result)
+	result = recognition(characteristics_list, label_list, e_character_list.iloc[:, 1:])
+	if result is None:
+		print("识别失败!")
+		exit()
+
+	print(result)
 
 
 if __name__ == '__main__':

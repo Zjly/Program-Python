@@ -36,65 +36,55 @@ def binarization(image_list):
 	return binarization_image_list
 
 
-def noise_processing(image_list, threshold, times):
+def noise_processing(image_list):
 	"""
 	噪点处理
 	:param image_list: 图像列表
-	:param threshold: 阈值 代表一个点周围n个点颜色与之不同则更改该点的颜色
-	:param times: 算法调用的次数
-	:return: 去除噪点后的图像列表
-	"""
-	for i in range(times):
-		image_list = remove_noise(image_list, threshold)
-
-	return image_list
-
-
-def remove_noise(image_list, threshold):
-	"""
-	去除图像噪点
-	:param image_list: 图像列表
-	:param threshold: 阈值 代表一个点周围n个点颜色与之不同则更改该点的颜色
 	:return: 去除噪点后的图像列表
 	"""
 	for n_image in image_list:
 		image = n_image[1]
-		i_height = image.shape[0]
-		i_width = image.shape[1]
 
-		# 横向边框设定
-		for i in range(i_width):
-			image[0, i] = 255
-			image[i_height - 1, i] = 255
+		m_image = image.copy()
 
-		# 纵向边框设定
+		i_height = m_image.shape[0]
+		i_width = m_image.shape[1]
+
 		for i in range(i_height):
-			image[i, 0] = 255
-			image[i, i_width - 1] = 255
+			for j in range(i_width):
+				array = []
 
-		# 判定每一个像素
-		for i in range(1, i_height - 1):
-			for j in range(1, i_width - 1):
-				i_value = image[i, j]
+				# 进行中值滤波计算
+				for x in range(i - 1, i + 2):
+					for y in range(j - 1, j + 2):
+						if is_in_range(x, y, i_height, i_width):
+							array.append(m_image[x, y])
 
-				# 去除黑点周围噪点
-				if i_value == 0:
-					i_count = 0
-					for m in range(i - 1, i + 2):
-						for n in range(j - 1, j + 2):
-							if image[m, n] == 255:
-								i_count = i_count + 1
-					if i_count >= threshold:
-						image[i, j] = 255
-				else:
-					i_count = 0
-					for m in range(i - 1, i + 2):
-						for n in range(j - 1, j + 2):
-							if image[m, n] == 0:
-								i_count = i_count + 1
-					if i_count >= threshold:
-						image[i, j] = 0
+				# 对周围像素进行排序
+				array.sort()
+
+				# 取中值作为该像素的值
+				image[i, j] = array[int((len(array) - 1) / 2)]
+
 	return image_list
+
+
+def is_in_range(x, y, height, width):
+	"""
+	该像素是否在图像中
+	:param x: 像素X坐标
+	:param y: 像素Y坐标
+	:param height: 图像高度
+	:param width: 图像宽度
+	:return: 像素是否在图像中
+	"""
+	if x < 0 or x >= height:
+		return False
+
+	if y < 0 or y >= width:
+		return False
+
+	return True
 
 
 # 黑点的个数，通过与一个阈值的比较，确定是噪点还是字母
@@ -154,7 +144,7 @@ def overflow_filling(image, x, y, color):
 	:return:
 	"""
 	global num
-	if image[x, y] == 0:
+	if x < 30 and y < 120 and image[x, y] == 0:
 		image[x, y] = color
 		num += 1
 
@@ -163,12 +153,6 @@ def overflow_filling(image, x, y, color):
 		overflow_filling(image, x + 1, y, color)
 		overflow_filling(image, x, y - 1, color)
 		overflow_filling(image, x, y + 1, color)
-
-
-# overflow_filling(image, x - 1, y - 1, color)
-# overflow_filling(image, x - 1, y + 1, color)
-# overflow_filling(image, x + 1, y - 1, color)
-# overflow_filling(image, x + 1, y + 1, color)
 
 
 def divide_characters(image_list):
@@ -219,12 +203,6 @@ def divide_characters(image_list):
 				for j in range(width):
 					if image[i + up, j + left] == color:
 						p_image[i, j] = 0
-
-			# 这段代码可用来显示图像并缩放到合适大小
-			# cv2.namedWindow('demo', 0)
-			# cv2.imshow("demo", p_image)
-			# cv2.waitKey(0)
-			# cv2.destroyAllWindows()
 
 			# 保存图片名字和图片到end_image中
 			end_image = [n_image[0][c_num], p_image]
@@ -290,6 +268,11 @@ def rotate_character(image_list):
 				else:
 					f_image[i, j] = 0
 
+		# cv2.namedWindow('image', cv2.WINDOW_KEEPRATIO)
+		# cv2.imshow("image", f_image)
+		# cv2.waitKey(0)
+		# cv2.destroyAllWindows()
+
 		r_list.append([n_image[0], f_image])
 
 	return r_list
@@ -311,7 +294,9 @@ def eigenvalue_extraction(image_list):
 		n_list[0] = n_image[0]
 		for i in range(i_height):
 			for j in range(i_width):
+				# 获取索引
 				index = int(i / 4) * 4 + int(j / 4) + 1
+				# 加入指定的数组图像块中
 				if image[i, j] == 0:
 					n_list[index] += 1
 
@@ -322,7 +307,7 @@ def eigenvalue_extraction(image_list):
 	return e_list
 
 
-def eigenvalue_extraction2(image_list):
+def principal_component_analysis(image_list):
 	"""
 	使用主成分分析对数据进行降维
 	:param image_list: 图像列表
@@ -345,8 +330,6 @@ def eigenvalue_extraction2(image_list):
 
 	pca = PCA(n_components='mle')
 	pca.fit(pandas.DataFrame(e_list.iloc[:, 1:]))
-
-	print('降维后的特征数: ' + str(pca.n_components_))
 
 	# 保存模型
 	joblib.dump(pca, 'pca.pickle')
@@ -371,7 +354,7 @@ def image_digitization(img_list):
 	b_img_list = binarization(g_img_list)
 
 	# 图像去除噪点
-	n_img_list = noise_processing(b_img_list, 7, 2)
+	n_img_list = noise_processing(b_img_list)
 
 	# 填充图像字母
 	f_img_list = fill_color(n_img_list)
