@@ -38,14 +38,14 @@ def grayscale_image2(image):
 	# 储存分解图像的数组
 	g_image_array = []
 
-	# 对图像的每一位使用位运算进行提取并存入数组
+	# 对图像的每四位使用位运算进行提取并存入数组
 	for i in range(2):
 		g_image_array.append(image % 16)
 		image = image // 16
 
-	# 将提取后的图像中的0和1分别变为0和255进行二值化
+	# 将提取后的图像中的数扩展到8位
 	for i in range(len(g_image_array)):
-		g_image_array[i] = g_image_array[i] * 255
+		g_image_array[i] = g_image_array[i] * 16
 
 		# 显示当前灰度层次的图像
 		cv2.namedWindow('demo', 0)
