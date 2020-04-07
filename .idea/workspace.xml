@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/educational_system/WHU/GPA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/XML/Xpath.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +70,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -91,6 +95,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding\Python\Program\courses\XML" />
+      <recent name="E:\Coding\Python\Program\courses\business_intelligence" />
+      <recent name="E:\Coding\Python\Program\courses\digital_image_processing\homework1" />
+      <recent name="E:\Coding\Python\Program\courses" />
+      <recent name="E:\Coding\Python\Program\verification_code_recognition" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Coding\Python\Program\courses\business_intelligence" />
       <recent name="E:\Coding\Python\Program\courses\business_intelligence\get_data" />
@@ -98,27 +109,30 @@
       <recent name="E:\Coding\Python\Program\practical_training\machine_learning\classification_of_courses\naive_bayes" />
       <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Coding\Python\Program\courses\business_intelligence" />
-      <recent name="E:\Coding\Python\Program\courses\digital_image_processing\homework1" />
-      <recent name="E:\Coding\Python\Program\courses" />
-      <recent name="E:\Coding\Python\Program\verification_code_recognition" />
-      <recent name="E:\Coding\Python\Program\honkai_impact_3" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.query_scores">
+  <component name="RunManager" selected="Python.Xpath">
+    <configuration name="Xpath" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/XML" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/XML/Xpath.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="homework1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,28 +147,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/digital_image_processing/homework1/homework1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="image_processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/business_intelligence" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/business_intelligence/image_processing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -231,23 +223,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Xpath" />
         <item itemvalue="Python.query_scores" />
         <item itemvalue="Python.homework1" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.image_recognition" />
-        <item itemvalue="Python.image_processing" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\94247\AppData\Roaming\Subversion</configuration>
@@ -353,13 +335,7 @@
       <workItem from="1576934903702" duration="917000" />
       <workItem from="1577954050416" duration="965000" />
       <workItem from="1579160116291" duration="1917000" />
-    </task>
-    <task id="LOCAL-00009" summary="commit-2019-7-4 12:10:41">
-      <created>1562213461720</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1562213461720</updated>
+      <workItem from="1586246139403" duration="4902000" />
     </task>
     <task id="LOCAL-00010" summary="commit-The machine learning code is written, the test passes, and the complete model is built after crawling comments.">
       <created>1562227305314</created>
@@ -697,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576935191467</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="commit">
+      <created>1586246192994</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1586246192995</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -755,7 +738,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-完成验证码字符的分隔，将每一个字符单独保存" />
     <MESSAGE value="commit-完成字符的旋转和统一大小" />
     <MESSAGE value="commit-抽取字符特征值并存入数据库" />
     <MESSAGE value="commit-去除已经完成的TODO" />
@@ -780,13 +762,58 @@
     <MESSAGE value="commit-增加各种机器学习模型测试，增加主成分分析" />
     <MESSAGE value="commit-完成商务智能报告代码" />
     <MESSAGE value="commit-修复数字图像处理提取图像的高4比特和低4比特的错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-修复数字图像处理提取图像的高4比特和低4比特的错误" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="364" y="24" key="CommitChangelistDialog2" timestamp="1586246167085">
+    <state x="364" y="24" key="CommitChangelistDialog2" timestamp="1586246188287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="364" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586246167085" />
+    <state x="364" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586246188287" />
+    <state x="147" y="68" key="DiffContextDialog" timestamp="1586246179657">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="147" y="68" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1586246179657" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1586246204823">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586246204823" />
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1586251446992">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586251446992" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1586251446991">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586251446991" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1586251446991">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586251446991" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1586251446992">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586251446992" />
+    <state width="1493" height="222" key="GridCell.Tab.1.bottom" timestamp="1586246862959">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="222" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586246862959" />
+    <state width="1493" height="222" key="GridCell.Tab.1.center" timestamp="1586246862959">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="222" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586246862959" />
+    <state width="1493" height="222" key="GridCell.Tab.1.left" timestamp="1586246862959">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="222" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586246862959" />
+    <state width="1493" height="222" key="GridCell.Tab.1.right" timestamp="1586246862959">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="222" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586246862959" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1586246195657">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586246195657" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$write_comments_to_database.coverage" NAME="write_comments_to_database Coverage Results" MODIFIED="1562751263133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
@@ -836,6 +863,7 @@
     <SUITE FILE_PATH="coverage/Program$score_analysis.coverage" NAME="score_analysis Coverage Results" MODIFIED="1562600889372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
     <SUITE FILE_PATH="coverage/Program$write_data_from_database_to_csv.coverage" NAME="write_data_from_database_to_csv Coverage Results" MODIFIED="1562554481153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
     <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
+    <SUITE FILE_PATH="coverage/Program$Xpath.coverage" NAME="Xpath Coverage Results" MODIFIED="1586251446984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/XML" />
     <SUITE FILE_PATH="coverage/Program$courses_machine_learning.coverage" NAME="courses_machine_learning Coverage Results" MODIFIED="1562843298363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
     <SUITE FILE_PATH="coverage/Program$Iris3.coverage" NAME="Iris3 Coverage Results" MODIFIED="1562138346590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$timetable_analysis.coverage" NAME="timetable_analysis Coverage Results" MODIFIED="1562855322965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
