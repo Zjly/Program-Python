@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/computer_network/UDP_checksum.py" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-计算机网络UDP">
+      <change afterPath="$PROJECT_DIR$/courses/computer_security/homework2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +110,7 @@
       <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.UDP_checksum">
+  <component name="RunManager" selected="Python.homework2">
     <configuration name="UDP_checksum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,6 +177,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="homework2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/computer_security" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/computer_security/homework2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="query_scores" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,35 +221,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.homework2" />
         <item itemvalue="Python.UDP_checksum" />
         <item itemvalue="Python.Xpath" />
         <item itemvalue="Python.query_scores" />
         <item itemvalue="Python.homework1" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -337,21 +337,8 @@
       <workItem from="1579160116291" duration="1917000" />
       <workItem from="1586246139403" duration="4937000" />
       <workItem from="1586434040194" duration="2334000" />
-      <workItem from="1586440574522" duration="1780000" />
-    </task>
-    <task id="LOCAL-00011" summary="commit-The model has been established.">
-      <created>1562236138911</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1562236138911</updated>
-    </task>
-    <task id="LOCAL-00012" summary="commit-The problem of unable to read model has been solved. It is a problem of random number seed. It needs to be compiled for prediction function.-2019-7-5 01:01:08">
-      <created>1562259676293</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1562259676294</updated>
+      <workItem from="1586440574522" duration="2044000" />
+      <workItem from="1586487265013" duration="5534000" />
     </task>
     <task id="LOCAL-00013" summary="commit-数据模型载入测试成功，已可以载入保存在文件中的数据模型。已可以对载入的模型进行使用，并依据此模型(迭代100次)进行了新评论集的预测，可以得到结果，结果准确率尚且不错，有待进行更多迭代次数模型的建立和测试。">
       <created>1562297039476</created>
@@ -682,7 +669,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586251464223</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="commit-计算机网络UDP">
+      <created>1586442392657</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1586442392657</updated>
+    </task>
+    <task id="LOCAL-00061" summary="commit-计算机网络UDP">
+      <created>1586442618126</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1586442618126</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -740,7 +741,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-抽取字符特征值并存入数据库" />
     <MESSAGE value="commit-去除已经完成的TODO" />
     <MESSAGE value="commit-完成模式识别homework1" />
     <MESSAGE value="commit-完成验证码识别的机器学习模型训练，完成神经网络训练并保存模型" />
@@ -765,13 +765,14 @@
     <MESSAGE value="commit-修复数字图像处理提取图像的高4比特和低4比特的错误" />
     <MESSAGE value="commit" />
     <MESSAGE value="commit-XML课程xpath" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-XML课程xpath" />
+    <MESSAGE value="commit-计算机网络UDP" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-计算机网络UDP" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="364" y="24" key="CommitChangelistDialog2" timestamp="1586442611173">
+    <state x="364" y="24" key="CommitChangelistDialog2" timestamp="1586442640609">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="364" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586442611173" />
+    <state x="364" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586442640609" />
     <state x="147" y="68" key="DiffContextDialog" timestamp="1586246179657">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -780,50 +781,42 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586246204823" />
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1586441905855">
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1586495203257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586441905855" />
-    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1586441905855">
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586495203257" />
+    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1586495203257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586441905855" />
-    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1586441905855">
+    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586495203257" />
+    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1586495203257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586441905855" />
-    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1586441905855">
+    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586495203257" />
+    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1586495203257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586441905855" />
-    <state width="1493" height="222" key="GridCell.Tab.1.bottom" timestamp="1586440193623">
+    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586495203257" />
+    <state width="1493" height="222" key="GridCell.Tab.1.bottom" timestamp="1586495203257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586440193623" />
-    <state width="1493" height="222" key="GridCell.Tab.1.center" timestamp="1586440193623">
+    <state width="1493" height="222" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586495203257" />
+    <state width="1493" height="222" key="GridCell.Tab.1.center" timestamp="1586495203257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586440193623" />
-    <state width="1493" height="222" key="GridCell.Tab.1.left" timestamp="1586440193623">
+    <state width="1493" height="222" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586495203257" />
+    <state width="1493" height="222" key="GridCell.Tab.1.left" timestamp="1586495203257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586440193623" />
-    <state width="1493" height="222" key="GridCell.Tab.1.right" timestamp="1586440193623">
+    <state width="1493" height="222" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586495203257" />
+    <state width="1493" height="222" key="GridCell.Tab.1.right" timestamp="1586495203257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586440193623" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1586442393857">
+    <state width="1493" height="222" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586495203257" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1586442621854">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586442393857" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="num1 + num2 + num3 + check_sum" language="Python" />
-        <watch expression="~(num1 + num2 + num3 + check_sum)" />
-      </configuration>
-    </watches-manager>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586442621854" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$write_comments_to_database.coverage" NAME="write_comments_to_database Coverage Results" MODIFIED="1562751263133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
@@ -884,7 +877,7 @@
     <SUITE FILE_PATH="coverage/Program$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1573475547718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence/get_data" />
     <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1573722725768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
-    <SUITE FILE_PATH="coverage/Program$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1570624473680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_image_processing/homework2" />
+    <SUITE FILE_PATH="coverage/Program$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1586494530136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
     <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
     <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd_test_add.coverage" NAME="Twisted Trial for test_add.TestAdd.test_add Coverage Results" MODIFIED="1562568386799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
