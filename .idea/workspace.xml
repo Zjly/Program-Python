@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/computer_security/caltulate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/computer_security/des.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/computer_security/elliptic_curve.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/computer_security/multiplicative_inverse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/computer_security/homework2.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/computer_security/homework2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/computer_security/caltulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/computer_security/caltulate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/computer_security/elliptic_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/computer_security/elliptic_curve.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +111,7 @@
       <recent name="E:\Coding\Python\Program\practical_training\classification_of_courses" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.multiplicative_inverse">
+  <component name="RunManager" selected="Python.elliptic_curve">
     <configuration name="UDP_checksum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -227,10 +224,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.multiplicative_inverse" />
         <item itemvalue="Python.elliptic_curve" />
-        <item itemvalue="Python.homework2" />
         <item itemvalue="Python.caltulate" />
+        <item itemvalue="Python.multiplicative_inverse" />
+        <item itemvalue="Python.homework2" />
         <item itemvalue="Python.UDP_checksum" />
       </list>
     </recent_temporary>
@@ -345,14 +342,7 @@
       <workItem from="1586487265013" duration="5534000" />
       <workItem from="1587090078660" duration="1461000" />
       <workItem from="1588856694992" duration="7981000" />
-      <workItem from="1588902824269" duration="438000" />
-    </task>
-    <task id="LOCAL-00014" summary="commit-2000次迭代的数据模型建立成功，并通过预测测试">
-      <created>1562308688988</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1562308688988</updated>
+      <workItem from="1588902824269" duration="4884000" />
     </task>
     <task id="LOCAL-00015" summary="commit-PHP与Python连接部分编写完毕，已测试通过连接并可在PHP中调用Python脚本">
       <created>1562384705324</created>
@@ -690,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587090100049</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="commit-信息安全更新">
+      <created>1588903304898</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1588903304899</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -748,7 +745,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-完成模式识别homework1" />
     <MESSAGE value="commit-完成验证码识别的机器学习模型训练，完成神经网络训练并保存模型" />
     <MESSAGE value="commit-修改模式识别作业代码，加入矩阵的转置以正确计算协方差矩阵" />
     <MESSAGE value="commit-no reason" />
@@ -773,13 +769,14 @@
     <MESSAGE value="commit-XML课程xpath" />
     <MESSAGE value="commit-计算机网络UDP" />
     <MESSAGE value="commit-信息安全homework2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-信息安全homework2" />
+    <MESSAGE value="commit-信息安全更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-信息安全更新" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="364" y="24" key="CommitChangelistDialog2" timestamp="1587090097524">
+    <state x="364" y="24" key="CommitChangelistDialog2" timestamp="1588903303970">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="364" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587090097524" />
+    <state x="364" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1588903303970" />
     <state x="147" y="68" key="DiffContextDialog" timestamp="1586246179657">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -788,38 +785,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586246204823" />
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1588868625040">
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1588910759470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588868625040" />
-    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1588868625040">
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588910759470" />
+    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1588910759469">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588868625040" />
-    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1588868625040">
+    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588910759469" />
+    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1588910759469">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588868625040" />
-    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1588868625040">
+    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588910759469" />
+    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1588910759469">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588868625040" />
-    <state width="1493" height="222" key="GridCell.Tab.1.bottom" timestamp="1588868625040">
+    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588910759469" />
+    <state width="1493" height="222" key="GridCell.Tab.1.bottom" timestamp="1588910759470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588868625040" />
-    <state width="1493" height="222" key="GridCell.Tab.1.center" timestamp="1588868625040">
+    <state width="1493" height="222" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588910759470" />
+    <state width="1493" height="222" key="GridCell.Tab.1.center" timestamp="1588910759470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1588868625040" />
-    <state width="1493" height="222" key="GridCell.Tab.1.left" timestamp="1588868625040">
+    <state width="1493" height="222" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1588910759470" />
+    <state width="1493" height="222" key="GridCell.Tab.1.left" timestamp="1588910759470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1588868625040" />
-    <state width="1493" height="222" key="GridCell.Tab.1.right" timestamp="1588868625040">
+    <state width="1493" height="222" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1588910759470" />
+    <state width="1493" height="222" key="GridCell.Tab.1.right" timestamp="1588910759470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1588868625040" />
+    <state width="1493" height="222" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1588910759470" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587090101711">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -836,7 +833,7 @@
     <SUITE FILE_PATH="coverage/Program$write_comments_to_database.coverage" NAME="write_comments_to_database Coverage Results" MODIFIED="1562751263133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$save_comments_to_database.coverage" NAME="save_comments_to_database Coverage Results" MODIFIED="1562120868396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
-    <SUITE FILE_PATH="coverage/Program$caltulate.coverage" NAME="caltulate Coverage Results" MODIFIED="1588859791930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
+    <SUITE FILE_PATH="coverage/Program$caltulate.coverage" NAME="caltulate Coverage Results" MODIFIED="1588910322355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
     <SUITE FILE_PATH="coverage/Program$create_file.coverage" NAME="create_file Coverage Results" MODIFIED="1562057925214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
     <SUITE FILE_PATH="coverage/Program$homework2__1_.coverage" NAME="homework2 (1) Coverage Results" MODIFIED="1569510648435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_media_communication" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
@@ -892,7 +889,7 @@
     <SUITE FILE_PATH="coverage/Program$unit_test.coverage" NAME="unit_test Coverage Results" MODIFIED="1562567823090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1573475547718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence/get_data" />
     <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$elliptic_curve.coverage" NAME="elliptic_curve Coverage Results" MODIFIED="1588864944947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
+    <SUITE FILE_PATH="coverage/Program$elliptic_curve.coverage" NAME="elliptic_curve Coverage Results" MODIFIED="1588910337021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
     <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1573722725768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
     <SUITE FILE_PATH="coverage/Program$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1588863577760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
     <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
