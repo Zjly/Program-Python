@@ -36,6 +36,9 @@ def question3():
 	print(l2, x4, y4)
 	print(float(l2), float(x4), float(y4))
 
+def question3_right():
+	print(3 * 7 ** 2 + 1)
+
 def question4():
 	n = 11
 	g = 2
@@ -48,4 +51,4 @@ def question4():
 	print(X, Y, k1, k2)
 
 if __name__ == '__main__':
-	question4()
+	question3_right()
