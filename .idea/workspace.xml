@@ -1,48 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-课程day3">
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/server_flask/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/server_flask/json/average.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/server_flask/json/count_list.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/server_flask/json/pie.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/src/views/Bing.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/src/views/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/cms/vue_program/src/views/Word.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/course/course2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/douban/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/douban/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/douban/list.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/douban/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/douban/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/douban/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/douban/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/douban/spiders/movie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/douban/scrapy.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/spiders/list.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/spiders/toscrape_xpath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/practical_training3/quotesbot/scrapy.cfg" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/KPL/KCC.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/processed/test.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/processed/training.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/raw/t10k-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/raw/t10k-images-idx3-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/raw/t10k-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/raw/t10k-labels-idx1-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/raw/train-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/raw/train-images-idx3-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/raw/train-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/datasets/MNIST/raw/train-labels-idx1-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/day01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/mnist_ds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/tensorflow_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/practical_training3/touch/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,36 +26,6 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="339" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="verification_code@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="verification_code@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="verification_code@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="verification_code: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,8 +87,8 @@
       <recent name="E:\Coding\Python\Program\courses\digital_image_processing\homework1" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.KCC">
+    <configuration name="KCC" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,12 +96,100 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/practical_training3/cms/server_flask" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KPL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/practical_training3/cms/server_flask/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KPL/KCC.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="day01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/practical_training3/touch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/practical_training3/touch/day01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mnist_ds" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/practical_training3/touch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/practical_training3/touch/mnist_ds.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tensorflow_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/practical_training3/touch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/practical_training3/touch/tensorflow_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/practical_training3/touch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/practical_training3/touch/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,7 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
+        <item itemvalue="Python.KCC" />
+        <item itemvalue="Python.tensorflow_test" />
+        <item itemvalue="Python.mnist_ds" />
+        <item itemvalue="Python.day01" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -295,14 +331,11 @@
       <workItem from="1594945881018" duration="1013000" />
       <workItem from="1594966682652" duration="2275000" />
       <workItem from="1594974019887" duration="1485000" />
-      <workItem from="1595052256004" duration="1342000" />
-    </task>
-    <task id="LOCAL-00018" summary="commit-修改项目结构，完成判断课程类型的功能的朴素贝叶斯算法的实现，完成深度神经网络预测与PHP的链接代码">
-      <created>1562573977976</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1562573977976</updated>
+      <workItem from="1595052256004" duration="3348000" />
+      <workItem from="1595056623649" duration="6384000" />
+      <workItem from="1595227618148" duration="3191000" />
+      <workItem from="1595235659290" duration="850000" />
+      <workItem from="1595254198854" duration="2735000" />
     </task>
     <task id="LOCAL-00019" summary="commit-对机器学习深度神经网络的建立的每一步加上注释，标注出网络的构筑层次">
       <created>1562586835868</created>
@@ -640,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594859967580</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="commit-课程day5">
+      <created>1595054397793</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1595054397794</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +738,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-完成验证码的识别模块，并应用到查询教务系统中，可直接对登录的验证码进行识别以完成自动登录。" />
     <MESSAGE value="commit-完成模式识别homework2" />
     <MESSAGE value="commit-调整文件夹层次关系" />
     <MESSAGE value="commit-完成数字图像处理homework1" />
@@ -723,61 +762,74 @@
     <MESSAGE value="commit-信息安全算法改进" />
     <MESSAGE value="commit-炉石传说泰坦跟班问题" />
     <MESSAGE value="commit-课程day3" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-课程day3" />
+    <MESSAGE value="commit-课程day5" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-课程day5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594884431797">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="447" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1594884431797" />
-    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1594882345157">
+    <state x="511" y="267" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1595056288611">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1594882345157" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1594946294388">
+    <state x="511" y="267" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.864@0.0.1536.864" timestamp="1595056288611" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1595254300748">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1594946294388" />
-    <state width="726" height="257" key="GridCell.Tab.0.bottom" timestamp="1594976250795">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1595254300748" />
+    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1595054396229">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="726" height="257" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594976250795" />
-    <state width="726" height="257" key="GridCell.Tab.0.center" timestamp="1594976250795">
+    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1595054396229" />
+    <state x="553" y="185" key="FileChooserDialogImpl" timestamp="1595235181007">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="726" height="257" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1594976250795" />
-    <state width="726" height="257" key="GridCell.Tab.0.left" timestamp="1594976250795">
+    <state x="553" y="185" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1595235181007" />
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1595236509429">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="726" height="257" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1594976250795" />
-    <state width="726" height="257" key="GridCell.Tab.0.right" timestamp="1594976250795">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595236509429" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1595236509429">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="726" height="257" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1594976250795" />
-    <state width="725" height="219" key="GridCell.Tab.1.bottom" timestamp="1594969706397">
+    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595236509429" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1595236509428">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="725" height="219" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594969706397" />
-    <state width="725" height="219" key="GridCell.Tab.1.center" timestamp="1594969706397">
+    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595236509428" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1595236509429">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="725" height="219" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1594969706397" />
-    <state width="725" height="219" key="GridCell.Tab.1.left" timestamp="1594969706397">
+    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595236509429" />
+    <state width="1493" height="221" key="GridCell.Tab.1.bottom" timestamp="1595074688809">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="725" height="219" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1594969706397" />
-    <state width="725" height="219" key="GridCell.Tab.1.right" timestamp="1594969706397">
+    <state width="1493" height="221" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595074688809" />
+    <state width="1493" height="221" key="GridCell.Tab.1.center" timestamp="1595074688809">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="725" height="219" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1594969706397" />
-    <state x="239" y="77" key="SettingsEditor" timestamp="1595053903439">
+    <state width="1493" height="221" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1595074688809" />
+    <state width="1493" height="221" key="GridCell.Tab.1.left" timestamp="1595074688809">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="239" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1595053903439" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1590596081513">
+    <state width="1493" height="221" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1595074688809" />
+    <state width="1493" height="221" key="GridCell.Tab.1.right" timestamp="1595074688809">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1590596081513" />
+    <state width="1493" height="221" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1595074688809" />
+    <state x="349" y="166" key="IDE.errors.dialog" timestamp="1595056491186">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="349" y="166" key="IDE.errors.dialog/0.0.1536.864@0.0.1536.864" timestamp="1595056491186" />
+    <state x="239" y="77" key="SettingsEditor" timestamp="1595056199439">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="239" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1595056199439" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1595054424817">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1595054424817" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1590577113044">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -800,11 +852,12 @@
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1577954175405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
     <SUITE FILE_PATH="coverage/Program$timetable_analysis.coverage" NAME="timetable_analysis Coverage Results" MODIFIED="1562855322965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
-    <SUITE FILE_PATH="coverage/Program$app.coverage" NAME="app Coverage Results" MODIFIED="1594974032336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/cms/server_flask" />
+    <SUITE FILE_PATH="coverage/Program$app.coverage" NAME="app Coverage Results" MODIFIED="1595056129470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/cms/server_flask" />
     <SUITE FILE_PATH="coverage/Program$write_comments_to_database.coverage" NAME="write_comments_to_database Coverage Results" MODIFIED="1562751263133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$recognition.coverage" NAME="recognition Coverage Results" MODIFIED="1568045782663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$caltulate.coverage" NAME="caltulate Coverage Results" MODIFIED="1588910322355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
     <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1573722463585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$mnist_ds.coverage" NAME="mnist_ds Coverage Results" MODIFIED="1595228716266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
     <SUITE FILE_PATH="coverage/Program$score_analysis.coverage" NAME="score_analysis Coverage Results" MODIFIED="1562600889372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
     <SUITE FILE_PATH="coverage/Program$get_verification_code__1_.coverage" NAME="get_verification_code (1) Coverage Results" MODIFIED="1573485867338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
     <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
@@ -825,10 +878,12 @@
     <SUITE FILE_PATH="coverage/Program$save_comments_to_database.coverage" NAME="save_comments_to_database Coverage Results" MODIFIED="1562120868396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$collaborative_filtering_algorithm.coverage" NAME="collaborative_filtering_algorithm Coverage Results" MODIFIED="1562836760602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
     <SUITE FILE_PATH="coverage/Program$Iris3.coverage" NAME="Iris3 Coverage Results" MODIFIED="1562138346590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/Iris_analysis" />
+    <SUITE FILE_PATH="coverage/Program$tensorflow_test.coverage" NAME="tensorflow_test Coverage Results" MODIFIED="1595235907971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
     <SUITE FILE_PATH="coverage/Program$score.coverage" NAME="score Coverage Results" MODIFIED="1562597932578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
-    <SUITE FILE_PATH="coverage/Program$test.coverage" NAME="test Coverage Results" MODIFIED="1573907664768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Program$test.coverage" NAME="test Coverage Results" MODIFIED="1595059114131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning.coverage" NAME="comments_machine_learning Coverage Results" MODIFIED="1568044295252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$KCC.coverage" NAME="KCC Coverage Results" MODIFIED="1595262890067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KPL" />
     <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$read_data_from_database_to_csv.coverage" NAME="read_data_from_database_to_csv Coverage Results" MODIFIED="1562742315041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
     <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1568201626762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
@@ -862,6 +917,7 @@
     <SUITE FILE_PATH="coverage/Program$elliptic_curve.coverage" NAME="elliptic_curve Coverage Results" MODIFIED="1588910936767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
     <SUITE FILE_PATH="coverage/Program$homework3.coverage" NAME="homework3 Coverage Results" MODIFIED="1571061184339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_media_communication" />
     <SUITE FILE_PATH="coverage/Program$create_file.coverage" NAME="create_file Coverage Results" MODIFIED="1562057925214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
+    <SUITE FILE_PATH="coverage/Program$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1595063032724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
     <SUITE FILE_PATH="coverage/Program$get_subtitles.coverage" NAME="get_subtitles Coverage Results" MODIFIED="1567438303794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/douyu/subtitles" />
     <SUITE FILE_PATH="coverage/Program$unit_test.coverage" NAME="unit_test Coverage Results" MODIFIED="1562567823090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd.coverage" NAME="Twisted Trial for test_add.TestAdd Coverage Results" MODIFIED="1562568497410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
