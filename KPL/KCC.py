@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 class Game:
 	"""
 	每一场比赛
@@ -28,6 +31,7 @@ class Result:
 		self.score1 = None
 		self.score2 = None
 		self.win_team = None
+		self.loss_team = None
 		self.next_game = None
 
 	def __str__(self):
@@ -56,14 +60,45 @@ def get_game_list():
 				result.score2 = scores[3 - k]
 				if k < 2:
 					result.win_team = teams[i]
+					result.loss_team = teams[j]
 				else:
 					result.win_team = teams[j]
+					result.loss_team = teams[i]
 
 				game.result_list.append(result)
 
 			game_list.append(game)
 
 	return game_list
+
+
+def get_game(team1, team2):
+	"""
+	创建两个队的比赛
+	:param team1:
+	:param team2:
+	:return:
+	"""
+	scores = [2, 2, 1, 0]
+
+	# 创建game
+	game = Game(team1, team2)
+	# 创建结果
+	for k in range(4):
+		# 设置result
+		result = Result(team1, team2)
+		result.score1 = scores[k]
+		result.score2 = scores[3 - k]
+		if k < 2:
+			result.win_team = team1
+			result.loss_team = team2
+		else:
+			result.win_team = team2
+			result.loss_team = team1
+
+		game.result_list.append(result)
+
+	return game
 
 
 def get_game_tree(game_list):
@@ -104,14 +139,49 @@ def traverse_tree(game, game_result, game_result_list):
 
 	return game_result_list
 
-def printGR(game_result_list):
+
+def calculate_score(game_result_list):
 	"""
-	结果输出
+	计算分数
 	:param game_result_list:
 	:return:
 	"""
-	for i in range(len(game_result_list)):
-		game_result = game_result_list[i]
+	# teams = ["AG", "QG", "ES"]
+	teams = ["AG", "QG", "ES", "WE", "TS"]
+	game_score_list = []
+	for game_result in game_result_list:
+		# 建立并初始化DataFrame
+		score = pd.DataFrame(index=teams, columns=["win", "loss", "diff", "score"])
+		score.loc[:, :] = 0
+
+		# 导入比赛数据
+		for result in game_result:
+			score.loc[result.win_team, "win"] += 1
+			score.loc[result.loss_team, "loss"] += 1
+			score.loc[result.win_team, "score"] += 1
+
+			current_diff = result.score1 - result.score2
+			score.loc[result.win_team, "diff"] += abs(current_diff)
+			score.loc[result.loss_team, "diff"] += -abs(current_diff)
+
+		# 排序
+		score = score.sort_values(by=["score", "diff"], ascending=False)
+		game_score_list.append([game_result, score])
+
+	return game_score_list
+
+
+def printGSL(game_score_list):
+	"""
+	结果输出
+	:param game_score_list:
+	:return:
+	"""
+	for i in range(len(game_score_list)):
+		game_result = game_score_list[i][0]
+		game_score = game_score_list[i][1]
+
+		# 输出比分
 		game_str = str(i)
 		game_str += "	:	"
 		for j in range(len(game_result)):
@@ -119,11 +189,92 @@ def printGR(game_result_list):
 			game_str += result.team1 + " " + str(result.score1) + ":" + str(result.score2) + " " + result.team2
 			game_str += "    "
 		print(game_str)
-	pass
 
-if __name__ == '__main__':
+		# 输出分数
+		print(game_score)
+		print("---------------------------------")
+
+
+def test():
+	"""
+	测试程序是否成功
+	:return:
+	"""
 	g_list = get_game_list()
 	g_list = get_game_tree(g_list)
 	g_r_list = traverse_tree(g_list[0], [], [])
-	printGR(g_r_list)
-	pass
+	g_s_list = calculate_score(g_r_list)
+	printGSL(g_s_list)
+
+
+def create_game_list():
+	"""
+	创建比赛列表
+	:return:
+	"""
+	game_list = []
+	game1 = get_game("TS", "WE")
+	game2 = get_game("AG", "WE")
+	game3 = get_game("TS", "QG")
+	game4 = get_game("AG", "ES")
+	game_list.append(game1)
+	game_list.append(game2)
+	game_list.append(game3)
+	game_list.append(game4)
+	return game_list
+
+
+def add_exist_result(game_score_list):
+	"""
+	手动加入已完比赛比分
+	:param game_score_list:
+	:return:
+	"""
+	for i in range(len(game_score_list)):
+		game_score = game_score_list[i][1]
+
+		game_score.loc["TS", "win"] += 2
+		game_score.loc["TS", "loss"] += 1
+		game_score.loc["TS", "diff"] += 2
+		game_score.loc["TS", "score"] = game_score.loc["TS", "win"]
+
+		game_score.loc["WE", "win"] += 2
+		game_score.loc["WE", "loss"] += 1
+		game_score.loc["WE", "diff"] += 2
+		game_score.loc["WE", "score"] = game_score.loc["WE", "win"]
+
+		game_score.loc["QG", "win"] += 2 + 1
+		game_score.loc["QG", "loss"] += 1
+		game_score.loc["QG", "diff"] += 2 + 2
+		game_score.loc["QG", "score"] = game_score.loc["QG", "win"]
+
+		game_score.loc["ES", "win"] += 2 + 1
+		game_score.loc["ES", "loss"] += 1
+		game_score.loc["ES", "diff"] += 1 + 2
+		game_score.loc["ES", "score"] = game_score.loc["ES", "win"]
+
+		game_score.loc["AG", "win"] += 0 + 1
+		game_score.loc["AG", "loss"] += 2
+		game_score.loc["AG", "diff"] += -3 + 2
+		game_score.loc["AG", "score"] = game_score.loc["AG", "win"]
+
+		# 排序
+		game_score_list[i][1] = game_score.sort_values(by=["score", "diff"], ascending=False)
+
+
+def run():
+	"""
+	运行程序
+	:return:
+	"""
+	g_list = create_game_list()
+	g_list = get_game_tree(g_list)
+	g_r_list = traverse_tree(g_list[0], [], [])
+	g_s_list = calculate_score(g_r_list)
+	add_exist_result(g_s_list)
+	printGSL(g_s_list)
+
+
+if __name__ == '__main__':
+	# test()
+	run()

@@ -322,14 +322,9 @@
       <workItem from="1595227618148" duration="3191000" />
       <workItem from="1595235659290" duration="850000" />
       <workItem from="1595254198854" duration="2859000" />
-      <workItem from="1595291377213" duration="18205000" />
-    </task>
-    <task id="LOCAL-00021" summary="commit-修改与Linux服务器上的PHP的连接部分的代码；重新标记评论集，使其更精确，并以此新建立模型并通过情绪分析测试；编写课程推荐算法（基于物品的协同过滤算法）">
-      <created>1562762369704</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1562762369704</updated>
+      <workItem from="1595291377213" duration="18230000" />
+      <workItem from="1595319603862" duration="2317000" />
+      <workItem from="1595378174390" duration="6657000" />
     </task>
     <task id="LOCAL-00022" summary="commit-编写基于物品的协同过滤的课程推荐算法完成，得到推荐课程的课程号">
       <created>1562776093743</created>
@@ -667,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595262963022</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="commit-世冠晋级问题">
+      <created>1595319560332</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1595319560333</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -765,46 +767,46 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1595254300748" />
-    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1595262962212">
+    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1595319559174">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1595262962212" />
+    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1595319559174" />
     <state x="553" y="185" key="FileChooserDialogImpl" timestamp="1595304390974">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="553" y="185" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1595304390974" />
-    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1595319491653">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1595388024249">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595319491653" />
-    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1595319491653">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595388024249" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1595388024249">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595319491653" />
-    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1595319491652">
+    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595388024249" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1595388024249">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595319491652" />
-    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1595319491653">
+    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595388024249" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1595388024249">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595319491653" />
-    <state width="1493" height="221" key="GridCell.Tab.1.bottom" timestamp="1595319114188">
+    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595388024249" />
+    <state width="1493" height="221" key="GridCell.Tab.1.bottom" timestamp="1595387546426">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595319114188" />
-    <state width="1493" height="221" key="GridCell.Tab.1.center" timestamp="1595319114188">
+    <state width="1493" height="221" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595387546426" />
+    <state width="1493" height="221" key="GridCell.Tab.1.center" timestamp="1595387546426">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1595319114188" />
-    <state width="1493" height="221" key="GridCell.Tab.1.left" timestamp="1595319114188">
+    <state width="1493" height="221" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1595387546426" />
+    <state width="1493" height="221" key="GridCell.Tab.1.left" timestamp="1595387546426">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1595319114188" />
-    <state width="1493" height="221" key="GridCell.Tab.1.right" timestamp="1595319114188">
+    <state width="1493" height="221" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1595387546426" />
+    <state width="1493" height="221" key="GridCell.Tab.1.right" timestamp="1595387546426">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1595319114188" />
+    <state width="1493" height="221" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1595387546426" />
     <state x="349" y="166" key="IDE.errors.dialog" timestamp="1595056491186">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -863,7 +865,7 @@
     <SUITE FILE_PATH="coverage/Program$test.coverage" NAME="test Coverage Results" MODIFIED="1595059114131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning.coverage" NAME="comments_machine_learning Coverage Results" MODIFIED="1568044295252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
-    <SUITE FILE_PATH="coverage/Program$KCC.coverage" NAME="KCC Coverage Results" MODIFIED="1595319491644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KPL" />
+    <SUITE FILE_PATH="coverage/Program$KCC.coverage" NAME="KCC Coverage Results" MODIFIED="1595388024242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KPL" />
     <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$read_data_from_database_to_csv.coverage" NAME="read_data_from_database_to_csv Coverage Results" MODIFIED="1562742315041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
     <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1568201626762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
