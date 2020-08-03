@@ -213,11 +213,11 @@ def create_game_list():
 	:return:
 	"""
 	game_list = []
-	game1 = get_game("TS", "WE")
+	# game1 = get_game("TS", "WE")
 	game2 = get_game("AG", "WE")
 	game3 = get_game("TS", "QG")
 	game4 = get_game("AG", "ES")
-	game_list.append(game1)
+	# game_list.append(game1)
 	game_list.append(game2)
 	game_list.append(game3)
 	game_list.append(game4)
@@ -233,29 +233,29 @@ def add_exist_result(game_score_list):
 	for i in range(len(game_score_list)):
 		game_score = game_score_list[i][1]
 
-		game_score.loc["TS", "win"] += 2
+		game_score.loc["TS", "win"] += 3
 		game_score.loc["TS", "loss"] += 1
-		game_score.loc["TS", "diff"] += 2
+		game_score.loc["TS", "diff"] += 4
 		game_score.loc["TS", "score"] = game_score.loc["TS", "win"]
 
 		game_score.loc["WE", "win"] += 2
-		game_score.loc["WE", "loss"] += 1
-		game_score.loc["WE", "diff"] += 2
+		game_score.loc["WE", "loss"] += 2
+		game_score.loc["WE", "diff"] += 0
 		game_score.loc["WE", "score"] = game_score.loc["WE", "win"]
 
-		game_score.loc["QG", "win"] += 2 + 1
+		game_score.loc["QG", "win"] += 3
 		game_score.loc["QG", "loss"] += 1
-		game_score.loc["QG", "diff"] += 2 + 2
+		game_score.loc["QG", "diff"] += 4
 		game_score.loc["QG", "score"] = game_score.loc["QG", "win"]
 
-		game_score.loc["ES", "win"] += 2 + 1
+		game_score.loc["ES", "win"] += 3
 		game_score.loc["ES", "loss"] += 1
-		game_score.loc["ES", "diff"] += 1 + 2
+		game_score.loc["ES", "diff"] += 3
 		game_score.loc["ES", "score"] = game_score.loc["ES", "win"]
 
-		game_score.loc["AG", "win"] += 0 + 1
+		game_score.loc["AG", "win"] += 1
 		game_score.loc["AG", "loss"] += 2
-		game_score.loc["AG", "diff"] += -3 + 2
+		game_score.loc["AG", "diff"] += -1
 		game_score.loc["AG", "score"] = game_score.loc["AG", "win"]
 
 		# 排序
