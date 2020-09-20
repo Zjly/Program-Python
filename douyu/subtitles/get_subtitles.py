@@ -101,7 +101,7 @@ class DouYu:
 							"user_name": gift[2]
 						}
 						print("\033[0;32;m{}送出了: {}\033[0m".format(gift[2], self.gift_dict[int(gift[0])]))
-				time.sleep(0.05)
+				time_4.sleep(0.05)
 			except KeyError:
 				pass
 			except Exception as e:
@@ -113,7 +113,7 @@ class DouYu:
 			# keep_msg = "type@=keeplive/tick@={}".format(get_time())  # 旧版心跳消息
 			keep_msg = "mrkl/"  # 新版心跳消息
 			self.send_msg(keep_msg)
-			time.sleep(40)
+			time_4.sleep(40)
 			logging.info("Keep live...")
 
 	def main(self):

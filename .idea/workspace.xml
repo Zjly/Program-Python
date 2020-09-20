@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit-世冠晋级问题">
-      <change afterPath="$PROJECT_DIR$/boston_housing_price_forecast/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boston_housing_price_forecast/boston_housing.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boston_housing_price_forecast/housing.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boston_housing_price_forecast/predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boston_housing_price_forecast/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boston_housing_price_forecast/visuals.py" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/honkai_impact_3/supply_system/yuanshen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/review/data_structure/e2_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/douyu/subtitles/get_subtitles.py" beforeDir="false" afterPath="$PROJECT_DIR$/douyu/subtitles/get_subtitles.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/boston_housing_price_forecast" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,7 +76,7 @@
       <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.predict">
+  <component name="RunManager" selected="Python.yuanshen">
     <configuration name="KCC" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="e2_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,12 +107,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/practical_training3/touch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/review/data_structure" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/practical_training3/touch/day01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/review/data_structure/e2_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tensorflow_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="yuanshen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,12 +173,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses/practical_training3/touch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/honkai_impact_3/supply_system" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/practical_training3/touch/tensorflow_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/honkai_impact_3/supply_system/yuanshen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.yuanshen" />
+        <item itemvalue="Python.e2_3" />
         <item itemvalue="Python.predict" />
         <item itemvalue="Python.KCC" />
         <item itemvalue="Python.mnist_ds" />
-        <item itemvalue="Python.tensorflow_test" />
-        <item itemvalue="Python.day01" />
       </list>
     </recent_temporary>
   </component>
@@ -337,13 +334,8 @@
       <workItem from="1596450100803" duration="881000" />
       <workItem from="1596464645245" duration="1000" />
       <workItem from="1597226247682" duration="3838000" />
-    </task>
-    <task id="LOCAL-00024" summary="commit-查询教务系统信息时需要手动输入用户名和密码，提高安全性；合并爬虫和分析py文件，消除html文件的生成">
-      <created>1562856255752</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1562856255752</updated>
+      <workItem from="1599571931710" duration="2671000" />
+      <workItem from="1600622969262" duration="1685000" />
     </task>
     <task id="LOCAL-00025" summary="commit-编写崩坏3夏日大作战游戏，完成琪亚娜和德丽莎两个女武神的类，有待编写游戏回合流程">
       <created>1562862187492</created>
@@ -681,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596450112797</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="commit-波士顿房价预测">
+      <created>1599571962531</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1599571962532</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -739,7 +738,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit-完成数字图像处理homework1" />
     <MESSAGE value="commit-上传数字图像处理homework1图像处理结果" />
     <MESSAGE value="commit-优化数字图像处理homework1中的算法，对每个像素值操作的时候进行查表而不是单独计算" />
     <MESSAGE value="commit-增加点到矩阵的马氏距离计算" />
@@ -764,7 +762,8 @@
     <MESSAGE value="commit-课程day5" />
     <MESSAGE value="commit-课程day02" />
     <MESSAGE value="commit-世冠晋级问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit-世冠晋级问题" />
+    <MESSAGE value="commit-波士顿房价预测" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-波士顿房价预测" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594884431797">
@@ -779,30 +778,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1595254300748" />
-    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1597226253339">
+    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1599571961127">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1597226253339" />
+    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1599571961127" />
     <state x="553" y="185" key="FileChooserDialogImpl" timestamp="1596450173387">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="553" y="185" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1596450173387" />
-    <state width="1493" height="221" key="GridCell.Tab.0.bottom" timestamp="1597250749568">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1600624639953">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597250749568" />
-    <state width="1493" height="221" key="GridCell.Tab.0.center" timestamp="1597250749568">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1600624639953" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1600624639953">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1597250749568" />
-    <state width="1493" height="221" key="GridCell.Tab.0.left" timestamp="1597250749568">
+    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1600624639953" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1600624639953">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1597250749568" />
-    <state width="1493" height="221" key="GridCell.Tab.0.right" timestamp="1597250749568">
+    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1600624639953" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1600624639953">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1597250749568" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1600624639953" />
     <state width="1493" height="221" key="GridCell.Tab.1.bottom" timestamp="1597250749569">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -831,19 +830,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1596450234881" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1590577113044">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1590577113044" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
     <SUITE FILE_PATH="coverage/Program$lackey.coverage" NAME="lackey Coverage Results" MODIFIED="1590577370430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/Program$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1573475547718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence/get_data" />
     <SUITE FILE_PATH="coverage/Program$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1588863577760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
+    <SUITE FILE_PATH="coverage/Program$yuanshen.coverage" NAME="yuanshen Coverage Results" MODIFIED="1600624639946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
     <SUITE FILE_PATH="coverage/Program$machine_learning_recognition.coverage" NAME="machine_learning_recognition Coverage Results" MODIFIED="1568199885241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
     <SUITE FILE_PATH="coverage/Program$fu_sakura.coverage" NAME="fu_sakura Coverage Results" MODIFIED="1563284241050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer_battle/games" />
     <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$e2_3.coverage" NAME="e2_3 Coverage Results" MODIFIED="1599574496283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
     <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1577954175405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
     <SUITE FILE_PATH="coverage/Program$timetable_analysis.coverage" NAME="timetable_analysis Coverage Results" MODIFIED="1562855322965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
     <SUITE FILE_PATH="coverage/Program$app.coverage" NAME="app Coverage Results" MODIFIED="1595056129470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/cms/server_flask" />
