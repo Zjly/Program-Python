@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/review/data_structure/KMP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review/data_structure/e4_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review/data_structure/e5_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review/data_structure/e5_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review/data_structure/fib.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review/data_structure/hanoi.py" afterDir="false" />
+    <list default="true" id="baff5ee9-487d-4264-8010-b8fe891da388" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/review/data_structure/quick_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/honkai_impact_3/supply_system/yuanshen.py" beforeDir="false" afterPath="$PROJECT_DIR$/honkai_impact_3/supply_system/yuanshen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +58,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -80,29 +76,7 @@
       <recent name="E:\Coding\Python\Program\practical_training\connect_php" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.e5_3">
-    <configuration name="KMP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/review/data_structure" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/review/data_structure/KMP.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.quick_sort">
     <configuration name="e5_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,16 +165,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="quick_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/review/data_structure" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/review/data_structure/quick_sort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.quick_sort" />
         <item itemvalue="Python.e5_3" />
         <item itemvalue="Python.e5_2" />
         <item itemvalue="Python.hanoi" />
         <item itemvalue="Python.fib" />
-        <item itemvalue="Python.KMP" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\94247\AppData\Roaming\Subversion</configuration>
   </component>
@@ -348,14 +345,8 @@
       <workItem from="1600851148905" duration="4148000" />
       <workItem from="1601018222250" duration="4088000" />
       <workItem from="1604389004406" duration="491000" />
-      <workItem from="1604389516083" duration="6980000" />
-    </task>
-    <task id="LOCAL-00026" summary="commit-完成琪亚娜模型和德丽莎模型建立，完成琪亚娜和德丽莎比赛逻辑，测试1000000场成功">
-      <created>1563209883287</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1563209883287</updated>
+      <workItem from="1604389516083" duration="7003000" />
+      <workItem from="1605346092822" duration="5988000" />
     </task>
     <task id="LOCAL-00027" summary="commit-完成符华模型和八重樱模型建立，完成符华和八重樱比赛逻辑，测试1000000场成功">
       <created>1563293130600</created>
@@ -693,11 +684,18 @@
       <option name="project" value="LOCAL" />
       <updated>1600624805662</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="commit">
+      <created>1604405360684</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1604405360684</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -779,145 +777,142 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1600624914503">
+    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1604405359401">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1600624914503" />
-    <state x="553" y="185" key="FileChooserDialogImpl" timestamp="1596450173387">
+    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1604405359401" />
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1605365965850">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="553" y="185" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1596450173387" />
-    <state width="1493" height="248" key="GridCell.Tab.0.bottom" timestamp="1604395984391">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1605365965850" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1605365965850">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="248" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604395984391" />
-    <state width="1493" height="248" key="GridCell.Tab.0.center" timestamp="1604395984390">
+    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1605365965850" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1605365965849">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="248" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604395984390" />
-    <state width="1493" height="248" key="GridCell.Tab.0.left" timestamp="1604395984390">
+    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1605365965849" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1605365965850">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="248" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604395984390" />
-    <state width="1493" height="248" key="GridCell.Tab.0.right" timestamp="1604395984391">
+    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1605365965850" />
+    <state width="1493" height="248" key="GridCell.Tab.1.bottom" timestamp="1604405376710">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="248" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604395984391" />
-    <state width="1493" height="248" key="GridCell.Tab.1.bottom" timestamp="1604395986549">
+    <state width="1493" height="248" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604405376710" />
+    <state width="1493" height="248" key="GridCell.Tab.1.center" timestamp="1604405376709">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="248" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604395986549" />
-    <state width="1493" height="248" key="GridCell.Tab.1.center" timestamp="1604395986549">
+    <state width="1493" height="248" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1604405376709" />
+    <state width="1493" height="248" key="GridCell.Tab.1.left" timestamp="1604405376709">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="248" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1604395986549" />
-    <state width="1493" height="248" key="GridCell.Tab.1.left" timestamp="1604395986549">
+    <state width="1493" height="248" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1604405376709" />
+    <state width="1493" height="248" key="GridCell.Tab.1.right" timestamp="1604405376710">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="248" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1604395986549" />
-    <state width="1493" height="248" key="GridCell.Tab.1.right" timestamp="1604395986549">
+    <state width="1493" height="248" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1604405376710" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1604405366670">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="248" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1604395986549" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1600624919502">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1600624919502" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1604405366670" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
-    <SUITE FILE_PATH="coverage/Program$lackey.coverage" NAME="lackey Coverage Results" MODIFIED="1590577370430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
-    <SUITE FILE_PATH="coverage/Program$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1573475547718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence/get_data" />
-    <SUITE FILE_PATH="coverage/Program$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1588863577760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
-    <SUITE FILE_PATH="coverage/Program$e5_3.coverage" NAME="e5_3 Coverage Results" MODIFIED="1604395984265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
-    <SUITE FILE_PATH="coverage/Program$yuanshen.coverage" NAME="yuanshen Coverage Results" MODIFIED="1600678556882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
-    <SUITE FILE_PATH="coverage/Program$machine_learning_recognition.coverage" NAME="machine_learning_recognition Coverage Results" MODIFIED="1568199885241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
-    <SUITE FILE_PATH="coverage/Program$fu_sakura.coverage" NAME="fu_sakura Coverage Results" MODIFIED="1563284241050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer_battle/games" />
-    <SUITE FILE_PATH="coverage/Program$e4_2.coverage" NAME="e4_2 Coverage Results" MODIFIED="1600682222307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
-    <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
-    <SUITE FILE_PATH="coverage/Program$e2_3.coverage" NAME="e2_3 Coverage Results" MODIFIED="1599574496283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
-    <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1577954175405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
-    <SUITE FILE_PATH="coverage/Program$timetable_analysis.coverage" NAME="timetable_analysis Coverage Results" MODIFIED="1562855322965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
-    <SUITE FILE_PATH="coverage/Program$app.coverage" NAME="app Coverage Results" MODIFIED="1595056129470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/cms/server_flask" />
-    <SUITE FILE_PATH="coverage/Program$write_comments_to_database.coverage" NAME="write_comments_to_database Coverage Results" MODIFIED="1562751263133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
-    <SUITE FILE_PATH="coverage/Program$recognition.coverage" NAME="recognition Coverage Results" MODIFIED="1568045782663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
-    <SUITE FILE_PATH="coverage/Program$caltulate.coverage" NAME="caltulate Coverage Results" MODIFIED="1588910322355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
-    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1573722463585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
-    <SUITE FILE_PATH="coverage/Program$mnist_ds.coverage" NAME="mnist_ds Coverage Results" MODIFIED="1595319099999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
-    <SUITE FILE_PATH="coverage/Program$score_analysis.coverage" NAME="score_analysis Coverage Results" MODIFIED="1562600889372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
-    <SUITE FILE_PATH="coverage/Program$get_verification_code__1_.coverage" NAME="get_verification_code (1) Coverage Results" MODIFIED="1573485867338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
-    <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$auto_get_timetable.coverage" NAME="auto_get_timetable Coverage Results" MODIFIED="1568205671290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
-    <SUITE FILE_PATH="coverage/Program$write_data_from_database_to_csv.coverage" NAME="write_data_from_database_to_csv Coverage Results" MODIFIED="1562554481153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
-    <SUITE FILE_PATH="coverage/Program$Xpath.coverage" NAME="Xpath Coverage Results" MODIFIED="1586251446984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/XML" />
-    <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd_test_add.coverage" NAME="Twisted Trial for test_add.TestAdd.test_add Coverage Results" MODIFIED="1562568386799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
-    <SUITE FILE_PATH="coverage/Program$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1594882399394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/spiders" />
-    <SUITE FILE_PATH="coverage/Program$model_predict1.coverage" NAME="model_predict1 Coverage Results" MODIFIED="1562259063180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_machine_learning_TestMachine_learning_test_machine_learning.coverage" NAME="Twisted Trial for test_machine_learning.TestMachine_learning.test_machine_learning Coverage Results" MODIFIED="1562142738734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$CSDN.coverage" NAME="CSDN Coverage Results" MODIFIED="1562146540898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
-    <SUITE FILE_PATH="coverage/Program$comments_machine_learning1.coverage" NAME="comments_machine_learning1 Coverage Results" MODIFIED="1562259009981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
-    <SUITE FILE_PATH="coverage/Program$timetable_analysis__1_.coverage" NAME="timetable_analysis (1) Coverage Results" MODIFIED="1562599610896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
-    <SUITE FILE_PATH="coverage/Program$get_ratio.coverage" NAME="get_ratio Coverage Results" MODIFIED="1564744148464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
-    <SUITE FILE_PATH="coverage/Program$naive_bayes_classification.coverage" NAME="naive_bayes_classification Coverage Results" MODIFIED="1562686230533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
-    <SUITE FILE_PATH="coverage/Program$multiplicative_inverse.coverage" NAME="multiplicative_inverse Coverage Results" MODIFIED="1588865769466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
-    <SUITE FILE_PATH="coverage/Program$save_comments_to_database.coverage" NAME="save_comments_to_database Coverage Results" MODIFIED="1562120868396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
-    <SUITE FILE_PATH="coverage/Program$collaborative_filtering_algorithm.coverage" NAME="collaborative_filtering_algorithm Coverage Results" MODIFIED="1562836760602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
-    <SUITE FILE_PATH="coverage/Program$Iris3.coverage" NAME="Iris3 Coverage Results" MODIFIED="1562138346590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/Iris_analysis" />
-    <SUITE FILE_PATH="coverage/Program$tensorflow_test.coverage" NAME="tensorflow_test Coverage Results" MODIFIED="1595235907971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
-    <SUITE FILE_PATH="coverage/Program$score.coverage" NAME="score Coverage Results" MODIFIED="1562597932578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
+    <SUITE FILE_PATH="coverage/Program$lackey.coverage" NAME="lackey Coverage Results" MODIFIED="1590577370430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/Program$test.coverage" NAME="test Coverage Results" MODIFIED="1595059114131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
+    <SUITE FILE_PATH="coverage/Program$score.coverage" NAME="score Coverage Results" MODIFIED="1562597932578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning.coverage" NAME="comments_machine_learning Coverage Results" MODIFIED="1568044295252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
-    <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
-    <SUITE FILE_PATH="coverage/Program$KCC.coverage" NAME="KCC Coverage Results" MODIFIED="1595641240401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KPL" />
-    <SUITE FILE_PATH="coverage/Program$fib.coverage" NAME="fib Coverage Results" MODIFIED="1604391921922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
-    <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
-    <SUITE FILE_PATH="coverage/Program$read_data_from_database_to_csv.coverage" NAME="read_data_from_database_to_csv Coverage Results" MODIFIED="1562742315041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
-    <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1568201626762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
-    <SUITE FILE_PATH="coverage/Program$course2.coverage" NAME="course2 Coverage Results" MODIFIED="1594862165857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/course" />
-    <SUITE FILE_PATH="coverage/Program$snow_NLP.coverage" NAME="snow_NLP Coverage Results" MODIFIED="1562258583657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
-    <SUITE FILE_PATH="coverage/Program$verification_code_send.coverage" NAME="verification_code_send Coverage Results" MODIFIED="1562642150294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/verification_code" />
-    <SUITE FILE_PATH="coverage/Program$course.coverage" NAME="course Coverage Results" MODIFIED="1594802811558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/course" />
     <SUITE FILE_PATH="coverage/Program$homework1.coverage" NAME="homework1 Coverage Results" MODIFIED="1576935144354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_image_processing/homework1" />
-    <SUITE FILE_PATH="coverage/Program$devide_comments.coverage" NAME="devide_comments Coverage Results" MODIFIED="1562746821862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
+    <SUITE FILE_PATH="coverage/Program$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1562729434889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
+    <SUITE FILE_PATH="coverage/Program$get_ratio.coverage" NAME="get_ratio Coverage Results" MODIFIED="1564744148464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
+    <SUITE FILE_PATH="coverage/Program$model_predict__1_.coverage" NAME="model_predict (1) Coverage Results" MODIFIED="1562565998220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
     <SUITE FILE_PATH="coverage/Program$app2.coverage" NAME="app2 Coverage Results" MODIFIED="1594773984421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/myflask" />
-    <SUITE FILE_PATH="coverage/Program$predict.coverage" NAME="predict Coverage Results" MODIFIED="1597228859199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boston_housing_price_forecast" />
-    <SUITE FILE_PATH="coverage/Program$game.coverage" NAME="game Coverage Results" MODIFIED="1563209716666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer_battle" />
-    <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562325733111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/test_learn" />
-    <SUITE FILE_PATH="coverage/Program$precision_replenishment.coverage" NAME="precision_replenishment Coverage Results" MODIFIED="1570085972913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
-    <SUITE FILE_PATH="coverage/Program$courses_machine_learning.coverage" NAME="courses_machine_learning Coverage Results" MODIFIED="1562843298363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
     <SUITE FILE_PATH="coverage/Program$adding_noise.coverage" NAME="adding_noise Coverage Results" MODIFIED="1570591887489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_image_processing/homework2" />
-    <SUITE FILE_PATH="coverage/Program$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1562230503327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
-    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1573612432921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1573722463585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd_test_add.coverage" NAME="Twisted Trial for test_add.TestAdd.test_add Coverage Results" MODIFIED="1562568386799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
+    <SUITE FILE_PATH="coverage/Program$fib.coverage" NAME="fib Coverage Results" MODIFIED="1604391921922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$test_sql.coverage" NAME="test_sql Coverage Results" MODIFIED="1562116231839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
     <SUITE FILE_PATH="coverage/Program$model_predict2.coverage" NAME="model_predict2 Coverage Results" MODIFIED="1562296031978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$CSDN.coverage" NAME="CSDN Coverage Results" MODIFIED="1562146540898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$predict.coverage" NAME="predict Coverage Results" MODIFIED="1597228859199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boston_housing_price_forecast" />
+    <SUITE FILE_PATH="coverage/Program$comments_machine_learning1.coverage" NAME="comments_machine_learning1 Coverage Results" MODIFIED="1562259009981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$UDP_checksum.coverage" NAME="UDP_checksum Coverage Results" MODIFIED="1586441905403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_network" />
+    <SUITE FILE_PATH="coverage/Program$model_predict__2_.coverage" NAME="model_predict (2) Coverage Results" MODIFIED="1562572114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
+    <SUITE FILE_PATH="coverage/Program$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1594882399394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/spiders" />
     <SUITE FILE_PATH="coverage/Program$KMP.coverage" NAME="KMP Coverage Results" MODIFIED="1601020719407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1573475547718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence/get_data" />
+    <SUITE FILE_PATH="coverage/Program$emotional_analysis.coverage" NAME="emotional_analysis Coverage Results" MODIFIED="1562325733111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/test_learn" />
+    <SUITE FILE_PATH="coverage/Program$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1588863577760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
+    <SUITE FILE_PATH="coverage/Program$read_data_from_database_to_csv.coverage" NAME="read_data_from_database_to_csv Coverage Results" MODIFIED="1562742315041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
+    <SUITE FILE_PATH="coverage/Program$model_predict1.coverage" NAME="model_predict1 Coverage Results" MODIFIED="1562259063180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1562230503327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1568044243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$tensorflow_test.coverage" NAME="tensorflow_test Coverage Results" MODIFIED="1595235907971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
+    <SUITE FILE_PATH="coverage/Program$unit_test.coverage" NAME="unit_test Coverage Results" MODIFIED="1562567823090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
+    <SUITE FILE_PATH="coverage/Program$write_comments_to_database.coverage" NAME="write_comments_to_database Coverage Results" MODIFIED="1562751263133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
+    <SUITE FILE_PATH="coverage/Program$create_file.coverage" NAME="create_file Coverage Results" MODIFIED="1562057925214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
+    <SUITE FILE_PATH="coverage/Program$homework3.coverage" NAME="homework3 Coverage Results" MODIFIED="1571061184339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_media_communication" />
+    <SUITE FILE_PATH="coverage/Program$timetable_analysis.coverage" NAME="timetable_analysis Coverage Results" MODIFIED="1562855322965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
+    <SUITE FILE_PATH="coverage/Program$hanoi.coverage" NAME="hanoi Coverage Results" MODIFIED="1604393597869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$homework2__1_.coverage" NAME="homework2 (1) Coverage Results" MODIFIED="1569510648435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_media_communication" />
+    <SUITE FILE_PATH="coverage/Program$query_timetable.coverage" NAME="query_timetable Coverage Results" MODIFIED="1568201626762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
+    <SUITE FILE_PATH="coverage/Program$caltulate.coverage" NAME="caltulate Coverage Results" MODIFIED="1588910322355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
+    <SUITE FILE_PATH="coverage/Program$write_data_from_database_to_csv.coverage" NAME="write_data_from_database_to_csv Coverage Results" MODIFIED="1562554481153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
+    <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1573722725768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$devide_comments.coverage" NAME="devide_comments Coverage Results" MODIFIED="1562746821862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
+    <SUITE FILE_PATH="coverage/Program$e2_3.coverage" NAME="e2_3 Coverage Results" MODIFIED="1599574496283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562136264678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
     <SUITE FILE_PATH="coverage/Program$comments_machine_learning2.coverage" NAME="comments_machine_learning2 Coverage Results" MODIFIED="1562295026765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
     <SUITE FILE_PATH="coverage/Program$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1562430562953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taokela_comments" />
-    <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
-    <SUITE FILE_PATH="coverage/Program$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1594882357026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/quotesbot" />
     <SUITE FILE_PATH="coverage/Program$school_timetable.coverage" NAME="school_timetable Coverage Results" MODIFIED="1562855304042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
-    <SUITE FILE_PATH="coverage/Program$sensitive_words_analysis.coverage" NAME="sensitive_words_analysis Coverage Results" MODIFIED="1562381136945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
-    <SUITE FILE_PATH="coverage/Program$Iris2.coverage" NAME="Iris2 Coverage Results" MODIFIED="1562136264678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/data_analysis_class/Iris_analysis" />
-    <SUITE FILE_PATH="coverage/Program$homework2__1_.coverage" NAME="homework2 (1) Coverage Results" MODIFIED="1569510648435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_media_communication" />
-    <SUITE FILE_PATH="coverage/Program$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1573722725768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
-    <SUITE FILE_PATH="coverage/Program$query_scores__1_.coverage" NAME="query_scores (1) Coverage Results" MODIFIED="1563204346577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
-    <SUITE FILE_PATH="coverage/Program$UDP_checksum.coverage" NAME="UDP_checksum Coverage Results" MODIFIED="1586441905403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_network" />
-    <SUITE FILE_PATH="coverage/Program$model_predict__1_.coverage" NAME="model_predict (1) Coverage Results" MODIFIED="1562565998220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/classification_of_courses" />
-    <SUITE FILE_PATH="coverage/Program$elliptic_curve.coverage" NAME="elliptic_curve Coverage Results" MODIFIED="1588910936767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
-    <SUITE FILE_PATH="coverage/Program$hanoi.coverage" NAME="hanoi Coverage Results" MODIFIED="1604393597869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
-    <SUITE FILE_PATH="coverage/Program$homework3.coverage" NAME="homework3 Coverage Results" MODIFIED="1571061184339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/digital_media_communication" />
-    <SUITE FILE_PATH="coverage/Program$create_file.coverage" NAME="create_file Coverage Results" MODIFIED="1562057925214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
-    <SUITE FILE_PATH="coverage/Program$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1595063032724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
-    <SUITE FILE_PATH="coverage/Program$get_subtitles.coverage" NAME="get_subtitles Coverage Results" MODIFIED="1567438303794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/douyu/subtitles" />
-    <SUITE FILE_PATH="coverage/Program$unit_test.coverage" NAME="unit_test Coverage Results" MODIFIED="1562567823090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
-    <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd.coverage" NAME="Twisted Trial for test_add.TestAdd Coverage Results" MODIFIED="1562568497410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
-    <SUITE FILE_PATH="coverage/Program$toscrape_xpath.coverage" NAME="toscrape_xpath Coverage Results" MODIFIED="1594882308571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/spiders" />
-    <SUITE FILE_PATH="coverage/Program$model_predict.coverage" NAME="model_predict Coverage Results" MODIFIED="1562761834728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
-    <SUITE FILE_PATH="coverage/Program$connect_test.coverage" NAME="connect_test Coverage Results" MODIFIED="1562051581948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
-    <SUITE FILE_PATH="coverage/Program$learning_model_use.coverage" NAME="learning_model_use Coverage Results" MODIFIED="1562258446331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$query_scores.coverage" NAME="query_scores Coverage Results" MODIFIED="1577954175405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
     <SUITE FILE_PATH="coverage/Program$http.coverage" NAME="httpTest Coverage Results" MODIFIED="1594794063170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/http" />
-    <SUITE FILE_PATH="coverage/Program$e5_2.coverage" NAME="e5_2 Coverage Results" MODIFIED="1604393622400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$game.coverage" NAME="game Coverage Results" MODIFIED="1563209716666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer_battle" />
+    <SUITE FILE_PATH="coverage/Program$get_verification_code.coverage" NAME="get_verification_code Coverage Results" MODIFIED="1573612432921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1562257899117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$Xpath.coverage" NAME="Xpath Coverage Results" MODIFIED="1586251446984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/XML" />
+    <SUITE FILE_PATH="coverage/Program$course2.coverage" NAME="course2 Coverage Results" MODIFIED="1594862165857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/course" />
+    <SUITE FILE_PATH="coverage/Program$Twisted_Trial_for_test_add_TestAdd.coverage" NAME="Twisted Trial for test_add.TestAdd Coverage Results" MODIFIED="1562568497410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/unit_test" />
+    <SUITE FILE_PATH="coverage/Program$score_analysis.coverage" NAME="score_analysis Coverage Results" MODIFIED="1562600889372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/score" />
+    <SUITE FILE_PATH="coverage/Program$get_subtitles.coverage" NAME="get_subtitles Coverage Results" MODIFIED="1567438303794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/douyu/subtitles" />
+    <SUITE FILE_PATH="coverage/Program$machine_learning_recognition.coverage" NAME="machine_learning_recognition Coverage Results" MODIFIED="1568199885241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$collaborative_filtering_algorithm.coverage" NAME="collaborative_filtering_algorithm Coverage Results" MODIFIED="1562836760602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/course_recommendation" />
+    <SUITE FILE_PATH="coverage/Program$model_predict.coverage" NAME="model_predict Coverage Results" MODIFIED="1562761834728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/comments_emotional_analysis" />
     <SUITE FILE_PATH="coverage/Program$MD5encryption.coverage" NAME="MD5encryption Coverage Results" MODIFIED="1562430181130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_administration_system" />
+    <SUITE FILE_PATH="coverage/Program$recognition.coverage" NAME="recognition Coverage Results" MODIFIED="1568045782663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$get_verification_code__1_.coverage" NAME="get_verification_code (1) Coverage Results" MODIFIED="1573485867338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/business_intelligence" />
+    <SUITE FILE_PATH="coverage/Program$learning_model_use.coverage" NAME="learning_model_use Coverage Results" MODIFIED="1562258446331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$Iris3.coverage" NAME="Iris3 Coverage Results" MODIFIED="1562138346590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/Iris_analysis" />
+    <SUITE FILE_PATH="coverage/Program$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1595063032724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
+    <SUITE FILE_PATH="coverage/Program$sensitive_words_analysis.coverage" NAME="sensitive_words_analysis Coverage Results" MODIFIED="1562381136945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/shielding_sensitive_words" />
+    <SUITE FILE_PATH="coverage/Program$app.coverage" NAME="app Coverage Results" MODIFIED="1595056129470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/cms/server_flask" />
+    <SUITE FILE_PATH="coverage/Program$courses_machine_learning.coverage" NAME="courses_machine_learning Coverage Results" MODIFIED="1562843298363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/DNN" />
+    <SUITE FILE_PATH="coverage/Program$snow_NLP.coverage" NAME="snow_NLP Coverage Results" MODIFIED="1562258583657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning" />
+    <SUITE FILE_PATH="coverage/Program$auto_get_timetable.coverage" NAME="auto_get_timetable Coverage Results" MODIFIED="1568205671290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification_code_recognition" />
+    <SUITE FILE_PATH="coverage/Program$save_comments_to_database.coverage" NAME="save_comments_to_database Coverage Results" MODIFIED="1562120868396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$yuanshen.coverage" NAME="yuanshen Coverage Results" MODIFIED="1600678556882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
+    <SUITE FILE_PATH="coverage/Program$elliptic_curve.coverage" NAME="elliptic_curve Coverage Results" MODIFIED="1588910936767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
+    <SUITE FILE_PATH="coverage/Program$naive_bayes_classification.coverage" NAME="naive_bayes_classification Coverage Results" MODIFIED="1562686230533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/machine_learning/classification_of_courses/naive_bayes" />
+    <SUITE FILE_PATH="coverage/Program$e5_2.coverage" NAME="e5_2 Coverage Results" MODIFIED="1604393622400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$e5_3.coverage" NAME="e5_3 Coverage Results" MODIFIED="1604395984265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1594882357026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/quotesbot" />
+    <SUITE FILE_PATH="coverage/Program$query_scores__1_.coverage" NAME="query_scores (1) Coverage Results" MODIFIED="1563204346577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU" />
+    <SUITE FILE_PATH="coverage/Program$test_save.coverage" NAME="test_save Coverage Results" MODIFIED="1562120575741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/taoke" />
+    <SUITE FILE_PATH="coverage/Program$KCC.coverage" NAME="KCC Coverage Results" MODIFIED="1595641240401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KPL" />
+    <SUITE FILE_PATH="coverage/Program$verification_code_send.coverage" NAME="verification_code_send Coverage Results" MODIFIED="1562642150294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/verification_code" />
+    <SUITE FILE_PATH="coverage/Program$analysis_pages.coverage" NAME="analysis_pages Coverage Results" MODIFIED="1562311696998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
+    <SUITE FILE_PATH="coverage/Program$fu_sakura.coverage" NAME="fu_sakura Coverage Results" MODIFIED="1563284241050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer_battle/games" />
+    <SUITE FILE_PATH="coverage/Program$precision_replenishment.coverage" NAME="precision_replenishment Coverage Results" MODIFIED="1570085972913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/honkai_impact_3/supply_system" />
+    <SUITE FILE_PATH="coverage/Program$connect_test.coverage" NAME="connect_test Coverage Results" MODIFIED="1562051581948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/connect_php" />
+    <SUITE FILE_PATH="coverage/Program$quick_sort.coverage" NAME="quick_sort Coverage Results" MODIFIED="1605347620570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$mnist_ds.coverage" NAME="mnist_ds Coverage Results" MODIFIED="1595319099999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/touch" />
+    <SUITE FILE_PATH="coverage/Program$timetable_analysis__1_.coverage" NAME="timetable_analysis (1) Coverage Results" MODIFIED="1562599610896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/educational_system/WHU/timetable" />
+    <SUITE FILE_PATH="coverage/Program$e4_2.coverage" NAME="e4_2 Coverage Results" MODIFIED="1600682222307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/review/data_structure" />
+    <SUITE FILE_PATH="coverage/Program$course.coverage" NAME="course Coverage Results" MODIFIED="1594802811558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/course" />
     <SUITE FILE_PATH="coverage/Program$download_pages.coverage" NAME="download_pages Coverage Results" MODIFIED="1562053581817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practical_training/crawler/MOOC" />
+    <SUITE FILE_PATH="coverage/Program$multiplicative_inverse.coverage" NAME="multiplicative_inverse Coverage Results" MODIFIED="1588865769466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/computer_security" />
+    <SUITE FILE_PATH="coverage/Program$toscrape_xpath.coverage" NAME="toscrape_xpath Coverage Results" MODIFIED="1594882308571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses/practical_training3/quotesbot/quotesbot/spiders" />
   </component>
 </project>
